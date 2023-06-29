@@ -337,9 +337,16 @@ header {
 }
 .intro__photo {
   position: absolute;
+  width: 40%;
+  height: 100%;
   bottom: 0;
-  right: 80px;
+  right: 50px;
   z-index: 1;
+  object-fit:cover;
+}
+.image.fit {
+  display: block;
+  width: 100%;
 }
 @media (max-width:991px) {
   .intro__photo {
@@ -1078,6 +1085,7 @@ header {
   max-height: 100%;
   height: auto;
   margin-left: 4rem;
+  object-fit:cover;
 }
 .hide {
   display: none;
