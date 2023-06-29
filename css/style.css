@@ -276,7 +276,7 @@ header {
   padding-bottom: 8rem;
   padding-top: 6.6rem;
   position: relative;
-  background: url('../images/symbols.png') right bottom no-repeat;
+  /*background: url('../images/symbols.png') right bottom no-repeat;  */
   border-bottom: 1px solid rgba(106, 105, 107, 0.3);
 }
 @media (max-width:991px) {
@@ -546,7 +546,7 @@ header {
   content: "";
   width: 413px;
   height: 413px;
-  background-color: #EFEFEF;
+  /*background-color: #EFEFEF;*/
   border-radius: 30px;
   position: absolute;
   left: 1rem;
@@ -633,7 +633,7 @@ header {
 .reviews {
   padding: 4.6rem 0;
   position: relative;
-  background: #332F30 url("../images/reviews-bg.png") center no-repeat;
+  /*background: #332F30 url("../images/reviews-bg.png") center no-repeat; 0*/
   background-size: cover;
 }
 .reviews__text {
@@ -717,6 +717,18 @@ header {
 }
 @media (max-width:767px) {
   .news__text {
+    font-size: 1rem;
+  }
+}
+.work_interest_text {
+  color: #8d8d8e;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+@media (max-width:767px) {
+  .work_interest_text {
     font-size: 1rem;
   }
 }
