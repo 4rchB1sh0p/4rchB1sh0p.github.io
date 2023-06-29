@@ -337,12 +337,13 @@ header {
 }
 .intro__photo {
   position: absolute;
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  /*height: 100%;*/
   bottom: 0;
   right: 50px;
   z-index: 1;
   object-fit:cover;
+  margin-bottom: 2rem;
 }
 .image.fit {
   display: block;
