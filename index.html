@@ -1,147 +1,179 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
     <title>Yashodhar</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-<!--Header-->
-<header class="header">
-    <div class="container">
+    <!--Header-->
+    <header class="header">
+        <div class="container">
 
-        <div class="header__inner">
+            <div class="header__inner">
 
-            <div class="user">
-                <div class="user__avatar">
-                    <img src="images/yash_notion.svg" alt="">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="images/yash_notion.svg" alt="">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Yashodhar<br>Mahajan</div>
+                        <div class="user__prof">Software Developer</div>
+                    </div>
                 </div>
-                <div class="user__content">
-                    <div class="user__name">Yashodhar<br>Mahajan</div>
-                    <div class="user__prof">Software Developer</div>
-                </div>  
+
+
+                <nav class="nav_2" id="nav_2">
+                    <a class="nav_2__link scrollto" href="index.html">Home</a>
+                    <a class="nav_2__link scrollto" href="projects.html">Projects</a>
+                    <a class="nav_2__link scrollto" href="#blog">blog</a>
+                    <a class="nav_2__link" href="#">contact</a>
+                    <a class="nav_2__link nav_2__link--btn" href="#" data-modal="#modal_hire_me">Contact Me</a>
+                </nav>
+
+                <button class="burger" type="button" id="nav_2Toggle">
+                    <img class="burger__icon" src="images/burger.svg" alt="">
+                </button>
+
             </div>
-
-
-            <nav class="nav" id="nav">
-                <a class="nav__link scrollto" href="index.html">Home</a>
-                <a class="nav__link scrollto"  href="projects.html">Projects</a>
-                <a class="nav__link scrollto" href="#blog">blog</a>
-                <a class="nav__link" href="#">contact</a>
-                <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
-            </nav>
-
-            <button class="burger" type="button" id="navToggle">
-                <img class="burger__icon" src="images/burger.svg" alt="">
-            </button>
-
         </div>
-    </div>
-</header>
+    </header>
 
-<!--Intro-->
-<section class="intro">
-    <div class="container">
+    <!--Intro-->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-7-large col-12-medium">
+                    <div class="intro__inner_2">
+                        <div class="intro__content_2">
+                            <h2 class="intro__subtitle">Hello, I'm</h2>
+                            <h1 class="intro__title">Yashodhar</h1>
+                            <div class="intro__text">I am an automation engineer and software developer on a thrilling
+                                multidisciplinary journey...
+                                I run a <a
+                                    href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy">fortnightly
+                                    newsletter</a>
+                                where I share interesting things I saw, heard, found and read.</div>
 
-        <div class="intro__inner">
-            <div class="intro__content">
-                <h2 class="intro__subtitle">Hello, I'm</h2>
-                <h1 class="intro__title">Yashodhar</h1>
-                <div class="intro__text">I am an automation engineer and software developer on a thrilling multidisciplinary journey... 
-                    I run a <a href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy">fortnightly newsletter</a> 
-                    where I share interesting things I saw, heard, found and read.</div>
+                            <div class="social">
+                                <a class="social__link"
+                                    href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy/"
+                                    target="_blank">
+                                    <img src="images/substack-icon.svg" width="41px" height="41px" alt="">
+                                </a>
 
-                <div class="social">
-                    <a class="social__link" href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy/" target="_blank">
-                        <img src="images/substack-icon.svg" width="41px" height="41px" alt="">
-                    </a>
+                                <a class="social__link" href="https://www.linkedin.com/in/yashodhar-mahajan/">
+                                    <img src="images/in.svg" width="41px" height="41px" alt="">
+                                </a>
 
-                    <a class="social__link" href="https://www.linkedin.com/in/yashodhar-mahajan/">
-                        <img src="images/in.svg" width="41px" height="41px" alt="">
-                    </a>
+                                <a class="social__link" href="https://www.instagram.com/yashodhar03/">
+                                    <img src="images/instagram.svg" width="41px" height="41px" alt="">
+                                </a>
 
-                    <a class="social__link" href="https://www.instagram.com/yashodhar03/">
-                        <img src="images/instagram.svg" width="41px" height="41px" alt="">
-                    </a>
+                                <a class="social__link" href="https://twitter.com/yashodhar03">
+                                    <img src="images/twitter.svg" width="41px" height="41px" alt="">
+                                </a>
+                            </div>
 
-                    <a class="social__link" href="https://twitter.com/yashodhar03">
-                        <img src="images/twitter.svg" width="41px" height="41px" alt="">
-                    </a>
+                            <!-- <a class="btn" href="#" data-modal="#modal_hire_me">Contact ME</a>-->
+                            <!--  <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button> -->
+                        </div>
+                    </div> <!-- /.intro__inner -->
+                </div>
+                <div class="col-4 col-5-large col-12-medium">
+                    <span class="image fit"><img src="images/photo1.jpg" alt="" /></span>
+                    <!-- <span class="image fit"><img src="images/photo1.jpg" alt="" /> -->
+                    <!--   <img class="intro__photo" src="images/photo1.jpg" alt="">-->
                 </div>
 
-                <!-- <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>-->
-               <!--  <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button> -->
             </div>
-                 <!-- <span class="image fit"><img src="images/photo1.jpg" alt="" /> -->
-                   <img class="intro__photo" src="images/photo1.jpg" alt="">
-            </span>
-        </div> <!-- /.intro__inner -->
-
-    </div> <!-- /.container -->
-    <br>
-
-</section>
-
-
-<!-- About -->
-
-<section class="about" id="about">
-    <div class="container">
-
-        <div class="about__inner">
-             <div class="about__photo">
-                <img class="img" src="images/designer_photo1.jpg" alt="">
-            </div>
-
-            <div class="about__content">
-                <h3 class="about__title">about me</h3>
-                <h2 class="about__bigtitle">WHO AM I</h2>
-                <div class="about__text">
-                    <p>I am an automation engineer and software developer on a thrilling multidisciplinary journey. 
-                        I started off with a knack for mechanical design and mass production in the automotive world. 
-                        But my insatiable curiosity led me to dive into software development and PLC programming.
-                         Now, I seamlessly blend my mechanical finesse with coding wizardry, creating innovative and
-                          boundary-breaking automation solutions that leave everyone amazed. 
-                          Let's push the limits of technology together!</p>
-                    <p>Exposure to different work cultures be it at a research center, academia, and
-                         industries has given me a strong and far-sighted vision. Along with this, it has given me
-                          a sense of understanding of applying knowledge/understanding to do multi-disciplinary research
-                           along with a strong grasp of understanding in each domain. Moreover, it has enhanced my analytical 
-                           skills to visualize the problem from wider as well as deeper perspectives. </p>
-                    <p>Apart from my technical work, I remain associated with NGOs/initiatives for 
-                        technical mentoring work (education domain) which gives me a chance to share my 
-                        vision, knowledge and learning with the primary school students and get to learn so 
-                        much of curiosity and motivation from them.</p>
-                </div>
-
-                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
-                <button class="btn" type="button" data-modal="#modal_resume">SEE MY CV</button>
-
-            </div> <!-- /.about__content -->
-        </div> <!-- /.about__inner -->
-
-    </div> <!-- /.container -->
-</section> <!-- /.about-->
-
-<!-- News -->
-<section class="news">
-    <div class="container">
-        <div class="news__header">
-            <h3 class="news__title">read me</h3>
-            <div class="news__text">Sometimes I write!</div>
-            <br>
-            <iframe src="https://yashodhar.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
         </div>
-                
+        </div> <!-- /.container -->
+        <br>
 
-       <!-- <div class="articles">
+    </section>
+
+
+    <!-- About -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner_2">
+                <div class="row">
+                    <div class="col-4 col-5-large col-12-medium">
+                        <div class="about__photo_2">
+                            <span class="image fit"><img src="images/designer_photo1.jpg" alt="" /></span>
+                        </div>
+                    </div>
+                    <div class="col-8 col-7-large">
+
+                        <div class="about__content_2">
+                            <h3 class="about__title">about me</h3>
+                            <h2 class="about__bigtitle">WHO AM I</h2>
+                            <div class="about__text">
+                                <p>I am an automation engineer and software developer on a thrilling multidisciplinary
+                                    journey.
+                                    I started off with a knack for mechanical design and mass production in the
+                                    automotive
+                                    world.
+                                    But my insatiable curiosity led me to dive into software development and PLC
+                                    programming.
+                                    Now, I seamlessly blend my mechanical finesse with coding wizardry, creating
+                                    innovative
+                                    and
+                                    boundary-breaking automation solutions that leave everyone amazed.
+                                    Let's push the limits of technology together!</p>
+                                <p>Exposure to different work cultures be it at a research center, academia, and
+                                    industries has given me a strong and far-sighted vision. Along with this, it has
+                                    given
+                                    me
+                                    a sense of understanding of applying knowledge/understanding to do
+                                    multi-disciplinary
+                                    research
+                                    along with a strong grasp of understanding in each domain. Moreover, it has enhanced
+                                    my
+                                    analytical
+                                    skills to visualize the problem from wider as well as deeper perspectives. </p>
+                                <p>Apart from my technical work, I remain associated with NGOs/initiatives for
+                                    technical mentoring work (education domain) which gives me a chance to share my
+                                    vision, knowledge and learning with the primary school students and get to learn so
+                                    much of curiosity and motivation from them.</p>
+                            </div>
+
+                            <a class="btn" href="#" data-modal="#modal_hire_me">Contact ME</a>
+                            <button class="btn" type="button" data-modal="#modal_resume">SEE MY CV</button>
+
+                        </div> <!-- /.about__content -->
+                    </div> <!-- col-8 col-7-large col-12-medium -->
+                </div> <!-- row -->
+            </div><!-- /.about__inner -->
+        </div> <!-- /.container -->
+    </section> <!-- /.about-->
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title">read me</h3>
+                <div class="news__text">Sometimes I write!</div>
+                <br>
+                <iframe src="https://yashodhar.substack.com/embed" width="480" height="320"
+                    style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+
+            <!-- <div class="articles">
             <div class="articles__col">
                 <div class="articles__item">
                     <div class="articles__header">
@@ -217,259 +249,267 @@
                 </div>
             </div>
         </div> <-- /.articles -->
-        <!--
+            <!--
         <div class="news__footer">
             <a class="news__link" href="#">See more posts</a>
         </div> -->
 
-    </div> <!-- /.container -->
-</section> <!-- /.news -->
+        </div> <!-- /.container -->
+    </section> <!-- /.news -->
 
-<!-- Footer -->
+    <!-- Footer -->
 
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+        <div class="container">
 
-        <div class="footer__inner">
-            <div class="footer__credits">
-                <div class="footer__copyright">
-                    &copy; 2020 My Portfolio
-                </div>  
-                <div class="footer__social">
-                    <a href="https://github.com/4rchB1sh0p" target="_blank">
-                        <img src="images/github_gray.svg" width="23" alt="">
-                    </a>
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        &copy; 2020 My Portfolio
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://github.com/4rchB1sh0p" target="_blank">
+                            <img src="images/github_gray.svg" width="23" alt="">
+                        </a>
 
-                    <a href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank">
-                        <img src="images/linkedin-gray.svg" width="21" alt="">
-                    </a>
+                        <a href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank">
+                            <img src="images/linkedin-gray.svg" width="21" alt="">
+                        </a>
 
-                    <a href="https://www.instagram.com/yashodhar03/" target="_blank">
-                        <img src="images/instagram-gray.svg" width="21" height="21" alt="">
-                    </a>
+                        <a href="https://www.instagram.com/yashodhar03/" target="_blank">
+                            <img src="images/instagram-gray.svg" width="21" height="21" alt="">
+                        </a>
 
-                    <a href="https://twitter.com/yashodhar03" target="_blank">
-                        <img src="images/twitter-gray.svg" width="21" alt="">
-                    </a>
+                        <a href="https://twitter.com/yashodhar03" target="_blank">
+                            <img src="images/twitter-gray.svg" width="21" alt="">
+                        </a>
 
-                </div>
-
-            </div> <!-- /.footer__credits -->
-
-            <nav class="footer__nav">
-                <a class="footer__nav-link" href="index.html">Home</a>
-                <a class="footer__nav-link" href="projects.html">Projects</a>
-                <a class="footer__nav-link" href="#">Blog</a>
-                <a class="footer__nav-link" href="#">Contact</a>
-                <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
-            </nav>
-
-        </div> <!-- /.footer__inner -->
-    </div> <!-- /.container -->
-</footer>
-
-<div class="modal" id="modal_resume">
-    <div class="modal__dialog">
-
-        <button type="button" class="modal__close" data-close>
-            <img src="images/cancel.svg" alt="">
-        </button>
-
-        <div class="modal__content">
-            <h3 class="modal__title text-center">resume</h3>
-
-            <div class="text-center">
-                <a class="btn btn--thin" href="">download pdf</a>
-                <a class="btn btn--thin" href="">print</a>
-            </div>
-
-
-            <div class="timeline">
-
-
-                <div class="timeline__col timeline__col--left">
-                    <h4 class="timeline__title">EXPERIENCE</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                        <h5 class="timeline__subtitle">Freelancer</h5>
-                        <div class="timeline__position">Art Director</div>
-                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
-                            porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
-                        </div>
                     </div>
 
+                </div> <!-- /.footer__credits -->
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                        <h5 class="timeline__subtitle">Freelancer</h5>
-                        <div class="timeline__position">Art Director</div>
-                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
-                            porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
-                        </div>
-                    </div>
+                <nav class="footer__nav_2">
+                    <a class="footer__nav_2-link" href="index.html">Home</a>
+                    <a class="footer__nav_2-link" href="projects.html">Projects</a>
+                    <a class="footer__nav_2-link" href="#">Blog</a>
+                    <a class="footer__nav_2-link" href="#">Contact</a>
+                    <a class="footer__nav_2-link footer__nav_2-link--btn" href="#" data-modal="#modal_hire_me">HIRE
+                        ME</a>
+                </nav>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                        <h5 class="timeline__subtitle">Freelancer</h5>
-                        <div class="timeline__position">Art Director</div>
-                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
-                            porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
-                        </div>
-                    </div>
+            </div> <!-- /.footer__inner -->
+        </div> <!-- /.container -->
+    </footer>
 
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__title text-center">resume</h3>
+
+                <div class="text-center">
+                    <a class="btn btn--thin" href="">download pdf</a>
+                    <a class="btn btn--thin" href="">print</a>
                 </div>
 
 
-                <div class="timeline__col timeline__col--right">
-                    <h4 class="timeline__title">EDUCATION</h4>
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA University, USA</div>
+                <div class="timeline">
+
+
+                    <div class="timeline__col timeline__col--left">
+                        <h4 class="timeline__title">EXPERIENCE</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">Freelancer</h5>
+                            <div class="timeline__position">Art Director</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
+                                porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
+                            </div>
+                        </div>
+
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">Freelancer</h5>
+                            <div class="timeline__position">Art Director</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
+                                porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">Freelancer</h5>
+                            <div class="timeline__position">Art Director</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
+                                porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
+                            </div>
+                        </div>
 
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA University, USA</div>
 
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">EDUCATION</h4>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
+                            <h5 class="timeline__subtitle">UI/UX Design</h5>
+                            <div class="timeline__position">LA University, USA</div>
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
+                            <h5 class="timeline__subtitle">UI/UX Design</h5>
+                            <div class="timeline__position">LA University, USA</div>
+
+                        </div>
+
+                        <h4 class="timeline__title">Skills</h4>
+
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">UI/UX Design</div>
+
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">UI/UX Design</div>
+
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">UI/UX Design</div>
+
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div> <!-- /.progress-bar -->
+
+                        <h4 class="timeline__title">Awards</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
+                            <h5 class="timeline__subtitle">UI/UX Design</h5>
+                            <div class="timeline__position">LA University, USA</div>
+                            <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
+                                porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
+                            </div>
+                        </div>
                     </div>
 
-                    <h4 class="timeline__title">Skills</h4>
-
-                    <div class="progress-bar">
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">UI/UX Design</div>
-
-                            </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 40%;"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">UI/UX Design</div>
-
-                            </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 60%;"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">UI/UX Design</div>
-
-                            </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div> <!-- /.progress-bar -->
-
-                    <h4 class="timeline__title">Awards</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</b></time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA University, USA</div>
-                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dignissimos enim exercitationem iste recusandae ut. Ad blanditiis cumque eaque iste
-                            porro quia soluta. Eligendi hic officiis, quos rem saepe tempora unde.
-                        </div>
-                    </div>
+                </div> <!-- /.timeline -->
+                <div class="text-center">
+                    <a href="#" class="btn">Contact Me</a>
                 </div>
 
-            </div> <!-- /.timeline -->
-            <div class="text-center">
-                <a href="#" class="btn">Hire me</a>
-            </div>
-
-        </div> <!-- /.modal__content -->
-    </div> <!-- /.modal-dialog -->
-</div> <!-- /.modal -->
+            </div> <!-- /.modal__content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
 
 
-<div class="modal" id="modal_hire_me">
-    <div class="modal__dialog modal__dialog--sm">
-        <button type="button" class="modal__close" data-close>
-            <img src="images/cancel.svg" alt="">
-        </button>
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
 
-        <div class="contact">
-            <div class="contact__left">
-                <h3 class="modal__title mb-0">LET'S TALK!</h3>
-                <div class="modal__subtitle">I usually respond to twitter DM's within 2 hours</div>
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                    <div class="modal__subtitle">I usually respond to twitter DM's within 2 hours</div>
 
-                <ul class="contact__info">
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/smartphone-call.svg" width="20" alt="">
-                        +49 17*******16
-                    </li>
-
-
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/mail.svg" width="20" alt="">
-                        mahajan.yash09@gmail.com
-                    </li>
-                </ul>
-
-                <form class="form" action="/" method="post">
-                    <div class="form__group">
-                        <label class="form__label" for="input-email">Adress e-mail</label>
-                        <input class="form__input" name="input-email" type="text" placeholder="Adress e-mail"
-                               id="input-email">
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__label" for="input-text">Request</label>
-                        <textarea class="form__textarea" name="input-text" id="input-text"
-                                  placeholder="Type your request..."></textarea>
-                    </div>
-
-                    <div class="text-right">
-                        <button class="btn">send</button>
-                    </div>
-                </form>
-
-            </div> <!-- /.contact__left -->
-
-            <div class="contact__right"></div>
-
-        </div> <!-- /.contact -->
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="images/smartphone-call.svg" width="20" alt="">
+                            +49 17*******16
+                        </li>
 
 
-    </div> <!-- /.modal-dialog -->
-</div> <!-- /.modal -->
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="images/mail.svg" width="20" alt="">
+                            mahajan.yash09@gmail.com
+                        </li>
+                    </ul>
+
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Adress e-mail</label>
+                            <input class="form__input" name="input-email" type="text" placeholder="Adress e-mail"
+                                id="input-email">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-text">Request</label>
+                            <textarea class="form__textarea" name="input-text" id="input-text"
+                                placeholder="Type your request..."></textarea>
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn">send</button>
+                        </div>
+                    </form>
+
+                </div> <!-- /.contact__left -->
+
+                <div class="contact__right"></div>
+
+            </div> <!-- /.contact -->
 
 
-<!-- JS -->
-<script src="js/slick.min.js"></script>
-<script src="js/app.js"></script>
-<script>
-    jQuery(document).ready(function() {
-        jQuery("a.scrollto").click(function () {
-            elementClick = jQuery(this).attr("href")
-            destination = jQuery(elementClick).offset().top;
-            jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-            return false;
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("a.scrollto").click(function () {
+                elementClick = jQuery(this).attr("href")
+                destination = jQuery(elementClick).offset().top;
+                jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 800);
+                return false;
+            });
         });
-    });
-</script>
+    </script>
 </body>
+
 </html>
