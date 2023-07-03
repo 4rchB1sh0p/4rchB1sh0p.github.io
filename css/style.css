@@ -939,7 +939,7 @@ header {
   padding-left: 3.2rem;
 }
 .timeline__title {
-  margin-bottom: 2.6rem;
+  margin-bottom: 0.6rem;
   font-size: 1.2rem;
   color: #2b2a2c;
   text-transform: uppercase;
@@ -982,7 +982,7 @@ header {
 .progress-bar__item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 .progress-bar__title {
   font-size: 0.94rem;
