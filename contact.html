@@ -22,7 +22,6 @@
     </style>
 </head>
 <body>
-<!--Header-->
     <!--Header-->
     <header class="header">
         <div class="container">
@@ -31,9 +30,7 @@
 
                 <div class="user">
                     <div class="user__avatar">
-                        <a href="index.html">
-                            <img src="images/yash_notion.svg" alt="">
-                        </a>
+                        <img src="images/yash_notion.svg" alt="">
                     </div>
                     <div class="user__content">
                         <div class="user__name">Yashodhar<br>Mahajan</div>
@@ -58,217 +55,24 @@
         </div>
     </header>    <!--Header End-->
 
-
-<!-- Works -->
-<div class="works" id="works">
-    <div class="container">
-        <div class="news__header">
-            <div class="work_interest_text">Being an automation enthusiast with a background in mechanical engineering,
-                I have worked on a lot of engaging projects covering a wide variety of topics....</div>
-        </div>
-        <div class="works__nav_2">
-            <a class="works__nav_2-link" href="#" data-filter="all">All</a>
-            <a class="works__nav_2-link" href="#" data-filter="app">App</a>
-            <a class="works__nav_2-link" href="#" data-filter="websites">Websites</a>
-            <a class="works__nav_2-link" href="#" data-filter="interaction">Interaction</a>
-        </div>
-
-
-        <div class="portfolio">
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/nokia1.JPG" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: app</div>
-                        <div class="work__title">
-                            Helical Reducer
-                            <time class="work__date" datetime="2020-24-11">2018</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="websites">
-                <div class="work" data-modal="#modal_project_2">
-                    <img class="work__image" src="https://github.com/4rchB1sh0p/Classroom-Ventilation-CFD-OpenFOAM/blob/main/images/d2%20geom_2.PNG?raw=true" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: website</div>
-                        <div class="work__title">
-                            Classroom ventilation CFD OpenFOAM
-                            <time class="work__date" datetime="2020-24-11">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work" data-modal="#modal_project_3">
-                    <img class="work__image" src="https://github.com/4rchB1sh0p/Grains-Classification/blob/main/images/rice2sol.jpg?raw=true" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: interaction</div>
-                        <div class="work__title">
-                            Grains Classification Image Processing
-                            <time class="work__date" datetime="2020-24-11">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="websites">
-                <div class="work" data-modal="#modal_project_4">    
-                    <img class="work__image" src="images/cgb2.JPG" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: website</div>
-                        <div class="work__title">
-                            Extruder GearBox
-                            <time class="work__date" datetime="2020-24-11">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work" data-modal="#modal_project_5">
-                    <img class="work__image" src="https://github.com/4rchB1sh0p/Two-Wheeled-Robot/blob/main/images/robot_1.JPG?raw=true" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: interaction</div>
-                        <div class="work__title">
-                            Two wheeled self balancing robot
-                            <time class="work__date" datetime="2020-24-11">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_6">
-                    <img class="work__image" src="https://github.com/4rchB1sh0p/4rchB1sh0p.github.io/blob/main/images/bevel_1.png?raw=true" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: app</div>
-                        <div class="work__title">
-                            CNC Spiral Bevel Gear Error Compensation
-                            <time class="work__date" datetime="2020-24-11">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="background_contact"></div>
+    <div class="container_contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form_contact">
+            <label for="name_contact">Name:</label> 
+            <input type="text" id="name_contact" name="name" required>
             
-            <!--
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_7">
-                    <img class="work__image" src="https://place-hold.it/370x300" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: app</div>
-                        <div class="work__title">
-                            Project title
-                            <time class="work__date" datetime="2020-24-11">2020</time>
-                        </div>
-                    </div>
-                </div>
-            </div>    /modal_project_7-->
-
-        </div> <!-- /.portfolio -->
-    </div> <!-- /.container -->
-</div> <!-- /.works -->
-
-
-
-
-<!-- News -->
-<section class="news">
-    <div class="container">
-        <div class="news__header">
-            <h3 class="news__title">read me</h3>
-            <div class="news__text">Sometimes I write!</div>
-            <br>
-            <iframe src="https://yashodhar.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-      <br>
- </div>
-                
-
-       <!-- <div class="articles">
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <div class="articles__date">
-                            25 <br> Nov
-                        </div>
-                        <a href="#"> <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#"> THE BEST APP IN 2020</a></h4>
-                        <div class="articles__cat">CATEGORY</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
-                                enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit
-                                amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-
-                    </div>
-                    <a class="btn btn--sm" href="#">read more</a>
-                </div>
-            </div>
-
-
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <div class="articles__date">
-                            25 <br> Nov
-                        </div>
-                        <a href="#"> <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#"> THE BEST APP IN 2020</a></h4>
-                        <div class="articles__cat">CATEGORY</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
-                                enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit
-                                amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-
-                    </div>
-                    <a class="btn btn--sm" href="#">read more</a>
-                </div>
-
-
-            </div>
-
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <div class="articles__date">
-                            25 <br> Nov
-                        </div>
-                        <a href="#"> <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#"> THE BEST APP IN 2020</a></h4>
-                        <div class="articles__cat">CATEGORY</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
-                                enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit
-                                amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-
-                    </div>
-                    <a class="btn btn--sm" href="#">read more</a>
-                </div>
-            </div>
-        </div> <-- /.articles -->
-
-        <div class="news__footer">
-            <a class="news__link" href="#">See more posts</a>
-        </div>
-
-    </div> <!-- /.container -->
-</section> <!-- /.news -->
+            <label for="email_contact">Email:</label>
+            <input type="email" id="email_contact" name="email" required>
+            
+            <label for="message_contact">Message:</label>
+            <textarea id="message_contact" name="message" required></textarea>
+            <a class="btn btn--sm" href="#">Submit</a>
+             <!--<button type="submit">Send</button> -->
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 
 <!-- Footer -->
 
