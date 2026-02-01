@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond 2026</title>
+  <style>
+    :root { --bg: #f5f1ed; --accent1: #d4a574; --accent2: #8b7355; --text: #2c2c2c; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+    nav { position: sticky; top: 0; background: var(--bg); border-bottom: 3px solid var(--accent1); padding: 1.5rem 2rem; z-index: 100; }
+    nav a { color: var(--text); text-decoration: none; margin-right: 2rem; font-weight: 600; font-size: 0.9rem; position: relative; }
+    nav a:hover, nav a.active { color: var(--accent2); }
+    nav a:focus { outline: 2px solid var(--accent2); outline-offset: 4px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+    #hero { padding: 5rem 0; text-align: center; border-bottom: 1px solid #d4c4b0; }
+    h1 { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 400; margin-bottom: 1rem; }
+    .subtitle { font-size: 1.15rem; color: #666; margin-bottom: 2rem; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 2rem; margin-bottom: 2.5rem; }
+    .info-block { text-align: center; }
+    .info-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent2); margin-bottom: 0.5rem; }
+    .info-value { font-size: 1.1rem; font-weight: 600; }
+    .cta-area { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    button { padding: 0.8rem 2rem; border: 2px solid var(--text); background: white; cursor: pointer; min-height: 44px; font-family: inherit; font-weight: 600; transition: all 0.3s; }
+    button:hover { background: var(--accent1); border-color: var(--accent1); color: white; }
+    button:focus { outline: 2px solid var(--accent2); outline-offset: 3px; }
+    .btn-primary { background: var(--accent2); color: white; border: none; }
+    section { padding: 4rem 0; border-bottom: 1px solid #d4c4b0; }
+    h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); font-weight: 400; margin-bottom: 2rem; }
+    p { color: #555; margin-bottom: 1.5rem; line-height: 1.8; }
+    ul { list-style: none; margin: 1.5rem 0; padding-left: 2rem; }
+    ul li { margin-bottom: 0.8rem; position: relative; }
+    ul li::before { content: '◇'; position: absolute; left: 0; color: var(--accent1); font-weight: bold; }
+    .bios { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .bio img { width: 100%; aspect-ratio: 9/13; object-fit: cover; margin-bottom: 1rem; border: 1px solid #d4c4b0; }
+    .bio h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .quote { padding: 1.5rem; background: white; border: 1px solid #d4c4b0; font-style: italic; line-height: 1.8; }
+    .details-box { background: white; padding: 2rem; border: 1px solid #d4c4b0; border-left: 4px solid var(--accent1); margin-bottom: 1.5rem; }
+    .detail-row { display: grid; grid-template-columns: 100px 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .detail-row:last-child { margin-bottom: 0; }
+    .detail-label { font-weight: 700; text-transform: uppercase; font-size: 0.7rem; color: var(--accent2); }
+    form { max-width: 450px; margin-top: 1.5rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+    input, select, textarea { width: 100%; padding: 0.75rem; border: 1px solid #d4c4b0; background: white; font-family: inherit; min-height: 44px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent2); box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1); }
+    textarea { min-height: 100px; resize: vertical; }
+    .price-box { background: linear-gradient(135deg, var(--accent1), var(--accent2)); color: white; padding: 1.25rem; text-align: center; font-weight: 700; margin-top: 1.5rem; }
+    footer { background: var(--accent2); color: white; padding: 2.5rem; text-align: center; }
+    footer a { color: #d4b596; text-decoration: none; }
+    footer a:focus { outline: 2px solid white; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Beyond 2026","startDate":"2026-06-20T19:30:00Z","endDate":"2026-06-20T21:00:00Z","location":{"@type":"Place","name":"TBD Venue","address":"TBD Address, Berlin"},"offers":{"@type":"Offer","price":"20","priceCurrency":"EUR"}}</script>
+  <nav class="container-fluid"><div class="container"><a href="#hero" class="nav-link active">Home</a> <a href="#tour" class="nav-link">Tour</a> <a href="#bios" class="nav-link">Frank & Paula</a> <a href="#droplet" class="nav-link">Droplet</a> <a href="#details" class="nav-link">Details</a> <a href="#register" class="nav-link">Register</a></div></nav>
+  <main>
+    <section id="hero"><div class="container"><h1>Beyond 2026</h1><p class="subtitle">A concert-journey for cello, word, and stillness</p><div class="info-grid"><div class="info-block"><div class="info-label">Location</div><div class="info-value" id="hero-city">Berlin</div></div><div class="info-block"><div class="info-label">Date</div><div class="info-value" id="hero-date">20 June 2026</div></div><div class="info-block"><div class="info-label">Duration</div><div class="info-value" id="hero-duration">90 min</div></div></div><div class="cta-area"><button class="btn-primary" onclick="smoothScroll('register')">Register</button> <button onclick="smoothScroll('tour')">Explore</button></div></div></section>
+    <section id="tour"><div class="container"><h2>Experience</h2><p>Beyond is a concert-journey that blends cello, word, and stillness. Live performance meets gentle inquiry. Frank performs original compositions and classical works; Paula guides the evening with brief reflections on listening, attention, and what clarity means.</p><p>It's not a lecture—it's an invitation to listen. Each evening asks: What happens when you really pay attention?</p><ul><li>Original cello compositions interwoven with silence</li><li>Brief spoken interludes (2–3 minutes) exploring attention and listening</li><li>Intimate acoustics; careful pacing for contemplation</li><li>No prior knowledge required—all welcome</li><li>A space where questions matter more than answers</li></ul></div></section>
+    <section id="bios"><div class="container"><h2>Frank & Paula</h2><div class="bios"><div class="bio"><img src="https://static.wixstatic.com/media/3ff249_fbe8310002834fbe8b75d5e6ccac2330~mv2.jpg/v1/crop/x_75,y_0,w_2648,h_3916/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frank_Spronk.jpg" alt="Frank Spronk"><h3>Frank Spronk</h3><p>Frank Spronk, cellist and composer, blends contemporary classical performance with thoughtful reflection. He is a direct student of a renowned 20th-century teacher known for disciplined inquiry and lucid self-knowledge. Together with Paula, he brings this lineage of clarity into the concert space, inviting audiences to listen not just to sound, but to what listening reveals.</p></div><div class="bio"><img src="https://static.wixstatic.com/media/e5d87d_42e5660b118448b89c1352003bf7e9b6~mv2.jpg/v1/crop/x_0,y_8,w_682,h_1009/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp-Image-2022-01-17-at-22_26_edite.jpg" alt="Paula Spronk"><h3>Paula Spronk</h3><p>Paula Spronk shapes the arc of each evening: pacing, context, and an atmosphere where listening becomes easy. Her background in mentoring and contemplative practice informs her role as guide. Like Frank, she studied under the same lineage of rigorous self-inquiry. Paula brings warmth, precision, and a gift for making subtle concepts accessible to all.</p></div></div></div></section>
+    <section id="droplet"><div class="container"><h2>Droplet</h2><p><em>Droplet is a collection of micro-texts written for the Beyond journey.</em></p><div class="quotes"><div class="quote">"When sound ends, something in you continues."</div><div class="quote">"Silence isn't empty; it's unclaimed space."</div></div></div></section>
+    <section id="details"><div class="container"><h2>Details</h2><div class="details-box"><div class="detail-row"><div class="detail-label">Date</div><div id="detail-date">20 June 2026</div></div><div class="detail-row"><div class="detail-label">Time</div><div id="detail-time">19:30–21:00 (90 min)</div></div><div class="detail-row"><div class="detail-label">Venue</div><div id="detail-venue">TBD Venue</div></div><div class="detail-row"><div class="detail-label">Address</div><div id="detail-address">TBD Address</div></div></div><button class="btn-primary" onclick="openMap()">View Map</button></div></section>
+    <section id="register"><div class="container"><h2>Register</h2><form id="registrationForm"><div class="form-group"><label for="name">Name <span style="color: #c41c3b;">*</span></label><input type="text" id="name" required></div><div class="form-group"><label for="email">Email <span style="color: #c41c3b;">*</span></label><input type="email" id="email" required></div><div class="form-group"><label for="tickets">Tickets <span style="color: #c41c3b;">*</span></label><select id="tickets" required><option value="">Select...</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div><div class="form-group"><label for="notes">Notes</label><textarea id="notes" placeholder="Accessibility needs?"></textarea></div><div class="price-box">€20 per ticket</div><button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Register</button><p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;"><a href="mailto:hello@example.com" style="color: var(--accent1);">Prefer email?</a></p></form></div></section>
+  </main>
+  <footer><div class="container"><p>Questions? <a href="mailto:hello@example.com">hello@example.com</a></p><p style="font-style: italic; margin: 0.5rem 0;">Music can be entertainment — or a doorway.</p><p>&copy; 2026 Beyond</p></div></footer>
+  <script>
+    const EVENT = { title: "Beyond 2026", city: "Berlin", venue: "TBD Venue", address: "TBD Address", dateISO: "2026-06-20", startTime: "19:30", endTime: "21:00", duration: "90 min", prices: { general: "€20" }, registrationEmail: "hello@example.com", mapQueryUrl: "https://www.google.com/maps?q=Berlin+TBD+Venue", ticketLimit: 6 };
+    function formatDate(iso) { const date = new Date(iso + "T00:00:00Z"); return date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }); }
+    function initPage() {
+      document.getElementById('hero-city').textContent = EVENT.city;
+      document.getElementById('hero-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('hero-duration').textContent = EVENT.duration;
+      document.getElementById('detail-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('detail-time').textContent = EVENT.startTime + '–' + EVENT.endTime + ' (' + EVENT.duration + ')';
+      document.getElementById('detail-venue').textContent = EVENT.venue;
+      document.getElementById('detail-address').textContent = EVENT.address;
+    }
+    function smoothScroll(id) { document.getElementById(id).scrollIntoView({ behavior: 'smooth' }); }
+    function openMap() { window.open(EVENT.mapQueryUrl, '_blank'); }
+    function validateForm(f) { if (!f.name.trim()) return "Name required"; if (!f.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) return "Valid email required"; if (f.tickets < 1 || f.tickets > 6) return "Select 1–6 tickets"; return null; }
+    function showSuccessModal() { const m = document.createElement('div'); m.id = 'sm'; m.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 2000;'; m.innerHTML = '<div style="background: white; padding: 2rem; max-width: 400px; text-align: center;"><h3 style="color: #8b7355; margin-bottom: 1rem;">Thank you!</h3><p style="color: #666; margin-bottom: 1.5rem;">Confirmation link coming to your email.</p><button onclick="document.getElementById(\'sm\').remove()" style="padding: 0.75rem 1.5rem; background: #8b7355; color: white; border: none; cursor: pointer; min-height: 44px;">Close</button></div>'; document.body.appendChild(m); m.addEventListener('keydown', (e) => { if (e.key === 'Escape') m.remove(); }); }
+    document.getElementById('registrationForm').addEventListener('submit', function(e) { e.preventDefault(); const f = { name: document.getElementById('name').value, email: document.getElementById('email').value, tickets: document.getElementById('tickets').value, notes: document.getElementById('notes').value, timestamp: new Date().toISOString() }; const err = validateForm(f); if (err) { alert(err); return; } localStorage.setItem('beyond-registration-' + Date.now(), JSON.stringify(f)); showSuccessModal(); this.reset(); });
+    const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { document.querySelectorAll('nav .nav-link').forEach(l => l.classList.remove('active')); const a = document.querySelector(`nav a[href="#${e.target.id}"]`); if (a) a.classList.add('active'); } }); }, { threshold: 0.3 });
+    document.querySelectorAll('section').forEach(s => obs.observe(s));
+    initPage();
+  </script>
+</body>
+</html>

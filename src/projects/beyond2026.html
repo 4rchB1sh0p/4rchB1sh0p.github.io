@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond 2026 — Design Showcase</title>
+    <meta name="description" content="Beyond 2026 landing page design showcase. Explore 27 distinct visual styles for a concert-journey experience.">
+    <meta property="og:title" content="Beyond 2026 — Design Showcase">
+    <meta property="og:description" content="Explore 27 distinct landing page designs for Beyond 2026.">
+    
+    <style>
+        :root {
+            --cream: #f5f1e8;
+            --sand: #e8dcc8;
+            --taupe: #b8a89a;
+            --warm-gray: #9b8b7e;
+            --warm-brown: #8b7355;
+            --dark-brown: #6b5b4a;
+            --olive: #a9a973;
+            --terracotta: #c99670;
+            --text: #3d3d3d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--sand) 100%);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--warm-brown);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: var(--dark-brown);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--warm-gray);
+            font-weight: 400;
+        }
+
+        .intro {
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .styles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .style-button {
+            display: inline-block;
+            padding: 1.2rem;
+            background: white;
+            border: 2px solid var(--warm-brown);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(107, 91, 74, 0.1);
+        }
+
+        .style-button:hover {
+            background: var(--warm-brown);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(107, 91, 74, 0.2);
+        }
+
+        .style-button:focus {
+            outline: 2px solid var(--olive);
+            outline-offset: 2px;
+        }
+
+        .style-button:active {
+            transform: translateY(0);
+        }
+
+        .styles-group {
+            margin-bottom: 3rem;
+        }
+
+        .group-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--warm-brown);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            padding-left: 0.5rem;
+            border-left: 3px solid var(--olive);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--taupe);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--warm-gray);
+        }
+
+        .footer-link {
+            color: var(--warm-brown);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .count {
+            display: inline-block;
+            background: var(--olive);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .styles-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
+            header {
+                margin-bottom: 2rem;
+            }
+
+            h1 {
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beyond 2026</h1>
+            <p class="subtitle">Design Showcase & Review</p>
+        </header>
+
+        <div class="intro">
+            <p>Below are 27 distinct landing page designs for the Beyond 2026 concert-journey. Each page maintains identical content while showcasing a unique visual approach. Click any button to preview the design in a new tab.</p>
+        </div>
+
+        <!-- Foundational Styles -->
+        <div class="styles-group">
+            <h2 class="group-title">Foundational <span class="count">5</span></h2>
+            <div class="styles-grid">
+                <a href="pages/minimal.html" target="_blank" class="style-button">Minimal</a>
+                <a href="pages/flat.html" target="_blank" class="style-button">Flat</a>
+                <a href="pages/editorial.html" target="_blank" class="style-button">Editorial</a>
+                <a href="pages/luxury_minimal.html" target="_blank" class="style-button">Luxury Minimal</a>
+                <a href="pages/swiss_international.html" target="_blank" class="style-button">Swiss International</a>
+            </div>
+        </div>
+
+        <!-- Minimalist Aesthetic -->
+        <div class="styles-group">
+            <h2 class="group-title">Minimalist Aesthetic <span class="count">4</span></h2>
+            <div class="styles-grid">
+                <a href="pages/scandinavian.html" target="_blank" class="style-button">Scandinavian</a>
+                <a href="pages/japandi.html" target="_blank" class="style-button">Japandi</a>
+                <a href="pages/modernist.html" target="_blank" class="style-button">Modernist</a>
+                <a href="pages/minimalist.html" target="_blank" class="style-button">Minimalist</a>
+            </div>
+        </div>
+
+        <!-- Structured Systems -->
+        <div class="styles-group">
+            <h2 class="group-title">Structured Systems <span class="count">6</span></h2>
+            <div class="styles-grid">
+                <a href="pages/bauhaus.html" target="_blank" class="style-button">Bauhaus</a>
+                <a href="pages/bauhaus_II.html" target="_blank" class="style-button">Bauhaus II</a>
+                <a href="pages/material.html" target="_blank" class="style-button">Material Design</a>
+                <a href="pages/neumorphic.html" target="_blank" class="style-button">Neumorphic</a>
+                <a href="pages/monochromatic.html" target="_blank" class="style-button">Monochromatic</a>
+                <a href="pages/corporate_professional.html" target="_blank" class="style-button">Corporate</a>
+            </div>
+        </div>
+
+        <!-- Progressive & Bold -->
+        <div class="styles-group">
+            <h2 class="group-title">Progressive & Bold <span class="count">5</span></h2>
+            <div class="styles-grid">
+                <a href="pages/tech_forward.html" target="_blank" class="style-button">Tech Forward</a>
+                <a href="pages/neobrutalist.html" target="_blank" class="style-button">Neobrutalist</a>
+                <a href="pages/gradient_modern.html" target="_blank" class="style-button">Gradient Modern</a>
+                <a href="pages/dark_mode_first.html" target="_blank" class="style-button">Dark Mode</a>
+                <a href="pages/glassmorphism.html" target="_blank" class="style-button">Glassmorphism</a>
+            </div>
+        </div>
+
+        <!-- Decorative & Era-Specific -->
+        <div class="styles-group">
+            <h2 class="group-title">Decorative & Era-Specific <span class="count">5</span></h2>
+            <div class="styles-grid">
+                <a href="pages/art_deco.html" target="_blank" class="style-button">Art Deco</a>
+                <a href="pages/typography_first.html" target="_blank" class="style-button">Typography First</a>
+                <a href="pages/metropolitan.html" target="_blank" class="style-button">Metropolitan</a>
+                <a href="pages/retro_futuristic.html" target="_blank" class="style-button">Retro Futuristic</a>
+                <a href="pages/neo_geo.html" target="_blank" class="style-button">Neo Geo</a>
+            </div>
+        </div>
+
+        <!-- Dynamic & Organic -->
+        <div class="styles-group">
+            <h2 class="group-title">Dynamic & Organic <span class="count">2</span></h2>
+            <div class="styles-grid">
+                <a href="pages/organic_fluid.html" target="_blank" class="style-button">Organic Fluid</a>
+                <a href="pages/kinetic.html" target="_blank" class="style-button">Kinetic</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>All pages contain identical event content. Differences are purely visual and stylistic.</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                For feedback and suggestions, please provide comments on the design approaches you find most effective for the Beyond 2026 concert-journey.
+            </p>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://github.com" class="footer-link">GitHub Repository</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

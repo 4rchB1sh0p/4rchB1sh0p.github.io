@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond 2026 — A Concert-Journey</title>
+  <meta name="description" content="Beyond 2026: A concert-journey for cello, word, and stillness.">
+  <meta property="og:title" content="Beyond 2026">
+  <meta property="og:description" content="A concert-journey for cello, word, and stillness.">
+  <meta property="og:type" content="event">
+  
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f0f0f0;
+      --text-primary: #111111;
+      --text-secondary: #666666;
+      --grid: #e0e0e0;
+      --accent: #0066cc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--grid);
+      padding: 1rem 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 0 1.5rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      position: relative;
+      transition: color 0.15s;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1rem;
+      margin-bottom: -1rem;
+    }
+
+    nav a:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 2.5rem; }
+
+    #hero {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--grid);
+      background: var(--bg-primary);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+      font-family: 'IBM Plex Mono', monospace;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0;
+      border: 1px solid var(--grid);
+      margin-bottom: 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .hero-cell {
+      padding: 1.5rem;
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      text-align: left;
+    }
+
+    .hero-cell:nth-child(4n) { border-right: none; }
+
+    .hero-cell-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-secondary);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-cell-value {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--grid);
+      cursor: pointer;
+      border-radius: 0;
+      min-height: 44px;
+      background: var(--bg-primary);
+      font-family: 'IBM Plex Sans', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.15s;
+    }
+
+    button:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      border: 1px solid var(--accent);
+    }
+
+    .btn-primary:hover {
+      background: #0052a3;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--text-primary);
+      color: var(--text-primary);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-secondary);
+    }
+
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--grid);
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 2rem;
+      border-left: 2px solid var(--accent);
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      padding: 0.75rem 0;
+      color: var(--text-secondary);
+      position: relative;
+    }
+
+    .bios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .bio {
+      border: 1px solid var(--grid);
+      padding: 1.5rem;
+      background: var(--bg-secondary);
+    }
+
+    .bio img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 9/13;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .bio h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .bio p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .droplets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0;
+      border: 1px solid var(--grid);
+      margin-top: 2rem;
+    }
+
+    .droplet {
+      padding: 1.5rem;
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      font-size: 1rem;
+      line-height: 1.7;
+      font-style: italic;
+      min-height: 140px;
+      display: flex;
+      align-items: center;
+    }
+
+    .droplet:nth-child(2n) { border-right: none; }
+
+    .event-details {
+      border: 1px solid var(--grid);
+      background: var(--bg-secondary);
+      margin-bottom: 2rem;
+    }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .detail-row:last-child { border-bottom: none; }
+
+    .detail-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      color: var(--text-secondary);
+    }
+
+    form {
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--grid);
+      background: white;
+      color: var(--text-primary);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1rem;
+      border-radius: 0;
+      min-height: 44px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .pricing {
+      border: 1px solid var(--grid);
+      background: var(--accent);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      background: var(--text-primary);
+      color: white;
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:focus {
+      outline: 2px solid white;
+      outline-offset: 2px;
+    }
+
+    .footer-tagline {
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 576px) {
+      nav a { padding: 0 0.8rem; }
+      .detail-row { grid-template-columns: 1fr; }
+      .cta-buttons { flex-direction: column; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Beyond 2026",
+    "description": "A concert-journey for cello, word, and stillness.",
+    "startDate": "2026-06-20T19:30:00Z",
+    "endDate": "2026-06-20T21:00:00Z",
+    "location": {
+      "@type": "Place",
+      "name": "TBD Venue",
+      "address": "TBD Address, Berlin"
+    },
+    "organizer": {
+      "@type": "Person",
+      "name": "Frank Spronk & Paula Spronk"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "20",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+
+  <nav class="container-fluid">
+    <div class="container">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#tour" class="nav-link">Tour</a>
+      <a href="#bios" class="nav-link">Frank & Paula</a>
+      <a href="#droplet" class="nav-link">Droplet</a>
+      <a href="#details" class="nav-link">Details</a>
+      <a href="#register" class="nav-link">Register</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h1>Beyond 2026</h1>
+        <p class="subtitle">A concert-journey for cello, word, and stillness</p>
+        
+        <div class="hero-grid">
+          <div class="hero-cell">
+            <div class="hero-cell-label">City</div>
+            <div class="hero-cell-value" id="hero-city">Berlin</div>
+          </div>
+          <div class="hero-cell">
+            <div class="hero-cell-label">Date</div>
+            <div class="hero-cell-value" id="hero-date">20 June 2026</div>
+          </div>
+          <div class="hero-cell">
+            <div class="hero-cell-label">Time</div>
+            <div class="hero-cell-value" id="hero-time">19:30</div>
+          </div>
+          <div class="hero-cell">
+            <div class="hero-cell-label">Duration</div>
+            <div class="hero-cell-value" id="hero-duration">90 min</div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <button class="btn-primary" onclick="smoothScroll('register')">Register</button>
+          <button class="btn-secondary" onclick="smoothScroll('tour')">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour">
+      <div class="container">
+        <h2>What is Beyond?</h2>
+        
+        <p>Beyond is a concert-journey that blends cello, word, and stillness. Live performance meets gentle inquiry. Frank performs original compositions and classical works; Paula guides the evening with brief reflections on listening, attention, and what clarity means. It's not a lecture or sermon—it's an invitation to listen.</p>
+
+        <p>Each evening invites a simple question: What happens when you really pay attention? No prior knowledge required. All welcome.</p>
+
+        <ul>
+          <li>Original cello compositions interwoven with silence</li>
+          <li>Brief spoken interludes (2–3 minutes) exploring attention and listening</li>
+          <li>Intimate acoustics; careful pacing for contemplation</li>
+          <li>No prior knowledge required—all welcome</li>
+          <li>A space where questions matter more than answers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="bios">
+      <div class="container">
+        <h2>Frank & Paula Spronk</h2>
+        <div class="bios">
+          <div class="bio">
+            <img src="https://static.wixstatic.com/media/3ff249_fbe8310002834fbe8b75d5e6ccac2330~mv2.jpg/v1/crop/x_75,y_0,w_2648,h_3916/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frank_Spronk.jpg" alt="Frank Spronk, cellist">
+            <h3>Frank Spronk</h3>
+            <p>Frank Spronk, cellist and composer, blends contemporary classical performance with thoughtful reflection. He is a direct student of a renowned 20th-century teacher known for disciplined inquiry and lucid self-knowledge. Together with Paula, he brings this lineage of clarity into the concert space, inviting audiences to listen not just to sound, but to what listening reveals.</p>
+          </div>
+          <div class="bio">
+            <img src="https://static.wixstatic.com/media/e5d87d_42e5660b118448b89c1352003bf7e9b6~mv2.jpg/v1/crop/x_0,y_8,w_682,h_1009/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp-Image-2022-01-17-at-22_26_edite.jpg" alt="Paula Spronk, co-creator">
+            <h3>Paula Spronk</h3>
+            <p>Paula Spronk shapes the arc of each evening: pacing, context, and an atmosphere where listening becomes easy. Her background in mentoring and contemplative practice informs her role as guide. Like Frank, she studied under the same lineage of rigorous self-inquiry. Paula brings warmth, precision, and a gift for making subtle concepts accessible to all.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="droplet">
+      <div class="container">
+        <h2>From Droplet</h2>
+        <p style="font-size: 0.9rem;"><em>Droplet is a collection of micro-texts written for the Beyond journey.</em></p>
+        <div class="droplets">
+          <div class="droplet">"When sound ends, something in you continues."</div>
+          <div class="droplet">"Silence isn't empty; it's unclaimed space."</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="container">
+        <h2>Event Details</h2>
+        <div class="event-details">
+          <div class="detail-row">
+            <div class="detail-label">Date</div>
+            <div id="detail-date">20 June 2026</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Time</div>
+            <div id="detail-time">19:30–21:00 (90 min)</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Venue</div>
+            <div id="detail-venue">TBD Venue</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Address</div>
+            <div id="detail-address">TBD Address</div>
+          </div>
+        </div>
+        <button class="btn-primary" onclick="openMap()">View Map</button>
+      </div>
+    </section>
+
+    <section id="register">
+      <div class="container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="name">Name <span style="color: #0066cc;">*</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span style="color: #0066cc;">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="tickets">Tickets <span style="color: #0066cc;">*</span></label>
+            <select id="tickets" name="tickets" required>
+              <option value="">Select...</option>
+              <option value="1">1 ticket</option>
+              <option value="2">2 tickets</option>
+              <option value="3">3 tickets</option>
+              <option value="4">4 tickets</option>
+              <option value="5">5 tickets</option>
+              <option value="6">6 tickets</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Any accessibility needs or notes?"></textarea>
+          </div>
+          <div class="pricing">€20 per ticket</div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1.5rem;">Register</button>
+          <p style="text-align: center; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+            Prefer email? <a href="mailto:hello@example.com?subject=Beyond%202026%20Registration" style="color: #0066cc;">Send a message</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Questions? <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p class="footer-tagline">Music can be entertainment — or a doorway.</p>
+      <p>&copy; 2026 Beyond</p>
+    </div>
+  </footer>
+
+  <script>
+    const EVENT = {
+      title: "Beyond 2026",
+      city: "Berlin",
+      venue: "TBD Venue",
+      address: "TBD Address",
+      dateISO: "2026-06-20",
+      startTime: "19:30",
+      endTime: "21:00",
+      timezone: "Europe/Berlin",
+      duration: "90 min",
+      prices: { general: "€20" },
+      registrationEmail: "hello@example.com",
+      mapQueryUrl: "https://www.google.com/maps?q=Berlin+TBD+Venue",
+      ticketLimit: 6
+    };
+
+    function formatDate(iso) {
+      const date = new Date(iso + "T00:00:00Z");
+      return date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function initPage() {
+      document.getElementById('hero-city').textContent = EVENT.city;
+      document.getElementById('hero-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('hero-time').textContent = EVENT.startTime;
+      document.getElementById('hero-duration').textContent = EVENT.duration;
+      document.getElementById('detail-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('detail-time').textContent = EVENT.startTime + '–' + EVENT.endTime + ' (' + EVENT.duration + ')';
+      document.getElementById('detail-venue').textContent = EVENT.venue;
+      document.getElementById('detail-address').textContent = EVENT.address;
+    }
+
+    function smoothScroll(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openMap() {
+      window.open(EVENT.mapQueryUrl, '_blank');
+    }
+
+    function validateForm(formData) {
+      if (!formData.name.trim()) return "Name is required.";
+      if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) return "Valid email required.";
+      if (formData.tickets < 1 || formData.tickets > EVENT.ticketLimit) return `Select 1–${EVENT.ticketLimit} tickets.`;
+      return null;
+    }
+
+    function showSuccessModal() {
+      const modal = document.createElement('div');
+      modal.id = 'successModal';
+      modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+      `;
+      modal.innerHTML = `
+        <div style="background: white; padding: 2rem; border-radius: 0; max-width: 400px; text-align: center; border: 1px solid #e0e0e0;">
+          <h3 style="margin-bottom: 1rem; color: #111; font-family: 'IBM Plex Mono', monospace; text-transform: uppercase; font-weight: 700;">Thank you!</h3>
+          <p style="margin-bottom: 1.5rem; color: #666;">A confirmation link will be sent to your email.</p>
+          <button onclick="document.getElementById('successModal').remove()" style="padding: 0.75rem 1.5rem; background: #111; color: white; border: 1px solid #111; cursor: pointer; border-radius: 0; min-height: 44px; font-weight: 600; font-family: 'IBM Plex Sans', sans-serif;">Close</button>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      document.getElementById('successModal').addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') document.getElementById('successModal').remove();
+      });
+    }
+
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        tickets: document.getElementById('tickets').value,
+        notes: document.getElementById('notes').value,
+        timestamp: new Date().toISOString()
+      };
+      
+      const error = validateForm(formData);
+      if (error) {
+        alert(error);
+        return;
+      }
+
+      localStorage.setItem('beyond-registration-' + Date.now(), JSON.stringify(formData));
+      showSuccessModal();
+      this.reset();
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('nav .nav-link').forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+    initPage();
+  </script>
+</body>
+</html>

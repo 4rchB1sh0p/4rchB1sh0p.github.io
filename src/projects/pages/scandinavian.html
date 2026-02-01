@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond 2026 — A Concert-Journey</title>
+  <meta name="description" content="Beyond 2026: A concert-journey for cello, word, and stillness.">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --accent: #2d5016;
+      --text: #2c2c2c;
+      --light: #e8e8e0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+    nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--light); padding: 1rem; z-index: 100; }
+    nav a { color: var(--text); text-decoration: none; margin: 0 1rem; padding: 0.5rem 0; display: inline-block; position: relative; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+    nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+    nav a:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+    #hero { padding: 5rem 0; text-align: center; border-bottom: 1px solid var(--light); }
+    h1 { font-size: clamp(2.5rem, 7vw, 3.8rem); font-weight: 300; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.1rem; color: #666; margin-bottom: 2rem; }
+    .hero-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .info-item { text-align: center; }
+    .info-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 0.5rem; }
+    .info-value { font-size: 1.1rem; font-weight: 500; }
+    .cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    button { padding: 0.8rem 1.8rem; border: 1px solid var(--text); background: white; cursor: pointer; border-radius: 4px; min-height: 44px; font-family: inherit; transition: all 0.2s; }
+    button:hover { background: var(--accent); color: white; border-color: var(--accent); }
+    button:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .btn-primary { background: var(--accent); color: white; border: none; }
+    section { padding: 3.5rem 0; border-bottom: 1px solid var(--light); }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.3rem); font-weight: 400; margin-bottom: 1.5rem; letter-spacing: -0.01em; }
+    p { color: #555; margin-bottom: 1rem; }
+    ul { list-style: none; margin: 1.5rem 0; padding-left: 1.5rem; }
+    ul li { padding: 0.5rem 0; position: relative; }
+    ul li::before { content: '✓'; position: absolute; left: -1.5rem; color: var(--accent); }
+    .bios { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .bio { text-align: left; }
+    .bio img { width: 100%; aspect-ratio: 9/13; object-fit: cover; margin-bottom: 1rem; }
+    .bio h3 { font-size: 1.2rem; font-weight: 500; margin-bottom: 0.5rem; }
+    .bio p { font-size: 0.95rem; }
+    .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .quote { padding: 1.5rem; background: white; border-left: 3px solid var(--accent); font-style: italic; line-height: 1.8; }
+    .details { background: white; padding: 2rem; border-left: 3px solid var(--accent); margin-bottom: 1.5rem; }
+    .detail-row { display: grid; grid-template-columns: 100px 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .label { font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
+    form { max-width: 450px; margin-top: 1.5rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    label { display: block; font-weight: 500; margin-bottom: 0.4rem; }
+    input, select, textarea { width: 100%; padding: 0.7rem; border: 1px solid var(--light); background: white; font-family: inherit; min-height: 44px; border-radius: 4px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1); }
+    textarea { min-height: 100px; resize: vertical; }
+    .price { background: linear-gradient(135deg, #4d7c2c, var(--accent)); color: white; padding: 1rem; text-align: center; font-weight: 600; margin-top: 1rem; border-radius: 4px; }
+    footer { background: var(--accent); color: white; padding: 2.5rem; text-align: center; }
+    footer a { color: #d4e4c8; text-decoration: none; }
+    footer a:focus { outline: 2px solid white; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Beyond 2026","startDate":"2026-06-20T19:30:00Z","endDate":"2026-06-20T21:00:00Z","location":{"@type":"Place","name":"TBD Venue","address":"TBD Address, Berlin"},"organizer":{"@type":"Person","name":"Frank Spronk & Paula Spronk"},"offers":{"@type":"Offer","price":"20","priceCurrency":"EUR"}}</script>
+  <nav class="container-fluid"><div class="container"><a href="#hero" class="nav-link active">Home</a> <a href="#tour" class="nav-link">Tour</a> <a href="#bios" class="nav-link">Frank & Paula</a> <a href="#droplet" class="nav-link">Droplet</a> <a href="#details" class="nav-link">Details</a> <a href="#register" class="nav-link">Register</a></div></nav>
+  <main>
+    <section id="hero"><div class="container"><h1>Beyond 2026</h1><p class="subtitle">A concert-journey for cello, word, and stillness</p><div class="hero-info"><div class="info-item"><div class="info-label">City</div><div class="info-value" id="hero-city">Berlin</div></div><div class="info-item"><div class="info-label">Date</div><div class="info-value" id="hero-date">20 June 2026</div></div><div class="info-item"><div class="info-label">Duration</div><div class="info-value" id="hero-duration">90 min</div></div></div><div class="cta"><button class="btn-primary" onclick="smoothScroll('register')">Register</button> <button onclick="smoothScroll('tour')">Learn More</button></div></div></section>
+    <section id="tour"><div class="container"><h2>What is Beyond?</h2><p>Beyond is a concert-journey that blends cello, word, and stillness. Live performance meets gentle inquiry. Frank performs original compositions and classical works; Paula guides the evening with brief reflections on listening, attention, and what clarity means. It's not a lecture or sermon—it's an invitation to listen.</p><p>Each evening invites a simple question: What happens when you really pay attention? No prior knowledge required. All welcome.</p><ul><li>Original cello compositions interwoven with silence</li><li>Brief spoken interludes (2–3 minutes) exploring attention and listening</li><li>Intimate acoustics; careful pacing for contemplation</li><li>No prior knowledge required—all welcome</li><li>A space where questions matter more than answers</li></ul></div></section>
+    <section id="bios"><div class="container"><h2>Frank & Paula Spronk</h2><div class="bios"><div class="bio"><img src="https://static.wixstatic.com/media/3ff249_fbe8310002834fbe8b75d5e6ccac2330~mv2.jpg/v1/crop/x_75,y_0,w_2648,h_3916/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frank_Spronk.jpg" alt="Frank Spronk, cellist"><h3>Frank Spronk</h3><p>Frank Spronk, cellist and composer, blends contemporary classical performance with thoughtful reflection. He is a direct student of a renowned 20th-century teacher known for disciplined inquiry and lucid self-knowledge. Together with Paula, he brings this lineage of clarity into the concert space, inviting audiences to listen not just to sound, but to what listening reveals.</p></div><div class="bio"><img src="https://static.wixstatic.com/media/e5d87d_42e5660b118448b89c1352003bf7e9b6~mv2.jpg/v1/crop/x_0,y_8,w_682,h_1009/fill/w_622,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp-Image-2022-01-17-at-22_26_edite.jpg" alt="Paula Spronk, co-creator"><h3>Paula Spronk</h3><p>Paula Spronk shapes the arc of each evening: pacing, context, and an atmosphere where listening becomes easy. Her background in mentoring and contemplative practice informs her role as guide. Like Frank, she studied under the same lineage of rigorous self-inquiry. Paula brings warmth, precision, and a gift for making subtle concepts accessible to all.</p></div></div></div></section>
+    <section id="droplet"><div class="container"><h2>From Droplet</h2><p><em>Droplet is a collection of micro-texts written for the Beyond journey.</em></p><div class="quotes"><div class="quote">"When sound ends, something in you continues."</div><div class="quote">"Silence isn't empty; it's unclaimed space."</div></div></div></section>
+    <section id="details"><div class="container"><h2>Details</h2><div class="details"><div class="detail-row"><div class="label">Date</div><div id="detail-date">20 June 2026</div></div><div class="detail-row"><div class="label">Time</div><div id="detail-time">19:30–21:00 (90 min)</div></div><div class="detail-row"><div class="label">Venue</div><div id="detail-venue">TBD Venue</div></div><div class="detail-row"><div class="label">Address</div><div id="detail-address">TBD Address</div></div></div><button class="btn-primary" onclick="openMap()">View Map</button></div></section>
+    <section id="register"><div class="container"><h2>Register</h2><form id="registrationForm"><div class="form-group"><label for="name">Name <span style="color: #c41c3b;">*</span></label><input type="text" id="name" name="name" required></div><div class="form-group"><label for="email">Email <span style="color: #c41c3b;">*</span></label><input type="email" id="email" name="email" required></div><div class="form-group"><label for="tickets">Tickets <span style="color: #c41c3b;">*</span></label><select id="tickets" name="tickets" required><option value="">Select...</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div><div class="form-group"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Accessibility needs?"></textarea></div><div class="price">€20 per ticket</div><button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Register</button><p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;"><a href="mailto:hello@example.com?subject=Beyond%202026%20Registration" style="color: var(--accent);">Prefer email?</a></p></form></div></section>
+  </main>
+  <footer><div class="container"><p>Questions? <a href="mailto:hello@example.com">hello@example.com</a></p><p style="font-style: italic; margin: 0.5rem 0;">Music can be entertainment — or a doorway.</p><p>&copy; 2026 Beyond</p></div></footer>
+  <script>
+    const EVENT = { title: "Beyond 2026", city: "Berlin", venue: "TBD Venue", address: "TBD Address", dateISO: "2026-06-20", startTime: "19:30", endTime: "21:00", duration: "90 min", prices: { general: "€20" }, registrationEmail: "hello@example.com", mapQueryUrl: "https://www.google.com/maps?q=Berlin+TBD+Venue", ticketLimit: 6 };
+    function formatDate(iso) { const date = new Date(iso + "T00:00:00Z"); return date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }); }
+    function initPage() {
+      document.getElementById('hero-city').textContent = EVENT.city;
+      document.getElementById('hero-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('hero-duration').textContent = EVENT.duration;
+      document.getElementById('detail-date').textContent = formatDate(EVENT.dateISO);
+      document.getElementById('detail-time').textContent = EVENT.startTime + '–' + EVENT.endTime + ' (' + EVENT.duration + ')';
+      document.getElementById('detail-venue').textContent = EVENT.venue;
+      document.getElementById('detail-address').textContent = EVENT.address;
+    }
+    function smoothScroll(id) { document.getElementById(id).scrollIntoView({ behavior: 'smooth' }); }
+    function openMap() { window.open(EVENT.mapQueryUrl, '_blank'); }
+    function validateForm(formData) {
+      if (!formData.name.trim()) return "Name is required.";
+      if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) return "Valid email required.";
+      if (formData.tickets < 1 || formData.tickets > EVENT.ticketLimit) return `Select 1–${EVENT.ticketLimit} tickets.`;
+      return null;
+    }
+    function showSuccessModal() {
+      const modal = document.createElement('div');
+      modal.id = 'successModal';
+      modal.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 2000;';
+      modal.innerHTML = '<div style="background: white; padding: 2rem; border-radius: 4px; max-width: 400px; text-align: center;"><h3 style="margin-bottom: 1rem; color: var(--accent);">Thank you!</h3><p style="margin-bottom: 1.5rem; color: #666;">A confirmation link will be sent to your email.</p><button onclick="document.getElementById(\'successModal\').remove()" style="padding: 0.75rem 1.5rem; background: var(--accent); color: white; border: none; cursor: pointer; border-radius: 4px; min-height: 44px;">Close</button></div>';
+      document.body.appendChild(modal);
+      document.getElementById('successModal').addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('successModal').remove(); });
+    }
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = { name: document.getElementById('name').value, email: document.getElementById('email').value, tickets: document.getElementById('tickets').value, notes: document.getElementById('notes').value, timestamp: new Date().toISOString() };
+      const error = validateForm(formData);
+      if (error) { alert(error); return; }
+      localStorage.setItem('beyond-registration-' + Date.now(), JSON.stringify(formData));
+      showSuccessModal();
+      this.reset();
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('nav .nav-link').forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('section').forEach(section => observer.observe(section));
+    initPage();
+  </script>
+</body>
+</html>
