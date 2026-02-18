@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥺 i'm sorry 🌸</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <style>
+        /* colors n stuff */
+        :root {
+            --color-primary: #ff1493;
+            --color-secondary: #ff69b4;
+            --color-accent:#ff91c5;
+            --color-light: #ffe4f2;
+            --color-glow: rgba(255, 105, 180, 0.6);
+            --color-glow-intense: rgba(255, 20, 147, 0.8);
+            --color-shadow: rgba(255, 105, 180, 0.3);
+            --font-display: 'Pacifico', cursive;
+            --font-body: 'Quicksand', sans-serif;
+            --font-handwritten: 'Caveat', cursive;
+            --spacing-unit: 1rem;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            overflow: hidden;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            touch-action: manipulation;
+        }
+
+        /* video stuff for bg */
+        #background-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+            object-fit: cover;
+        }
+
+        /* overlay thing */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.1) 100%);
+            z-index: -1;
+            backdrop-filter: blur(1px);
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+            animation: fadeInScale 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.85) translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* main box */
+        .dialogue-box {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 245, 250, 0.98) 100%);
+            padding: calc(var(--spacing-unit) * 2.5) calc(var(--spacing-unit) * 3);
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 192, 203, 0.3);
+            max-width: 600px;
+            width: 90vw;
+            position: relative;
+            animation: floatBox 4s ease-in-out infinite;
+            will-change: transform;
+        }
+
+        @keyframes floatBox {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .image-container {
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+            position: relative;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-secondary);
+            box-shadow: 
+                0 10px 40px var(--color-glow),
+                0 0 0 10px rgba(255, 255, 255, 0.3),
+                0 0 0 15px rgba(255, 182, 193, 0.2);
+            animation: pulse 3s ease-in-out infinite;
+            will-change: transform, box-shadow;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 
+                    0 8px 25px rgba(255, 105, 180, 0.2),
+                    0 0 0 8px rgba(255, 255, 255, 0.2),
+                    0 0 0 12px rgba(255, 182, 193, 0.15);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 
+                    0 10px 30px rgba(255, 105, 180, 0.25),
+                    0 0 0 10px rgba(255, 255, 255, 0.3),
+                    0 0 0 15px rgba(255, 182, 193, 0.2);
+            }
+        }
+
+        .heart-float {
+            position: absolute;
+            font-size:24px;
+            animation: floatHeart 3s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        .heart-1 {
+            top: 10%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+
+        .heart-2 {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0.5s;
+        }
+
+        .heart-3 {
+            bottom: 10%;
+            left: -5%;
+            animation-delay: 1s;
+        }
+
+        .heart-4 {
+            bottom: 10%;
+            right: -5%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes floatHeart {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-15px) rotate(10deg);
+            }
+        }
+
+        /* txt styling */
+        .romantic-text {
+            font-size: 48px;
+            color: var(--color-primary);
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: calc(var(--spacing-unit) * 2.5);
+            line-height: 1.3;
+            font-family: var(--font-handwritten);
+            letter-spacing: 0.5px;
+            animation: fadeInUp 0.6s ease-out 0.5s both;
+        }
+
+        /* buttons */
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 2);
+            position: relative;
+            min-height: 70px;
+            z-index: 10;
+        }
+
+        .btn {
+            padding: 1em 3em;
+            font-size: 22px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            border: 3px solid var(--color-primary);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            border-radius: 1em;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            letter-spacing: 0.5px;
+        }
+
+        .btn::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: radial-gradient(ellipse at center, var(--color-glow) 0%, transparent 70%);
+            filter: blur(2em);
+            opacity: 0.7;
+            transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+            transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            color: white;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+            border-color: var(--color-accent);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 
+                0 0 1.5em 0.5em var(--color-secondary),
+                0 0 4em 2em var(--color-glow-intense),
+                inset 0 0 1em 0.3em rgba(255, 255, 255, 0.3),
+                0 12px 30px rgba(255, 20, 147, 0.4);
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+        }
+
+        .btn:active {
+            transform: scale(1.02) translateY(0);
+            box-shadow: 
+                0 0 0.8em 0.25em var(--color-secondary),
+                0 0 3em 1.5em var(--color-glow),
+                inset 0 0 0.5em 0.25em rgba(255, 255, 255, 0.2),
+                0 4px 15px rgba(255, 20, 147, 0.3);
+        }
+
+        .btn-yes {
+            animation: bounceYes 2s ease-in-out infinite;
+        }
+
+        @keyframes bounceYes {
+            0%, 100% {
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                transform: scale(1.05) translateY(-3px);
+            }
+        }
+
+        /* no btn moves around lol */
+        .btn-no {
+            position: relative;
+            opacity: 1 !important;
+            visibility: visible !important;
+            z-index: 100;
+            transition: left 0.15s ease, top 0.15s ease;
+        }
+
+        .btn-no.moving {
+            position: fixed;
+            opacity: 1 !important;
+            visibility: visible !important;
+            z-index: 1000;
+        }
+
+        .sparkle {
+            position: fixed;
+            pointer-events: none;
+            font-size: 20px;
+            animation: sparkleFloat 2s ease-out forwards;
+        }
+
+        @keyframes sparkleFloat {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(0);
+            }
+            50% {
+                transform: translateY(-30px) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-60px) scale(0.5);
+            }
+        }
+
+        /* bouquet popup */
+        .bouquet-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-out;
+            backdrop-filter: blur(3px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .bouquet-title {
+            font-size: 42px;
+            color: #c91c34;
+            font-family: var(--font-handwritten);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.6s ease-out;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+            z-index: 10;
+            position: relative;
+        }
+
+        .bouquet-subtitle {
+            font-size: 20px;
+            color: var(--color-secondary);
+            font-family: var(--font-body);
+            margin-bottom: 30px;
+            font-weight: 600;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        .bouquet-container {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            max-width: 90vw;
+            max-height: 70vh;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 250, 253, 0.95) 100%);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(255, 182, 213, 0.3);
+            animation: scaleIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s both;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0) rotate(-10deg);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .bouquet-container svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .rose-clickable {
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            will-change: transform;
+        }
+
+        .rose-clickable:hover {
+            transform: scale(1.08);
+            animation: roseHoverPulse 1s ease-in-out infinite;
+        }
+
+        .rose-clickable:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes roseHoverPulse {
+            0%, 100% { filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.4)); }
+            50% { filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.8)); }
+        }
+
+        .rose-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(0px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            transition: background 0.4s ease, backdrop-filter 0.4s ease;
+        }
+
+        .rose-modal.show {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(5px);
+        }
+
+        .rose-modal-content {
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #fff5f9 100%);
+            border-radius: 25px;
+            padding: 35px 40px;
+            max-width: 420px;
+            width: 90%;
+            border: 3px solid var(--color-primary);
+            box-shadow: 
+                0 20px 60px rgba(233, 64, 87, 0.2),
+                0 5px 15px rgba(255, 105, 180, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            text-align: center;
+            overflow: hidden;
+            will-change: transform, opacity;
+            transform: scale(0.3) translateY(30px);
+            opacity: 0;
+            transition: transform 0s, opacity 0s;
+        }
+
+        .rose-modal.show .rose-modal-content {
+            animation: modalPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .rose-modal-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 182, 213, 0.15) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes modalPop {
+            0% {
+                transform: scale(0.5) translateY(40px) rotate(-5deg);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.03) translateY(-8px) rotate(2deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1) translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .rose-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--color-primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            color: var(--color-primary);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            padding: 0;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            opacity: 0;
+            transform: scale(0) rotate(-90deg);
+        }
+
+        .rose-modal.show .rose-modal-close {
+            animation: closeButtonIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s forwards;
+        }
+
+        @keyframes closeButtonIn {
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        .rose-modal-close:hover {
+            background: var(--color-primary);
+            color: white;
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        .rose-modal-emoji {
+            display: none;
+        }
+
+        @keyframes roseRotate {
+            0% {
+                transform: scale(0) rotate(-180deg);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2) rotate(10deg);
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .rose-modal-title {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-family: var(--font-display);
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+
+        .rose-modal.show .rose-modal-title {
+            animation: slideInFade 0.5s ease-out 0.15s forwards;
+        }
+
+        .rose-modal-message {
+            font-size: 18px;
+            color: #5a1032;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-weight: 500;
+            min-height: 80px;
+            font-family: var(--font-body);
+            position: relative;
+            z-index: 1;
+            padding: 0 5px;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+
+        .rose-modal.show .rose-modal-message {
+            animation: slideInFade 0.5s ease-out 0.25s forwards;
+        }
+
+        .rose-modal-icons {
+            font-size: 32px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        .rose-modal.show .rose-modal-icons {
+            animation: scaleInFade 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s forwards;
+        }
+
+        @keyframes slideInFade {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleInFade {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .rose-modal-icons span {
+            animation: iconFloat 2s ease-in-out infinite;
+            animation-delay: calc(var(--i) * 0.2s);
+        }
+
+        @keyframes iconFloat {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-10px) scale(1.15);
+            }
+        }
+
+        /* Apology Particles */
+        .love-particle {
+            position: fixed;
+            font-size: 35px;
+            pointer-events: none;
+            z-index: 3000;
+            user-select: none;
+            filter: drop-shadow(0 0 9px rgba(233, 64, 87, 0.5));
+        }
+
+        /* Falling Petals */
+        .falling-petal {
+            position: fixed;
+            pointer-events: none;
+            font-size: 22px;
+            opacity: 0.6;
+            user-select: none;
+            z-index: 1;
+            filter: blur(0.5px) drop-shadow(0 0 7px rgba(255, 182, 213, 0.8));
+            animation: petalFall linear infinite;
+            will-change: transform, opacity;
+        }
+
+        @keyframes petalFall {
+            0% {
+                transform: translateY(-8vh) rotate(0deg);
+                opacity: 0.7;
+            }
+            10% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0.85;
+            }
+            95% {
+                opacity: 0.1;
+            }
+            100% {
+                transform: translateY(104vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Smooth modal transitions */
+        .bouquet-modal {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+        .bouquet-modal.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .rose-modal {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .rose-modal.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .dialogue-box {
+                padding: calc(var(--spacing-unit) * 1.8) calc(var(--spacing-unit) * 1.5);
+                border-radius: 30px;
+                max-width: 92vw;
+            }
+
+            .profile-image {
+                width: 140px;
+                height: 140px;
+                border: 3px solid var(--color-secondary);
+                box-shadow: 
+                    0 8px 25px var(--color-glow),
+                    0 0 0 7px rgba(255, 255, 255, 0.3),
+                    0 0 0 11px rgba(255, 182, 193, 0.2);
+            }
+
+            .romantic-text {
+                font-size: 34px;
+                margin-bottom: calc(var(--spacing-unit) * 1.8);
+            }
+
+            .buttons-container {
+                gap: calc(var(--spacing-unit) * 1.2);
+            }
+
+            .btn {
+                padding: 0.8em 2em;
+                font-size: 18px;
+                border-radius: 0.8em;
+            }
+
+            .bouquet-title {
+                font-size: 32px;
+                margin-bottom: 14px;
+            }
+
+            .bouquet-subtitle {
+                font-size: 16px;
+                margin-bottom: 18px;
+            }
+
+            .bouquet-container {
+                width: 90vw;
+                height: 60vh;
+                padding: 20px;
+                border-radius: 22px;
+            }
+
+            .rose-modal-content {
+                padding: 28px 24px;
+                border-radius: 20px;
+                max-width: 88vw;
+            }
+
+            .rose-modal-title {
+                font-size: 24px;
+            }
+
+            .rose-modal-message {
+                font-size: 16px;
+                min-height: 60px;
+            }
+
+            .rose-modal-icons {
+                font-size: 28px;
+                gap: 14px;
+            }
+
+            .rose-modal-close {
+                width: 36px;
+                height: 36px;
+                font-size: 20px;
+                top: 14px;
+                right: 16px;
+            }
+
+            .heart-float {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dialogue-box {
+                padding: calc(var(--spacing-unit) * 1.4) calc(var(--spacing-unit) * 1.2);
+                border-radius: 24px;
+                max-width: 95vw;
+            }
+
+            .profile-image {
+                width: 110px;
+                height: 110px;
+                border: 3px solid var(--color-secondary);
+                box-shadow: 
+                    0 6px 18px var(--color-glow),
+                    0 0 0 5px rgba(255, 255, 255, 0.3),
+                    0 0 0 8px rgba(255, 182, 193, 0.2);
+            }
+
+            .image-container {
+                margin-bottom: calc(var(--spacing-unit) * 1);
+            }
+
+            .romantic-text {
+                font-size: 26px;
+                margin-bottom: calc(var(--spacing-unit) * 1.4);
+                line-height: 1.4;
+            }
+
+            .buttons-container {
+                gap: calc(var(--spacing-unit) * 1);
+                flex-wrap: wrap;
+                min-height: 55px;
+            }
+
+            .btn {
+                padding: 0.7em 1.8em;
+                font-size: 16px;
+                border-width: 2px;
+            }
+
+            .bouquet-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+                padding: 0 10px;
+            }
+
+            .bouquet-subtitle {
+                font-size: 14px;
+                margin-bottom: 12px;
+                padding: 0 10px;
+            }
+
+            .bouquet-container {
+                width: 94vw;
+                height: 55vh;
+                padding: 12px;
+                border-radius: 18px;
+            }
+
+            .rose-modal-content {
+                padding: 22px 18px;
+                border-radius: 18px;
+                max-width: 92vw;
+                border-width: 2px;
+            }
+
+            .rose-modal-title {
+                font-size: 20px;
+                margin-bottom: 14px;
+            }
+
+            .rose-modal-message {
+                font-size: 14px;
+                min-height: 50px;
+                line-height: 1.6;
+                margin-bottom: 14px;
+            }
+
+            .rose-modal-icons {
+                font-size: 24px;
+                gap: 12px;
+                margin: 10px 0;
+            }
+
+            .rose-modal-close {
+                width: 32px;
+                height: 32px;
+                font-size: 18px;
+                top: 10px;
+                right: 12px;
+            }
+
+            .heart-float {
+                font-size: 16px;
+            }
+
+            @keyframes floatBox {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-6px); }
+            }
+        }
+
+        /* Small height devices (landscape) */
+        @media (max-height: 600px) {
+            .profile-image {
+                width: 90px;
+                height: 90px;
+            }
+            .romantic-text {
+                font-size: 22px;
+                margin-bottom: calc(var(--spacing-unit) * 1);
+            }
+            .image-container {
+                margin-bottom: calc(var(--spacing-unit) * 0.5);
+            }
+            .dialogue-box {
+                padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 1.5);
+            }
+            .bouquet-container {
+                height: 50vh;
+                padding: 10px;
+            }
+            .bouquet-title {
+                font-size: 20px;
+                margin-bottom: 6px;
+            }
+            .bouquet-subtitle {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="background-video" autoplay loop muted playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" src="song.mp3" loop preload="auto"></audio>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="dialogue-box">
+            <!-- Image with floating hearts -->
+            <div class="image-container">
+                <span class="heart-float heart-1">🥺</span>
+                <span class="heart-float heart-2">🌸</span>
+                <span class="heart-float heart-3">✨</span>
+                <span class="heart-float heart-4">💐</span>
+                <img src="img.jpeg" alt="Profile" class="profile-image">
+            </div>
+
+            <!-- Romantic Text -->
+            <div class="romantic-text">
+                Can you forgive me, pretty please??
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons-container">
+                <button class="btn btn-yes" onclick="handleYes()">Okay fine 🥺</button>
+                <button class="btn btn-no" id="noBtn">No 😤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouquet Modal -->
+    <div class="bouquet-modal" id="bouquetModal">
+        <div class="bouquet-title">I Got These For You 🌸🥺</div>
+        <div class="bouquet-subtitle">Each rose has something I need you to hear ✨</div>
+        <div class="bouquet-container" id="bouquetContainer"></div>
+    </div>
+
+    <!-- Rose Message Modal -->
+    <div class="rose-modal" id="roseModal">
+        <div class="rose-modal-content">
+            <button class="rose-modal-close" onclick="closeRoseModal()">×</button>
+            <div class="rose-modal-emoji">�</div>
+            <div class="rose-modal-title">Please Read This</div>
+            <div class="rose-modal-message" id="roseMessage"></div>
+            <div class="rose-modal-icons">
+                <span style="--i: 0">🥺</span>
+                <span style="--i: 1">✨</span>
+                <span style="--i: 2">🌸</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        const container = document.querySelector('.dialogue-box');
+        let isMoving = false;
+
+        // make the no button run away (mouse + touch)
+        noBtn.addEventListener('mouseenter', moveButton);
+        noBtn.addEventListener('mousemove', moveButton);
+        noBtn.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            moveButton();
+        }, { passive: false });
+
+        function moveButton() {
+            if (isMoving) return;
+            isMoving = true;
+            
+            // Ensure button is in fixed position mode
+            if (!noBtn.classList.contains('moving')) {
+                noBtn.classList.add('moving');
+                noBtn.style.position = 'fixed';
+            }
+
+            const btnWidth = noBtn.offsetWidth;
+            const btnHeight = noBtn.offsetHeight;
+
+            const padding = 20; // some padding from edges
+
+            const maxX = window.innerWidth - btnWidth - padding;
+            const maxY = window.innerHeight - btnHeight - padding;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            noBtn.style.left = `${randomX}px`;
+            noBtn.style.top = `${randomY}px`;
+
+            // sparkles when it moves
+            createSparkle(randomX + btnWidth / 2, randomY + btnHeight / 2);
+
+            // wait a bit before moving again
+            setTimeout(() => {
+                isMoving = false;
+            }, 200);
+        }
+
+        function createSparkle(x, y) {
+            const sparkles = ['✨', '💫', '⭐', '🌟', '💖'];
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+            sparkle.style.left = x + 'px';
+            sparkle.style.top = y + 'px';
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+                sparkle.remove();
+            }, 2000);
+        }
+
+        // messages for each rose
+        const roseMessages = [
+            "I know I messed up, and I know sorry might not feel like enough right now. But you mean the world to me, and I hate that I made you feel anything less than amazing.",
+            "You deserve someone who gets it right every time, and I'm trying. I really am. You make me want to be better, and I promise I'm working on it.",
+            "The way your smile disappears when you're upset with me is the worst feeling I've ever known. I'd do anything to see that smile come back.",
+            "I replay what happened over and over, and each time I wish I'd done things differently. You deserved better from me, and I see that now.",
+            "You are my favorite person in this whole messy world, and the thought of losing your warmth over something stupid terrifies me.",
+            "I'm not perfect, and I'll probably mess up again someday. But I'll never stop trying to be the person you deserve, because you're worth every effort.",
+            "Even when you're mad at me, you're still the most beautiful human I've ever known u{2014} inside and out. That never changes.",
+            "Remember when we couldn't stop laughing together? I want us back there. I want us to always find our way back to each other.",
+            "You are my calm in every storm, my reason to smile on the hardest days. Please don't stay mad at me forever... I miss your laugh already. u{1F97A}"
+        ];
+
+        function handleYes() {
+            const modal = document.getElementById('bouquetModal');
+            modal.style.display = 'flex';
+            // Trigger reflow then add class for smooth transition
+            requestAnimationFrame(() => {
+                modal.classList.add('show');
+            });
+            
+            // hide the main stuff
+            document.querySelector('.container').style.display = 'none';
+            
+            // hide the escaped no button if it moved
+            noBtn.style.display = 'none';
+            
+            // Create falling petals (fewer on mobile)
+            createFallingPetals();
+            
+            // Render bouquet SVG
+            renderBouquet();
+        }
+
+        function createFallingPetals() {
+            const petals = ['🌸', '🌹', '💮', '🌺'];
+            const isMobile = window.innerWidth <= 768;
+            const petalCount = isMobile ? 12 : 25;
+            for (let i = 0; i < petalCount; i++) {
+                setTimeout(() => {
+                    const petal = document.createElement('div');
+                    petal.className = 'falling-petal';
+                    petal.textContent = petals[Math.floor(Math.random() * petals.length)];
+                    petal.style.left = Math.random() * 100 + '%';
+                    petal.style.fontSize = (18 + Math.random() * 22) + 'px';
+                    petal.style.animationDuration = (7 + Math.random() * 8) + 's';
+                    petal.style.animationDelay = (Math.random() * 8) + 's';
+                    document.body.appendChild(petal);
+                }, i * 100);
+            }
+        }
+
+        function renderBouquet() {
+            const container = document.getElementById('bouquetContainer');
+            
+            const svg = `
+                <svg width="100%" height="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+                            <feOffset dx="0" dy="2" result="offsetblur"/>
+                            <feComponentTransfer>
+                                <feFuncA type="linear" slope="0.3"/>
+                            </feComponentTransfer>
+                            <feMerge> 
+                                <feMergeNode/>
+                                <feMergeNode in="SourceGraphic"/> 
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <!-- Wrapper -->
+                    <path d="M272.07 105.735L235.427 168.658L166.285 209.439L115 149L93 83.593C168.728 35.9039 243.57 78.1374 272.07 105.735Z" fill="#ffc9e3" stroke="#B8927A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M234.18 130.09C256.329 133.204 237.265 152.05 224.964 161.084C175.122 202.062 135.792 170.231 122.357 149.193C117.54 135.643 114.216 105.641 139.453 94.026C170.998 79.5066 168.037 111.969 183.427 108.325C198.816 104.682 206.495 126.196 234.18 130.09Z" fill="#6B8965" stroke="#4A5F45" stroke-width="0.8"/>
+                    
+                    <!-- Static Roses -->
+                    <g transform="translate(110, 90)">
+                        <g class="rose-clickable" onclick="showRoseMessage(0, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+                    
+                    <g transform="translate(120, 125)">
+                        <g class="rose-clickable" onclick="showRoseMessage(1, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+                    
+                    <g transform="translate(125, 160)">
+                        <g class="rose-clickable" onclick="showRoseMessage(2, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(130, 110)">
+                        <g class="rose-clickable" onclick="showRoseMessage(3, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(170, 90)">
+                        <g class="rose-clickable" onclick="showRoseMessage(4, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(210, 105)">
+                        <g class="rose-clickable" onclick="showRoseMessage(5, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(150, 145)">
+                        <g class="rose-clickable" onclick="showRoseMessage(6, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(190, 140)">
+                        <g class="rose-clickable" onclick="showRoseMessage(7, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+
+                    <g transform="translate(170, 130)">
+                        <g class="rose-clickable" onclick="showRoseMessage(8, event)" transform="scale(1.2)">
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#D15570" stroke="#A84558" stroke-width="0.5" filter="url(#shadow)"/>
+                            <path d="M51.7193 13.9343C52.8981 24.291 51.4717 28.5137 46.5779 34.1038C41.7914 39.5714 34.176 40.6406 29.9208 40.396C19.6842 38.3923 17.318 33.1105 15.8176 28.1802C15.0838 25.6935 14.2702 18.7432 16.8858 10.8348C18.2772 11.346 20.5188 12.2384 22.0845 13.1063C22.9296 11.6435 25.2248 10.4882 26.2667 10.0934C28.5028 10.7309 29.9107 12.271 30.3351 12.9614C32.3871 11.286 34.8802 10.0871 36.3464 9.55116C37.8445 10.3726 39.0571 11.6957 39.9941 13.0985C40.9019 12.788 43.9582 12.1769 45.6697 12.2094C46.1002 12.522 47.1692 13.548 48.0023 15.1519C49.4358 14.5775 50.7198 14.1751 51.7193 13.9343Z" fill="#E86580" opacity="0.7"/>
+                            <circle cx="33" cy="25" r="8" fill="#F47B8E" opacity="0.6"/>
+                        </g>
+                    </g>
+                    
+                    <!-- Over-wrapper -->
+                    <path d="M108.291 148.683L163.888 232.461L237.694 167.805C237.694 167.805 212.588 179.34 205.343 163.025C198.099 146.709 187.602 142.308 172.993 158.244C158.383 174.18 153.345 176.153 140.642 153.463C127.939 130.774 108.291 148.683 108.291 148.683Z" fill="#ffddf2" stroke="#B8927A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M223.218 197.745L165.201 237.486L192.683 284.759C191.645 284.009 190.627 283.343 189.629 282.755C173.002 272.954 161.888 284.477 157.567 279.791C152.987 274.824 148.406 269.856 140.009 277.307C134.554 282.148 128.777 279.651 125.398 277.307C123.576 276.043 122.451 274.824 122.451 274.824L165.201 237.486L116.344 181.186C116.344 181.186 130.085 196.089 143.063 185.326C156.04 174.563 162.147 177.874 169.781 189.465C177.415 201.056 186.341 204.623 196.499 193.605C206.658 182.587 223.218 197.745 223.218 197.745Z" fill="#ffddf2" stroke="#B8927A" stroke-width="0.8"/>
+                    <path d="M140.009 277.307C148.406 269.856 152.987 274.823 157.567 279.791C161.888 284.477 173.002 272.954 189.629 282.755V291.382C189.629 291.382 180.468 291.382 176.294 287.627C169.739 281.728 165.201 281.447 154.513 286.415C143.826 291.382 143.826 281.447 135.442 285.84C129.623 288.889 119.398 281.447 119.398 281.447L125.398 277.307C128.777 279.651 134.554 282.148 140.009 277.307Z" fill="#ffc9e3" stroke="#B8927A" stroke-width="0.8"/>
+                    
+                    <!-- Bow -->
+                    <path d="M164.976 233.776C168.076 234.366 171.021 235.739 170.291 239.4C169.973 240.998 168.444 241.504 166.661 241.472C164.357 241.432 161.63 240.494 160.547 239.855C154.789 236.453 161.875 233.187 164.976 233.776Z" fill="#ffd0ed"/>
+                    <path d="M158.32 235.538C154.332 228.629 144.32 215.345 136.171 217.487C125.985 220.164 120.229 232.91 125.987 236.312C131.746 239.713 153.891 241.617 158.32 235.538Z" stroke="#5B371D" stroke-width="0.5"/>
+                    <path d="M170.721 237.896C177.069 232.951 191.447 224.305 198.18 229.276C206.597 235.489 207.042 249.415 200.398 250.459C193.755 251.502 172.494 245.154 170.721 237.896Z" stroke="#5B371D" stroke-width="0.5"/>
+                </svg>
+            `;
+            container.innerHTML = svg;
+        }
+
+        function showRoseMessage(index, event) {
+            const modal = document.getElementById('roseModal');
+            const messageEl = document.getElementById('roseMessage');
+            
+            // Prevent event bubbling
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            // Set message content
+            messageEl.textContent = roseMessages[index % roseMessages.length];
+            
+            // Show modal with smooth transition
+            modal.style.display = 'flex';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    modal.classList.add('show');
+                });
+            });
+            
+            // Create love particles - use touch coords if available
+            const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+            const clientY = event.touches ? event.touches[0].clientY : event.clientY;
+            createLoveParticles(clientX, clientY);
+        }
+
+        function closeRoseModal() {
+            const modal = document.getElementById('roseModal');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 400);
+        }
+
+        function createLoveParticles(x, y) {
+            const emojis = ['🌸', '✨', '💫', '🥺'];
+            const isMobile = window.innerWidth <= 768;
+            const particleCount = isMobile ? 4 : 7;
+            for(let i = 0; i < particleCount; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'love-particle';
+                    particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                    particle.style.left = x + 'px';
+                    particle.style.top = y + 'px';
+                    
+                    const angle = (i / particleCount) * 2 * Math.PI;
+                    const distance = 80 + Math.random() * 35;
+                    const endX = x + Math.cos(angle) * distance;
+                    const endY = y + Math.sin(angle) * distance;
+                    
+                    document.body.appendChild(particle);
+                    
+                    particle.animate([
+                        { left: x + 'px', top: y + 'px', opacity: 1, transform: 'scale(1.5)' },
+                        { left: endX + 'px', top: endY + 'px', opacity: 0.3, transform: 'scale(0.8) rotate(360deg)' }
+                    ], {
+                        duration: 1100,
+                        easing: 'ease-out'
+                    });
+                    
+                    setTimeout(() => particle.remove(), 1100);
+                }, i * 50);
+            }
+        }
+
+        // close modal if click outside
+        document.addEventListener('DOMContentLoaded', () => {
+            const roseModal = document.getElementById('roseModal');
+            if (roseModal) {
+                roseModal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeRoseModal();
+                    }
+                });
+            }
+        });
+
+        window.addEventListener('load', () => {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const x = Math.random() * window.innerWidth;
+                    const y = Math.random() * window.innerHeight;
+                    createSparkle(x, y);
+                }, i * 500);
+            }
+        });
+
+        // Background Music - Start from 2 minutes
+        const bgMusic = document.getElementById('bgMusic');
+        let musicStarted = false;
+
+        bgMusic.volume = 0.5;
+        bgMusic.load();
+
+        const startMusic = () => {
+            if (musicStarted) return;
+            bgMusic.currentTime = 120; // Start at 2 minutes
+            bgMusic.play().then(() => {
+                musicStarted = true;
+            }).catch(() => {});
+        };
+
+        // Try to play when metadata is loaded
+        bgMusic.addEventListener('loadedmetadata', () => {
+            setTimeout(startMusic, 100);
+        });
+
+        // Play music on first user interaction
+        const playOnInteraction = () => {
+            if (!musicStarted) {
+                startMusic();
+            }
+        };
+        
+        document.addEventListener('click', playOnInteraction, { once: true });
+        document.addEventListener('touchstart', playOnInteraction, { once: true });
+        document.addEventListener('keydown', playOnInteraction, { once: true });
+    </script>
+</body>
+</html>
