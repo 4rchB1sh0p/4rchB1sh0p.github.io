@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tallinn One-Day Itinerary — 3 April 2026</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    :root{
+      --bg: #f6f1e7;
+      --paper: #fffaf1;
+      --sand: #e8dcc7;
+      --clay: #cfa97e;
+      --sage: #9cab8f;
+      --forest: #586b52;
+      --ink: #3d352d;
+      --muted: #74685b;
+      --accent: #8f6a4f;
+      --border: #dbcdb8;
+    }
+
+    body{
+      background:
+        radial-gradient(circle at top right, rgba(156,171,143,0.14), transparent 25%),
+        radial-gradient(circle at top left, rgba(207,169,126,0.18), transparent 25%),
+        var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar{
+      background: rgba(255,250,241,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-pill{
+      display: inline-block;
+      background: var(--sand);
+      color: var(--forest);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .hero{
+      padding: 6.5rem 0 2.5rem;
+    }
+
+    .hero-card,
+    .section-card,
+    .food-card,
+    .tip-card,
+    .timeline-card,
+    .sticky-card{
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      box-shadow: 0 10px 30px rgba(93, 76, 58, 0.06);
+    }
+
+    .hero-card{
+      padding: 2rem;
+    }
+
+    h1, h2, h3, h4, h5{
+      color: var(--forest);
+      font-weight: 700;
+    }
+
+    .lead, .muted{
+      color: var(--muted);
+    }
+
+    .meta-chip{
+      background: #f1e8db;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.45rem 0.75rem;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0.2rem 0.35rem 0.2rem 0;
+    }
+
+    .section-title{
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title .badge{
+      background: var(--forest) !important;
+      font-size: 0.85rem;
+      padding: 0.5rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .timeline{
+      position: relative;
+      padding-left: 1.25rem;
+      margin-left: 0.75rem;
+      border-left: 2px dashed var(--clay);
+    }
+
+    .timeline-item{
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-dot{
+      position: absolute;
+      left: -1.82rem;
+      top: 0.25rem;
+      width: 14px;
+      height: 14px;
+      background: var(--forest);
+      border: 3px solid var(--paper);
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px var(--forest);
+    }
+
+    .time-badge{
+      background: #efe2d0;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-weight: 700;
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.86rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .food-card, .tip-card, .timeline-card, .sticky-card, .section-card{
+      padding: 1.25rem;
+    }
+
+    .place{
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .walk-note{
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    .pill{
+      display: inline-block;
+      background: #f1e8db;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.28rem 0.6rem;
+      font-size: 0.82rem;
+      margin: 0.15rem 0.2rem 0.15rem 0;
+    }
+
+    .list-clean{
+      padding-left: 1.1rem;
+      margin-bottom: 0;
+    }
+
+    .list-clean li{
+      margin-bottom: 0.35rem;
+    }
+
+    .small-title{
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+
+    .sticky-wrap{
+      position: sticky;
+      top: 5rem;
+    }
+
+    .nav-pills .nav-link{
+      color: var(--forest);
+      border: 1px solid transparent;
+      border-radius: 999px;
+      margin: 0.2rem 0.25rem 0.2rem 0;
+      background: transparent;
+    }
+
+    .nav-pills .nav-link.active{
+      background: var(--forest);
+      color: #fff;
+    }
+
+    .footer-note{
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .divider{
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+      margin: 1.25rem 0;
+    }
+
+    @media (max-width: 991px){
+      .sticky-wrap{
+        position: static;
+      }
+      .hero{
+        padding-top: 5.5rem;
+      }
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#dayNav" data-bs-offset="120" tabindex="0">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top" style="color: var(--forest);">Tallinn Day Plan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="ms-auto d-flex flex-wrap align-items-center gap-2">
+          <a class="btn btn-sm" href="#timeline" style="background: var(--forest); color: #fff;">Jump to itinerary</a>
+          <a class="btn btn-sm" href="#food" style="border: 1px solid var(--border); color: var(--accent); background: var(--paper);">Food picks</a>
+          <a class="btn btn-sm" href="#tips" style="border: 1px solid var(--border); color: var(--accent); background: var(--paper);">Money-saving tips</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero-card">
+        <div class="brand-pill mb-3">Standalone itinerary page • 3 April 2026</div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-6 mb-3">One Day in Tallinn, Estonia</h1>
+            <p class="lead mb-3">
+              A relaxed, local-leaning day plan for a group of 4, designed around your
+              <strong>11:30–13:45 walking tour</strong>. Mornings focus on sightseeing,
+              afternoons slow down, and evenings are for a good dinner.
+            </p>
+            <div class="mb-2">
+              <span class="meta-chip">📍 Stay: Narva mnt 24 / Fr. R. Kreutzwaldi 2</span>
+              <span class="meta-chip">👣 Mostly walking + public transport</span>
+              <span class="meta-chip">🕘 9:00 AM – 9:00 PM</span>
+              <span class="meta-chip">👥 Group of 4</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="section-card h-100">
+              <div class="small-title">Today at a glance</div>
+              <ul class="list-clean">
+                <li>Breakfast near the city center</li>
+                <li>Quiet Old Town warm-up before crowds</li>
+                <li>Walking tour of the main highlights</li>
+                <li>Choose between 2 lunch options</li>
+                <li>Creative district + chill seaside time</li>
+                <li>Dessert stop before dinner</li>
+                <li>Choose between 2 dinner options</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <section id="timeline" class="mb-4">
+          <div class="section-title">
+            <span class="badge">Itinerary</span>
+            <h2 class="h3 mb-0">9:00 AM to 9:00 PM</h2>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline">
+              <div class="timeline-item" id="morning">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">9:00 – 10:00</span>
+                <h3 class="h5">Breakfast at RØST Bakery</h3>
+                <p class="mb-1"><span class="place">Why this works:</span> excellent pastries, specialty coffee, and an easy start before heading into Old Town.</p>
+                <p class="walk-note mb-2">Approx. 20 min walk from your accommodation.</p>
+                <div class="small-title">Order</div>
+                <div class="mb-2">
+                  <span class="pill">Cardamom bun</span>
+                  <span class="pill">Sourdough sandwich with smoked fish</span>
+                  <span class="pill">Flat white or filter coffee</span>
+                </div>
+                <p class="mb-0"><strong>Local note:</strong> go early if you want the best pastry selection.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">10:00 – 11:15</span>
+                <h3 class="h5">Pre-tour wander through quiet Old Town corners</h3>
+                <p class="mb-2">Walk toward the meeting point and use the extra time for a gentle warm-up before the tour crowds pick up.</p>
+                <ul class="list-clean">
+                  <li><strong>St Catherine’s Passage</strong> — one of the best hidden medieval lanes in the city.</li>
+                  <li><strong>Viru Gates area</strong> — a classic Old Town entrance, but nicest before it gets busy.</li>
+                  <li><strong>Small courtyards</strong> — step through open archways; many are easy to miss and feel more local than the main streets.</li>
+                </ul>
+                <p class="walk-note mt-2 mb-0">Keep the walk to the tour meeting point easy and flexible.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">11:30 – 13:45</span>
+                <h3 class="h5">Your booked walking tour</h3>
+                <p class="mb-2">You’ll cover these spots during the guided portion of the day:</p>
+                <div class="mb-2">
+                  <span class="pill">Niguliste tänav (starting point)</span>
+                  <span class="pill">Danish King’s Garden</span>
+                  <span class="pill">Alexander Nevsky Cathedral</span>
+                  <span class="pill">St Mary’s Cathedral</span>
+                  <span class="pill">Kohtuotsa viewing platform</span>
+                  <span class="pill">Balti Jaam</span>
+                </div>
+                <p class="mb-0"><strong>Good timing:</strong> your tour naturally ends near lunch options and close to the afternoon plan.</p>
+              </div>
+
+              <div class="timeline-item" id="afternoon">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">13:45 – 15:00</span>
+                <h3 class="h5">Lunch — pick one of two styles</h3>
+                <p class="mb-3">Both options keep walking short after the tour.</p>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="food-card h-100">
+                      <div class="small-title">Lunch option 1 · Quick & local</div>
+                      <h4 class="h6">Balti Jaama Turg Food Area</h4>
+                      <p class="mb-2">Casual, flexible, and easy for a group of 4 if everyone wants something slightly different.</p>
+                      <ul class="list-clean">
+                        <li>Pelmeni with sour cream</li>
+                        <li>Black bread sandwiches</li>
+                        <li>Local craft beer</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="food-card h-100">
+                      <div class="small-title">Lunch option 2 · Cozy sit-down</div>
+                      <h4 class="h6">Rataskaevu 16</h4>
+                      <p class="mb-2">A warm, reliable Old Town classic with polished Estonian comfort food.</p>
+                      <ul class="list-clean">
+                        <li>Elk or moose stew</li>
+                        <li>Creamy mushroom soup</li>
+                        <li>Kama dessert</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">15:00 – 16:30</span>
+                <h3 class="h5">Telliskivi Creative City</h3>
+                <p class="mb-2">A good energy shift after the medieval core: murals, indie shops, design spaces, and a more modern local vibe.</p>
+                <ul class="list-clean">
+                  <li>Browse street art and small concept stores</li>
+                  <li>Pause for a relaxed coffee if lunch ran quick</li>
+                  <li>Optional: pop into Fotografiska Tallinn</li>
+                </ul>
+                <p class="mb-0"><strong>Hidden gem:</strong> the Fotografiska café/view area can be a smart stop for the atmosphere even if you do not make the museum the main event.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">16:30 – 18:00</span>
+                <h3 class="h5">Chill seaside time at Linnahall</h3>
+                <p class="mb-2">From Telliskivi, use a short public transport hop or an easy walk sequence to keep the day smooth.</p>
+                <ul class="list-clean">
+                  <li>Brutalist waterfront architecture</li>
+                  <li>Open views toward the sea and harbor</li>
+                  <li>One of Tallinn’s more local-feeling places to simply sit and take in the city</li>
+                </ul>
+                <p class="mb-0"><strong>Why it works:</strong> this is the “slow afternoon” moment built into the plan.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">18:00 – 18:45</span>
+                <h3 class="h5">Dessert break at Karjase Sai</h3>
+                <p class="mb-2">A nice reset before dinner rather than rushing straight into the evening.</p>
+                <div class="mb-2">
+                  <span class="pill">Seasonal tart</span>
+                  <span class="pill">Rye-based sweet pastry</span>
+                  <span class="pill">Specialty coffee</span>
+                </div>
+                <p class="mb-0"><strong>Local specialty angle:</strong> rye appears in both savory and sweet Estonian baking, so it is worth trying in dessert form too.</p>
+              </div>
+
+              <div class="timeline-item" id="evening">
+                <div class="timeline-dot"></div>
+                <span class="time-badge">19:00 – 21:00</span>
+                <h3 class="h5">Dinner — choose your evening mood</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="food-card h-100">
+                      <div class="small-title">Dinner option 1 · Modern Estonian</div>
+                      <h4 class="h6">NOA Chef’s Hall</h4>
+                      <p class="mb-2">Best for a more polished, destination-style dinner. Worth a short ride.</p>
+                      <ul class="list-clean">
+                        <li>Tasting menu</li>
+                        <li>Baltic fish dishes</li>
+                        <li>Seasonal modern Estonian plates</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="food-card h-100">
+                      <div class="small-title">Dinner option 2 · Atmospheric & rustic</div>
+                      <h4 class="h6">III Draakon</h4>
+                      <p class="mb-2">A fun Old Town tavern pick if you want memorable atmosphere over refinement.</p>
+                      <ul class="list-clean">
+                        <li>Elk soup</li>
+                        <li>Meat pies</li>
+                        <li>Pickles from the barrel</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-3 mb-0"><strong>Evening finish:</strong> by 9 PM you can either return to your accommodation or take a final short Old Town stroll if energy is still high.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="food" class="mb-4">
+          <div class="section-title">
+            <span class="badge">Food</span>
+            <h2 class="h3 mb-0">All food stops in one place</h2>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Breakfast café</div>
+                <h3 class="h5">RØST Bakery</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> cardamom bun, smoked fish sandwich, filter coffee</li>
+                  <li><strong>Vibe:</strong> modern Nordic-style bakery</li>
+                  <li><strong>Why go:</strong> strong start without anything too heavy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Dessert place</div>
+                <h3 class="h5">Karjase Sai</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> seasonal tart, rye pastry, specialty coffee</li>
+                  <li><strong>Vibe:</strong> stylish but low-key</li>
+                  <li><strong>Why go:</strong> great break between the seaside and dinner</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Lunch spot 1</div>
+                <h3 class="h5">Balti Jaama Turg Food Area</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> pelmeni, black bread sandwiches, local beer</li>
+                  <li><strong>Vibe:</strong> flexible and casual</li>
+                  <li><strong>Best for:</strong> a quick reset after the tour</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Lunch spot 2</div>
+                <h3 class="h5">Rataskaevu 16</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> elk/moose stew, mushroom soup, kama dessert</li>
+                  <li><strong>Vibe:</strong> cozy and popular</li>
+                  <li><strong>Best for:</strong> a proper sit-down meal</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Dinner restaurant 1</div>
+                <h3 class="h5">NOA Chef’s Hall</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> tasting menu, Baltic fish, seasonal plates</li>
+                  <li><strong>Vibe:</strong> upscale, waterside, modern</li>
+                  <li><strong>Best for:</strong> a special dinner</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="food-card h-100">
+                <div class="small-title">Dinner restaurant 2</div>
+                <h3 class="h5">III Draakon</h3>
+                <ul class="list-clean">
+                  <li><strong>Try:</strong> elk soup, savory pies, pickles</li>
+                  <li><strong>Vibe:</strong> medieval tavern, fun and memorable</li>
+                  <li><strong>Best for:</strong> atmosphere and a simple rustic meal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card mt-3">
+            <div class="small-title">Local specialties worth trying</div>
+            <div>
+              <span class="pill">Black bread</span>
+              <span class="pill">Baltic fish</span>
+              <span class="pill">Elk or game stew</span>
+              <span class="pill">Mushroom dishes</span>
+              <span class="pill">Kama dessert</span>
+              <span class="pill">Rye pastries</span>
+              <span class="pill">Pelmeni</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="tips">
+          <div class="section-title">
+            <span class="badge">Tips</span>
+            <h2 class="h3 mb-0">Hidden gems, practical advice, and savings</h2>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Hidden gems & local favorites</div>
+                <ul class="list-clean">
+                  <li>St Catherine’s Passage is one of the best quiet medieval corners before tour groups arrive.</li>
+                  <li>Telliskivi gives you a more local, creative side of Tallinn beyond the postcard Old Town.</li>
+                  <li>Linnahall is ideal for a calm sea-facing pause and feels less “scheduled” than the main sights.</li>
+                  <li>Open courtyards in Old Town are often more charming than the busiest streets.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Practical tips most tourists miss</div>
+                <ul class="list-clean">
+                  <li>Old Town cobblestones can be slick — wear grippy shoes.</li>
+                  <li>April weather can flip quickly, so layers are better than one heavy coat.</li>
+                  <li>Early morning is the best time for the prettiest Old Town atmosphere.</li>
+                  <li>For a group of 4, casual market-style lunch can save time compared with waiting for a table.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Money-saving hacks · Food & drink</div>
+                <ul class="list-clean">
+                  <li>Choose lunch menus or simpler midday dishes instead of going big at both lunch and dinner.</li>
+                  <li>Drink tap water — Tallinn’s tap water is generally good, so skip bottled water.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Money-saving hacks · Transport</div>
+                <ul class="list-clean">
+                  <li>Use a 24-hour public transport pass instead of buying multiple single rides.</li>
+                  <li>If you need a car, compare Bolt rides with regular taxis; short city hops are often cheaper that way.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Money-saving hacks · Attractions</div>
+                <ul class="list-clean">
+                  <li>Prioritize free viewpoints like Kohtuotsa instead of stacking paid towers.</li>
+                  <li>Use neighborhoods like Telliskivi and the waterfront for atmosphere without needing tickets.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="tip-card h-100">
+                <div class="small-title">Money-saving hacks · General</div>
+                <ul class="list-clean">
+                  <li>Tourist souvenir shops in the busiest Old Town lanes are usually pricier than design shops elsewhere.</li>
+                  <li>Card payment is widely accepted, so there is little need to exchange much cash.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="sticky-wrap">
+          <div class="sticky-card mb-3">
+            <div class="small-title">Quick navigation</div>
+            <nav id="dayNav" class="nav nav-pills flex-wrap">
+              <a class="nav-link" href="#morning">Morning</a>
+              <a class="nav-link" href="#afternoon">Afternoon</a>
+              <a class="nav-link" href="#evening">Evening</a>
+              <a class="nav-link" href="#food">Food picks</a>
+              <a class="nav-link" href="#tips">Tips & savings</a>
+            </nav>
+          </div>
+
+          <div class="sticky-card mb-3">
+            <div class="small-title">Plan logic</div>
+            <ul class="list-clean">
+              <li>Walks are kept manageable between stops.</li>
+              <li>Morning is active, afternoon is slower, evening is food-led.</li>
+              <li>The tour acts as the anchor for the whole day.</li>
+            </ul>
+          </div>
+
+          <div class="sticky-card">
+            <div class="small-title">Fast summary</div>
+            <p class="mb-2"><strong>Best hidden-gem stretch:</strong> St Catherine’s Passage + courtyards.</p>
+            <p class="mb-2"><strong>Best chill break:</strong> Linnahall waterfront.</p>
+            <p class="mb-2"><strong>Most local-feeling lunch:</strong> Balti Jaama Turg.</p>
+            <p class="mb-2"><strong>Best special dinner:</strong> NOA Chef’s Hall.</p>
+            <p class="mb-0"><strong>Best fun dinner:</strong> III Draakon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer class="pb-4">
+      <p class="footer-note mb-0">
+        Built as a single-page itinerary for quick use throughout the day. Save it offline in your browser if you want an easy reference while exploring Tallinn.
+      </p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
