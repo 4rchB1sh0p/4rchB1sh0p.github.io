@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helsinki 3-Day Itinerary · Yash, Saurabh, Shruti, Ketki</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --card: #fffaf3;
+      --ink: #3f342d;
+      --muted: #7b6c60;
+      --line: #dccdbd;
+      --accent: #a97c50;
+      --accent-soft: #e8d8c2;
+      --sage: #d7e0d0;
+    }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a {
+      color: #7a4f2a;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(122,79,42,0.35);
+    }
+    a:hover { color: #5c3a1e; }
+    .hero {
+      background: linear-gradient(180deg, #efe4d4 0%, #f7f2ea 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero h1 { font-weight: 800; letter-spacing: -0.02em; }
+    .hero .lead { color: var(--muted); max-width: 900px; }
+    .chip {
+      display: inline-block; padding: .35rem .7rem; border-radius: 999px;
+      background: #efe3d3; border: 1px solid var(--line); font-size: .92rem; margin: .15rem;
+    }
+    .section-head {
+      margin-bottom: 1rem; padding: 1rem 1.1rem; border-left: 6px solid var(--accent);
+      background: rgba(255,255,255,.45); border-radius: 16px;
+    }
+    .section-head h2 { margin: 0 0 .2rem 0; font-size: 1.5rem; }
+    .section-head p { margin: 0; color: var(--muted); }
+    .slot-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(90,60,20,0.05);
+    }
+    .slot-card h5 { font-weight: 700; }
+    .time-pill {
+      display: inline-block; padding: .3rem .7rem; background: var(--accent-soft);
+      border-radius: 999px; font-weight: 700; font-size: .9rem;
+    }
+    .note-card {
+      background: #fffaf3; border: 1px solid var(--line); border-radius: 18px;
+    }
+    .tag {
+      display: inline-block; padding: .14rem .48rem; font-size: .76rem;
+      border-radius: 999px; font-weight: 700; letter-spacing: .02em;
+      border: 1px solid transparent; vertical-align: middle;
+    }
+    .tag-veg { background: #dcebd8; color: #24472c; border-color: #b8d0b1; }
+    .tag-mix { background: #efe0cf; color: #6a4324; border-color: #dbc2a6; }
+    .small-note { color: var(--muted); font-size: .95rem; }
+    .table-shell {
+      background: #fffaf3; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    }
+    .table thead th {
+      background: #efe4d6; color: #4d3b30; border-bottom: 1px solid var(--line);
+      position: sticky; top: 0;
+    }
+    .accordion-button {
+      background: #efe4d4; color: var(--ink); font-weight: 700;
+    }
+    .accordion-button:not(.collapsed) {
+      background: #e6d7c1; color: var(--ink);
+      box-shadow: none;
+    }
+    .accordion-item {
+      background: transparent; border: 1px solid var(--line); border-radius: 18px !important;
+      overflow: hidden; margin-bottom: 1rem;
+    }
+    .spot-thumb {
+      width: 140px; height: auto; border-radius: 14px; border: 1px solid var(--line);
+      box-shadow: 0 6px 16px rgba(0,0,0,.04);
+    }
+    footer {
+      color: var(--muted); font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero py-5 mb-4">
+    <div class="container">
+      <h1 class="display-5 mb-3">3 Days in Helsinki for Yash, Saurabh, Shruti & Ketki</h1>
+      <p class="lead">A practical, click-anywhere, phone-friendly plan from <strong>10:00 on 4 April</strong> to <strong>17:00 on 6 April</strong>, built around walking + public transport from <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Innotelli Apartments</a>.</p>
+      <div class="mb-3">
+        <span class="chip">49 spots covered</span>
+        <span class="chip">Walking links kept short</span>
+        <span class="chip">Veg-safe planning built in</span>
+        <span class="chip">Budget target: ≤ €25 pp / meal</span>
+        <span class="chip">Ends at hotel each day</span>
+      </div>
+      <p class="small-note mb-0"><strong>Hotel:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Sirrikuja 3 D, 00940 Helsinki, Finland</a></p>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+    
+<div class="row g-3 mb-4">
+  <div class="col-md-4">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Group food strategy</h5>
+      <p>Yash and Ketki are egg-vegetarian, so the itinerary leans on vegetarian-first cafés, vegan lunch options, and mixed restaurants with safe veg choices. Ask clearly for <em>no fish sauce / no meat stock</em> when in doubt.</p>
+    </div></div>
+  </div>
+  <div class="col-md-4">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Local favorites</h5>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Regatta" target="_blank" rel="noopener">Café Regatta</a> for atmosphere, <a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall" target="_blank" rel="noopener">Hakaniemi Market Hall</a> for less-touristy eating, <a href="https://www.google.com/maps/search/?api=1&query=Oodi%20Library" target="_blank" rel="noopener">Oodi Library</a> as a true local everyday space, and the quieter corners of <a href="https://www.google.com/maps/search/?api=1&query=Suomenlinna" target="_blank" rel="noopener">Suomenlinna</a> after the first arrival zone.</p>
+    </div></div>
+  </div>
+  <div class="col-md-4">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Tourist tips most people miss</h5>
+      <p>Wind off the sea makes Helsinki feel colder than the temperature looks. Keep a light windproof layer, a power bank, and one reusable water bottle per pair.</p>
+    </div></div>
+  </div>
+</div>
+
+
+    <section class="mb-5">
+      <div class="section-head">
+        <h2>How to use this page</h2>
+        <p>Tap any place name to open it in Google Maps. Each activity block is one card so the page works like a day-of-trip dashboard.</p>
+      </div>
+      
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Transport · 2 money-saving hacks</h5>
+      <ul>
+        <li>Use HSL 24-hour AB day tickets on your heavy public-transport days instead of buying single rides again and again.</li>
+        <li>Pair nearby sights into walking clusters before boarding another tram. In the center, short hops add cost faster than distance.</li>
+      </ul>
+    </div></div>
+  </div>
+  <div class="col-md-6">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Food · 2 money-saving hacks</h5>
+      <ul>
+        <li>Use lunch as the main paid meal. Helsinki lunch menus and buffets are usually the best value.</li>
+        <li>Split one dessert or pastry order in the middle of the day and keep drinks simple: tap water, tea, coffee, or house soft drinks.</li>
+      </ul>
+    </div></div>
+  </div>
+  <div class="col-md-6">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Sightseeing · 2 money-saving hacks</h5>
+      <ul>
+        <li>Do not overpay for every interior. Some of Helsinki’s best experiences are outdoor: Senate Square, Esplanadi, Töölönlahti, Kaivopuisto, Suomenlinna sea walls.</li>
+        <li>Use one strong museum per cluster and enjoy the rest from outside when energy is low.</li>
+      </ul>
+    </div></div>
+  </div>
+  <div class="col-md-6">
+    <div class="card note-card h-100"><div class="card-body">
+      <h5>Souvenirs / shopping · 2 money-saving hacks</h5>
+      <ul>
+        <li>Buy edible gifts or small design items in Hakaniemi or market halls before touristy waterfront kiosks.</li>
+        <li>For Finnish chocolate and packaged gifts, city supermarkets and Fazer shops are usually better value than specialty souvenir stores.</li>
+      </ul>
+    </div></div>
+  </div>
+</div>
+
+    </section>
+
+    
+    <section class="mb-5">
+      <div class="section-head">
+        <h2>Day 1 · Fri 4 Apr · Harbor, Old Town, Suomenlinna, Design South</h2>
+        <p>Starts 10:00 from hotel · ends at hotel</p>
+      </div>
+      <div class="row g-3">
+        
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:00–10:45</div>
+                  <h5 class="card-title mt-2">Hotel → harbor start</h5>
+                  <div class="card-text">
+<p><strong>Move:</strong> Leave <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Innotelli Apartments</a> and take the metro toward the center. Target <strong><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Central%20Station" target="_blank" rel="noopener">Helsinki Central Station</a></strong> / harbor area. A 24-hour HSL AB day ticket is the simplest move for this day.</p>
+<p><strong>Buy/details:</strong> <a href="https://www.hsl.fi/en/tickets-and-fares/day-tickets" target="_blank" rel="noopener">HSL day tickets</a> · <a href="https://www.hsl.fi/en/travelling/visitors" target="_blank" rel="noopener">Visitor guide</a> · <a href="https://www.hsl.fi/en/tickets-and-fares/hsl-area-and-zones" target="_blank" rel="noopener">Zones</a></p>
+<p class="small-note">Practical tip: your address is outside the compact center, so the AB day ticket is usually the sweet spot for downtown + Suomenlinna, but check your exact route in HSL route planner before purchase.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:45–11:30</div>
+                  <h5 class="card-title mt-2">Breakfast with a square view</h5>
+                  <div class="card-text">
+<p><strong>Breakfast café:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Engel%2C%20Helsinki" target="_blank" rel="noopener">Café Engel, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · target spend <strong>€10–18 pp</strong>.</p>
+<ul><li>Veg picks for Yash/Ketki: egg breakfast, avocado toast if available, cinnamon bun, tea/coffee.</li><li>Non-veg picks for Saurabh/Shruti: breakfast plate or soup if running late.</li><li>Local specialty to try: korvapuusti (Finnish cinnamon bun).</li><li>After breakfast, you are already beside <a href="https://www.google.com/maps/search/?api=1&query=Senate%20Square" target="_blank" rel="noopener">Senate Square</a>, <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Cathedral" target="_blank" rel="noopener">Helsinki Cathedral</a>, <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20City%20Museum" target="_blank" rel="noopener">Helsinki City Museum</a> and <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20University" target="_blank" rel="noopener">Helsinki University</a>.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">11:30–13:15</div>
+                  <h5 class="card-title mt-2">Historic core walk</h5>
+                  <div class="card-text">
+<p><strong>Walking cluster, all under 30 min links:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Senate%20Square" target="_blank" rel="noopener">Senate Square</a> → <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Cathedral" target="_blank" rel="noopener">Helsinki Cathedral</a> → <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20City%20Museum" target="_blank" rel="noopener">Helsinki City Museum</a> → <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20University" target="_blank" rel="noopener">Helsinki University</a> → <a href="https://www.google.com/maps/search/?api=1&query=Uspenski%20Cathedral" target="_blank" rel="noopener">Uspenski Cathedral</a>.</p>
+<ul><li>Best photo trick: climb the cathedral steps, then turn back toward the square instead of only shooting the facade.</li><li>Hidden-gem angle: the streets behind Uspenski are calmer than the cathedral front and give a better red-brick skyline shot.</li><li>Keep interiors quick; save energy for the island later.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">13:15–14:45</div>
+                  <h5 class="card-title mt-2">Harbor classics + lunch options</h5>
+                  <div class="card-text">
+<p><strong>Walk:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Market%20Square%20%28Kauppatori%29%2C%20Helsinki" target="_blank" rel="noopener">Market Square (Kauppatori), Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Old%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Old Market Hall, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Havis%20Amanda%20Statue%2C%20Helsinki" target="_blank" rel="noopener">Havis Amanda Statue, Helsinki</a> → optional quick look at <a href="https://www.google.com/maps/search/?api=1&query=SkyWheel%20Helsinki" target="_blank" rel="noopener">SkyWheel Helsinki</a> and <a href="https://www.google.com/maps/search/?api=1&query=Allas%20Sea%20Pool" target="_blank" rel="noopener">Allas Sea Pool</a> from outside.</p>
+<p><strong>Lunch option 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Story%20Old%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Story Old Market Hall, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€15–22 pp</strong>.</p>
+<p><strong>Lunch option 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Zucchini%2C%20Helsinki" target="_blank" rel="noopener">Zucchini, Helsinki</a> <span class="tag tag-veg">VEG</span> · <strong>€13–18 pp</strong> if the group wants a pure vegetarian lunch.</p>
+<ul><li>NV local specialty: creamy salmon soup (lohikeitto) at the market hall.</li><li>VEG move: seasonal soup + bread or Zucchini’s loaded lunch plate.</li><li>Money-saving hack: share one extra pastry instead of everyone ordering dessert here; save dessert for later.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">14:45–17:45</div>
+                  <h5 class="card-title mt-2">Suomenlinna deep dive</h5>
+                  <div class="card-text">
+<p><strong>Ferry:</strong> from harbor to <a href="https://www.google.com/maps/search/?api=1&query=Suomenlinna%2C%20Helsinki" target="_blank" rel="noopener">Suomenlinna, Helsinki</a> using the same HSL ticket.</p>
+<ul><li>Aim for scenic essentials rather than every museum: church area, walls, dock area, sea-facing bastions, tunnel-adjacent viewpoints.</li><li>Local-favorite trick: once crowds thin beyond the main ferry arrival zone, the island becomes much quieter.</li><li>Bring water and one snack from the market hall; island cafés can cost more.</li><li>The island is best for atmosphere and views, not rushing.</li></ul>
+<p class="small-note">This is the biggest walking block of the trip, but it is worth keeping because your other two days are more stop-start and relaxed.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">18:15–19:15</div>
+                  <h5 class="card-title mt-2">Design + south-coast unwind</h5>
+                  <div class="card-text">
+<p><strong>Back on the mainland:</strong> use tram/short walk through <a href="https://www.google.com/maps/search/?api=1&query=Esplanadi%20Park%2C%20Helsinki" target="_blank" rel="noopener">Esplanadi Park, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Design%20District" target="_blank" rel="noopener">Helsinki Design District</a> → <a href="https://www.google.com/maps/search/?api=1&query=Design%20Museum%20Helsinki" target="_blank" rel="noopener">Design Museum Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Punavuori%20District%2C%20Helsinki" target="_blank" rel="noopener">Punavuori District, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Sinebrychoff%20Art%20Museum%2C%20Helsinki" target="_blank" rel="noopener">Sinebrychoff Art Museum, Helsinki</a> exterior/quick visit → <a href="https://www.google.com/maps/search/?api=1&query=Vanha%20Kirkkopuisto%2C%20Helsinki" target="_blank" rel="noopener">Vanha Kirkkopuisto, Helsinki</a>.</p>
+<p><strong>Chill finish before dinner:</strong> continue to <a href="https://www.google.com/maps/search/?api=1&query=Kaivopuisto%20Park%2C%20Helsinki" target="_blank" rel="noopener">Kaivopuisto Park, Helsinki</a> or directly to <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6yly%20Sauna%2C%20Helsinki" target="_blank" rel="noopener">Löyly Sauna, Helsinki</a> waterfront for sunset mood.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">19:30–21:15</div>
+                  <h5 class="card-title mt-2">Dinner choices + dessert</h5>
+                  <div class="card-text">
+<p><strong>Dinner 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Green%20Hippo%20Punavuori%2C%20Helsinki" target="_blank" rel="noopener">Green Hippo Punavuori, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€16–24 pp</strong>.</p>
+<p><strong>Dinner 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Yes%20Yes%20Yes%2C%20Helsinki" target="_blank" rel="noopener">Yes Yes Yes, Helsinki</a> <span class="tag tag-veg">VEG</span> · <strong>€20–25 pp</strong>.</p>
+<p><strong>Dessert:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Fazer%20Caf%C3%A9%2C%20Kluuvikatu%203%20Helsinki" target="_blank" rel="noopener">Fazer Café, Kluuvikatu 3 Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€6–12 pp</strong>.</p>
+<ul><li>Veg dishes: cauliflower / halloumi / mushroom plates at Yes Yes Yes; pasta or egg-friendly brunch-style options at Green Hippo.</li><li>Non-veg-friendly but still budget-safe: Green Hippo is the easier mixed group pick.</li><li>Local sweet to try: blueberry tart or Fazer chocolate pastry.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">21:15–22:00</div>
+                  <h5 class="card-title mt-2">Return to hotel</h5>
+                  <div class="card-text">
+<p><strong>End of day:</strong> metro/tram combo back to <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Sirrikuja 3 D, 00940 Helsinki, Finland</a>.</p>
+<p class="small-note">Tourist tip most miss: keep a screenshot of your HSL ticket and the last metro direction in case the phone signal is patchy around the harbor crowd.</p>
+</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    
+    <section class="mb-5">
+      <div class="section-head">
+        <h2>Day 2 · Sat 5 Apr · Töölö, museums, civic Helsinki, architecture</h2>
+        <p>A scenic museum-and-neighborhood day with calmer pace</p>
+      </div>
+      <div class="row g-3">
+        
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:00–10:40</div>
+                  <h5 class="card-title mt-2">Hotel → Töölö district</h5>
+                  <div class="card-text">
+<p><strong>Move:</strong> metro/tram to the west-center and start around <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Regatta%2C%20Helsinki" target="_blank" rel="noopener">Café Regatta, Helsinki</a> / Töölö side. Today is your calm scenic architecture day with lots of short hops.</p>
+<p><strong>Pass idea:</strong> another 24-hour HSL AB ticket keeps buses/trams/ferries simple if you prefer zero friction.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:40–11:20</div>
+                  <h5 class="card-title mt-2">Breakfast on the water</h5>
+                  <div class="card-text">
+<p><strong>Breakfast café:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Regatta%2C%20Helsinki" target="_blank" rel="noopener">Café Regatta, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€8–15 pp</strong>.</p>
+<ul><li>Order: cinnamon bun, hot chocolate, coffee; simple egg-friendly items when available.</li><li>Local-favorite move: take photos outside first, then sit by the water instead of the tiny indoor queue zone.</li><li>Right after breakfast, tick off <a href="https://www.google.com/maps/search/?api=1&query=Sibelius%20Monument" target="_blank" rel="noopener">Sibelius Monument</a>.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">11:20–13:15</div>
+                  <h5 class="card-title mt-2">Töölö coastal cluster</h5>
+                  <div class="card-text">
+<p><strong>Walking cluster:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Sibelius%20Monument%2C%20Helsinki" target="_blank" rel="noopener">Sibelius Monument, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=T%C3%B6%C3%B6l%C3%B6%20District%2C%20Helsinki" target="_blank" rel="noopener">Töölö District, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Hietaniemi%20Beach%2C%20Helsinki" target="_blank" rel="noopener">Hietaniemi Beach, Helsinki</a> → bus/short ride to <a href="https://www.google.com/maps/search/?api=1&query=Seurasaari%20Open-Air%20Museum%2C%20Helsinki" target="_blank" rel="noopener">Seurasaari Open-Air Museum, Helsinki</a>.</p>
+<ul><li>Hidden gem: the shoreline segments between Regatta and Hietaniemi are often more enjoyable than the headline monument itself.</li><li>Seurasaari is where the trip briefly feels far from the capital without leaving the city.</li><li>Keep museum interiors short if weather is good; the value here is the open-air atmosphere.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">13:15–14:15</div>
+                  <h5 class="card-title mt-2">Lunch picks near the center re-entry</h5>
+                  <div class="card-text">
+<p><strong>Lunch option 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Soup%2BMore%2C%20Helsinki" target="_blank" rel="noopener">Soup+More, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€13–19 pp</strong>.</p>
+<p><strong>Lunch option 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Lie%20Mi%20Kamppi%2C%20Helsinki" target="_blank" rel="noopener">Lie Mi Kamppi, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€15–22 pp</strong>.</p>
+<ul><li>Veg: tofu summer rolls, noodle bowl, or seasonal soup.</li><li>NV: tacos / chicken bowl if you want a break from Nordic food.</li><li>Money-saving hack: lunch menus are much better value than dinner in Helsinki; use lunch for your bigger meal.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">14:15–17:30</div>
+                  <h5 class="card-title mt-2">Museum + civic-architecture loop</h5>
+                  <div class="card-text">
+<p><strong>Very efficient central loop with short walks:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Temppeliaukio%20Church%2C%20Helsinki" target="_blank" rel="noopener">Temppeliaukio Church, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Natural%20History%20Museum%20Helsinki" target="_blank" rel="noopener">Natural History Museum Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Kamppi%20Chapel%20of%20Silence%2C%20Helsinki" target="_blank" rel="noopener">Kamppi Chapel of Silence, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Amos%20Rex%2C%20Helsinki" target="_blank" rel="noopener">Amos Rex, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Art%20Museum%20%28HAM%29%2C%20Helsinki" target="_blank" rel="noopener">Helsinki Art Museum (HAM), Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Kiasma%20Museum%20of%20Contemporary%20Art%2C%20Helsinki" target="_blank" rel="noopener">Kiasma Museum of Contemporary Art, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Oodi%20Library%2C%20Helsinki" target="_blank" rel="noopener">Oodi Library, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Finlandia%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Finlandia Hall, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=T%C3%B6%C3%B6l%C3%B6nlahti%2C%20Helsinki" target="_blank" rel="noopener">Töölönlahti, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=National%20Museum%20of%20Finland" target="_blank" rel="noopener">National Museum of Finland</a>.</p>
+<ul><li>Most tourists rush Oodi; go up to the top floor windows for one of the nicest free indoor city views.</li><li>Kamppi Chapel is tiny, but it resets your energy in 10 minutes.</li><li>If museum fatigue hits, prioritize Temppeliaukio, Oodi, and the Töölönlahti walk.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">17:30–18:45</div>
+                  <h5 class="card-title mt-2">Station classics + art fix</h5>
+                  <div class="card-text">
+<p><strong>Finish the center cluster:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Central%20Station" target="_blank" rel="noopener">Helsinki Central Station</a> → <a href="https://www.google.com/maps/search/?api=1&query=Ateneum%20Art%20Museum%2C%20Helsinki" target="_blank" rel="noopener">Ateneum Art Museum, Helsinki</a> exterior or quick visit.</p>
+<p><strong>Dessert stop:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Dolce%20Italia%2C%20Helsinki" target="_blank" rel="noopener">Dolce Italia, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€6–11 pp</strong> for gelato / waffle.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">19:00–21:00</div>
+                  <h5 class="card-title mt-2">Comfort-food dinner choices</h5>
+                  <div class="card-text">
+<p><strong>Dinner 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ravintola%20Mountain%2C%20Helsinki" target="_blank" rel="noopener">Ravintola Mountain, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€15–23 pp</strong>.</p>
+<p><strong>Dinner 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Ravintola%20Nepali%2C%20Helsinki" target="_blank" rel="noopener">Ravintola Nepali, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€14–22 pp</strong>.</p>
+<ul><li>This day intentionally leans South Asian for comfort after many museums.</li><li>Veg dishes: paneer, chana/chickpea curries, veg thali, naan; confirm no fish sauce or meat stock if needed.</li><li>NV dishes: chicken tikka or mixed Nepalese set.</li><li>Local trick: ask for the lunch-style set if the restaurant still has it running early evening.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">21:00–21:45</div>
+                  <h5 class="card-title mt-2">Return to hotel</h5>
+                  <div class="card-text">
+<p><strong>End of day:</strong> head back to <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Innotelli Apartments</a> by metro.</p>
+<p class="small-note">Practical tip: if the group is tired, split museum interiors. Exterior ticks plus one strong highlight each is enough.</p>
+</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    
+    <section class="mb-5">
+      <div class="section-head">
+        <h2>Day 3 · Sun 6 Apr · Kallio, Hakaniemi, gardens, Linnanmäki, zoo</h2>
+        <p>Wrap by 17:00 at the hotel</p>
+      </div>
+      <div class="row g-3">
+        
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:00–10:40</div>
+                  <h5 class="card-title mt-2">Hotel → Kallio/Hakaniemi</h5>
+                  <div class="card-text">
+<p><strong>Move:</strong> metro toward the center, start north-east of downtown. Today is neighborhood energy + markets + funfair + zoo, then back to the hotel by 17:00.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">10:40–11:20</div>
+                  <h5 class="card-title mt-2">Breakfast in Kallio</h5>
+                  <div class="card-text">
+<p><strong>Breakfast café:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Green%20Hippo%20Kallio%2C%20Helsinki" target="_blank" rel="noopener">Green Hippo Kallio, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€10–18 pp</strong>.</p>
+<ul><li>Veg: porridge, egg breakfast, toast, coffee.</li><li>NV: brunch bowl / added protein options.</li><li>Kallio is where Helsinki feels less polished and more lived-in.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">11:20–12:45</div>
+                  <h5 class="card-title mt-2">Markets + neighborhood walk</h5>
+                  <div class="card-text">
+<p><strong>Walk cluster:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Kallio%20District%2C%20Helsinki" target="_blank" rel="noopener">Kallio District, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Hakaniemi Market Hall, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Square%2C%20Helsinki" target="_blank" rel="noopener">Hakaniemi Market Square, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Kaisaniemi%20Park%2C%20Helsinki" target="_blank" rel="noopener">Kaisaniemi Park, Helsinki</a> → <a href="https://www.google.com/maps/search/?api=1&query=Botanical%20Garden%20Helsinki" target="_blank" rel="noopener">Botanical Garden Helsinki</a>.</p>
+<ul><li>Hidden-gem tip: Hakaniemi is better than the harbor if you want locals doing normal-life shopping.</li><li>Best souvenir move: buy food gifts or simple design items here rather than the overpriced harbor stalls.</li><li>Botanical Garden is the softest, most relaxing stop of the day.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">12:45–13:35</div>
+                  <h5 class="card-title mt-2">Lunch choices</h5>
+                  <div class="card-text">
+<p><strong>Lunch option 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Peace%20Kitchen%2C%20Helsinki" target="_blank" rel="noopener">Peace Kitchen, Helsinki</a> <span class="tag tag-veg">VEG</span> · <strong>€13.5–18 pp</strong>.</p>
+<p><strong>Lunch option 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Thai%20Vegan%20Kitchen%2C%20Helsinki" target="_blank" rel="noopener">Thai Vegan Kitchen, Helsinki</a> <span class="tag tag-veg">VEG</span> · <strong>€14–20 pp</strong>.</p>
+<ul><li>This is your easiest full-veg day for Yash and Ketki.</li><li>Budget play: vegan lunch buffets in Helsinki often stretch further than dinner menus.</li><li>Group balance: non-veg eaters still get strong flavor here, so no one feels like they compromised.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">13:35–15:00</div>
+                  <h5 class="card-title mt-2">Fun + east-harbor nature split</h5>
+                  <div class="card-text">
+<p><strong>Afternoon route:</strong> tram/ride to <a href="https://www.google.com/maps/search/?api=1&query=Linnanm%C3%A4ki%20Amusement%20Park%2C%20Helsinki" target="_blank" rel="noopener">Linnanmäki Amusement Park, Helsinki</a> for the atmosphere and hill views, then continue to <a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Zoo%20%28Korkeasaari%29%2C%20Helsinki" target="_blank" rel="noopener">Helsinki Zoo (Korkeasaari), Helsinki</a> for a lighter-paced final major stop.</p>
+<ul><li>You do not need full rides time at Linnanmäki; 30–45 minutes is enough to catch the vibe and views.</li><li>If the group feels zoo-fatigue, do a short scenic loop only; the goal is to cover the island and enjoy the waterfront setting.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">15:00–16:00</div>
+                  <h5 class="card-title mt-2">Early dinner + dessert wrap-up</h5>
+                  <div class="card-text">
+<p><strong>Dinner 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Hakaniemi Market Hall, Helsinki</a> stalls <span class="tag tag-mix">VEG+NV</span> · <strong>€10–20 pp</strong>.</p>
+<p><strong>Dinner 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Story%2C%20Helsinki" target="_blank" rel="noopener">Story, Helsinki</a> fallback <span class="tag tag-mix">VEG+NV</span> · <strong>€15–22 pp</strong>.</p>
+<p><strong>Dessert:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Kuplavohvelibaari%2C%20Helsinki" target="_blank" rel="noopener">Kuplavohvelibaari, Helsinki</a> <span class="tag tag-mix">VEG+NV</span> · <strong>€7–12 pp</strong>.</p>
+<ul><li>NV local specialty: fish plate or another salmon soup if someone wants one last Finnish comfort meal.</li><li>VEG: pie + soup, salad plates, waffle dessert.</li><li>Fastest endgame: eat near your return route instead of forcing one last detour.</li></ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card slot-card h-100">
+                <div class="card-body">
+                  <div class="time-pill">16:00–17:00</div>
+                  <h5 class="card-title mt-2">Back to hotel by 5 pm</h5>
+                  <div class="card-text">
+<p><strong>End of itinerary:</strong> metro back to <a href="https://www.google.com/maps/search/?api=1&query=Sirrikuja%203%20D%2C%2000940%20Helsinki%2C%20Finland" target="_blank" rel="noopener">Sirrikuja 3 D, 00940 Helsinki, Finland</a> and arrive by <strong>17:00</strong>.</p>
+<p class="small-note">This last day is intentionally flexible. If weather is poor, spend longer in the Botanical Garden and shorter at the zoo.</p>
+</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    
+
+    <section class="mb-5">
+      <div class="section-head">
+        <h2>Coverage check · all 49 spots</h2>
+        <p>Every requested spot is included across the 3 days, with scenic outdoor stops used where full interiors would slow the trip too much.</p>
+      </div>
+      <div class="card note-card">
+        <div class="card-body">
+          <p><strong>Day 1 focus:</strong> Harbor core, Old Town, waterfront, Suomenlinna, Design District, Punavuori, south parks.</p>
+          <p><strong>Day 2 focus:</strong> Töölö, west coast, Seurasaari, major central museums, Oodi, Finlandia Hall, station area.</p>
+          <p><strong>Day 3 focus:</strong> Kallio, Hakaniemi, Kaisaniemi, Botanical Garden, Linnanmäki, zoo, finish back east.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="accordion" id="tripAccordions">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="foodHeading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#foodCollapse" aria-expanded="true" aria-controls="foodCollapse">
+            All food stops in one place
+          </button>
+        </h2>
+        <div id="foodCollapse" class="accordion-collapse collapse show" aria-labelledby="foodHeading" data-bs-parent="#tripAccordions">
+          <div class="accordion-body">
+            <div class="table-shell">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Type</th>
+                      <th>Name</th>
+                      <th>Tag</th>
+                      <th>Price</th>
+                      <th>Location</th>
+                      <th>Rating</th>
+                      <th>Recommended dish</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+<td>Day 1</td>
+<td>Breakfast café</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Engel%2C%20Helsinki" target="_blank" rel="noopener">Café Engel</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€10–18</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Aleksanterinkatu%2026%20/%20Senate%20Square%2C%20Helsinki" target="_blank" rel="noopener">Aleksanterinkatu 26 / Senate Square</a></td>
+<td>4.1★</td>
+<td>Egg breakfast plate, cinnamon bun, coffee</td>
+</tr><tr>
+<td>Day 1</td>
+<td>Lunch 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Story%20Old%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Story Old Market Hall</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€15–22</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Old%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Old Market Hall</a></td>
+<td>4.0★</td>
+<td>Salmon soup for NV; seasonal soup/salad for VEG</td>
+</tr><tr>
+<td>Day 1</td>
+<td>Lunch 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Zucchini%2C%20Helsinki" target="_blank" rel="noopener">Zucchini</a></td>
+<td><span class="tag tag-veg">VEG</span></td>
+<td>€13–18</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Fabianinkatu%20area%2C%20Helsinki" target="_blank" rel="noopener">Fabianinkatu area</a></td>
+<td>Well-loved lunch spot</td>
+<td>Loaded vegetarian plate, soup of the day</td>
+</tr><tr>
+<td>Day 1</td>
+<td>Dinner 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Green%20Hippo%20Punavuori%2C%20Helsinki" target="_blank" rel="noopener">Green Hippo Punavuori</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€16–24</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Punavuorenkatu%202%2C%20Helsinki" target="_blank" rel="noopener">Punavuorenkatu 2</a></td>
+<td>4.3★</td>
+<td>Pasta, shakshuka-style plates, brownie</td>
+</tr><tr>
+<td>Day 1</td>
+<td>Dinner 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Yes%20Yes%20Yes%2C%20Helsinki" target="_blank" rel="noopener">Yes Yes Yes</a></td>
+<td><span class="tag tag-veg">VEG</span></td>
+<td>€20–25</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Iso%20Roobertinkatu%201%2C%20Helsinki" target="_blank" rel="noopener">Iso Roobertinkatu 1</a></td>
+<td>3.9★</td>
+<td>Halloumi / mushroom dishes, cauliflower, mocktail-free soft drink</td>
+</tr><tr>
+<td>Day 1</td>
+<td>Dessert</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Fazer%20Caf%C3%A9%20Kluuvikatu%2C%20Helsinki" target="_blank" rel="noopener">Fazer Café Kluuvikatu</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€6–12</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kluuvikatu%203%2C%20Helsinki" target="_blank" rel="noopener">Kluuvikatu 3</a></td>
+<td>4.1★</td>
+<td>Blueberry tart, Karl Fazer chocolate, hot cocoa</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Breakfast café</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Regatta%2C%20Helsinki" target="_blank" rel="noopener">Café Regatta</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€8–15</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Merikannontie%208%2C%20Helsinki" target="_blank" rel="noopener">Merikannontie 8</a></td>
+<td>Local favorite</td>
+<td>Cinnamon bun, hot chocolate, egg sandwich</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Lunch 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Soup%2BMore%2C%20Helsinki" target="_blank" rel="noopener">Soup+More</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€13–19</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Old%20Market%20Hall%20/%20city%20branch%2C%20Helsinki" target="_blank" rel="noopener">Old Market Hall / city branch</a></td>
+<td>Well-reviewed</td>
+<td>Soup combo, bread, tea</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Lunch 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Lie%20Mi%20Kamppi%2C%20Helsinki" target="_blank" rel="noopener">Lie Mi Kamppi</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€15–22</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kamppi%2C%20Helsinki" target="_blank" rel="noopener">Kamppi</a></td>
+<td>3.9★</td>
+<td>Tofu summer rolls / fried noodles; tacos for NV</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Dinner 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Ravintola%20Mountain%2C%20Helsinki" target="_blank" rel="noopener">Ravintola Mountain</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€15–23</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Niemenkatu%20area%2C%20Helsinki" target="_blank" rel="noopener">Niemenkatu area</a></td>
+<td>Well-reviewed</td>
+<td>Paneer/chana for VEG; chicken tikka set for NV</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Dinner 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Ravintola%20Nepali%2C%20Helsinki" target="_blank" rel="noopener">Ravintola Nepali</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€14–22</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20center%2C%20Helsinki" target="_blank" rel="noopener">Helsinki center</a></td>
+<td>Strong recent reviews</td>
+<td>Eggplant tofu masala, veg thali, naan</td>
+</tr><tr>
+<td>Day 2</td>
+<td>Dessert</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Dolce%20Italia%2C%20Helsinki" target="_blank" rel="noopener">Dolce Italia</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€6–11</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Central%20stop%20as%20convenient%2C%20Helsinki" target="_blank" rel="noopener">Central stop as convenient</a></td>
+<td>Gelato favorite</td>
+<td>Pistachio gelato or waffle</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Breakfast café</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Green%20Hippo%20Kallio%2C%20Helsinki" target="_blank" rel="noopener">Green Hippo Kallio</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€10–18</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kallio%2C%20Helsinki" target="_blank" rel="noopener">Kallio</a></td>
+<td>Popular brunch pick</td>
+<td>Porridge/brunch toast, eggs, coffee</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Lunch 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Peace%20Kitchen%2C%20Helsinki" target="_blank" rel="noopener">Peace Kitchen</a></td>
+<td><span class="tag tag-veg">VEG</span></td>
+<td>€13.5–18</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Pengerkatu%2024%2C%20Kallio%2C%20Helsinki" target="_blank" rel="noopener">Pengerkatu 24, Kallio</a></td>
+<td>Budget favorite</td>
+<td>Vegan lunch buffet, noodle bowl</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Lunch 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Thai%20Vegan%20Kitchen%2C%20Helsinki" target="_blank" rel="noopener">Thai Vegan Kitchen</a></td>
+<td><span class="tag tag-veg">VEG</span></td>
+<td>€14–20</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20center/Kallio%20side%2C%20Helsinki" target="_blank" rel="noopener">Helsinki center/Kallio side</a></td>
+<td>4.3★</td>
+<td>Curry, tofu stir-fry, jasmine rice</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Dinner 1</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall%20stalls%2C%20Helsinki" target="_blank" rel="noopener">Hakaniemi Market Hall stalls</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€10–20</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall%2C%20Helsinki" target="_blank" rel="noopener">Hakaniemi Market Hall</a></td>
+<td>Local-life pick</td>
+<td>Soup/pie combo, fish plate or veg lunch plate</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Dinner 2</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Story%20/%20market%20casual%20fallback%2C%20Helsinki" target="_blank" rel="noopener">Story / market casual fallback</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€15–22</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=City%20center%2C%20Helsinki" target="_blank" rel="noopener">City center</a></td>
+<td>4.0★</td>
+<td>Soup, salad, toast</td>
+</tr><tr>
+<td>Day 3</td>
+<td>Dessert</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kuplavohvelibaari%2C%20Helsinki" target="_blank" rel="noopener">Kuplavohvelibaari</a></td>
+<td><span class="tag tag-mix">VEG+NV</span></td>
+<td>€7–12</td>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Pasila%20route%2C%20Helsinki" target="_blank" rel="noopener">Pasila route</a></td>
+<td>Well-reviewed</td>
+<td>Bubble waffle with berries</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="small-note mt-3 mb-0">Ratings are quick traveler-reference values gathered from common public listings where available; always double-check live Maps right before you go.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="spotsHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spotsCollapse" aria-expanded="false" aria-controls="spotsCollapse">
+            All spots
+          </button>
+        </h2>
+        <div id="spotsCollapse" class="accordion-collapse collapse" aria-labelledby="spotsHeading" data-bs-parent="#tripAccordions">
+          <div class="accordion-body">
+            <div class="table-shell">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Spot</th>
+                      <th>Wow factor</th>
+                      <th>Picture</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Suomenlinna" target="_blank" rel="noopener">Suomenlinna</a></td>
+<td>Sea fortress island; best big-view payoff in Helsinki</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8c3a5%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%B0%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EFortress%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESuomenlinna%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Suomenlinna visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Cathedral" target="_blank" rel="noopener">Helsinki Cathedral</a></td>
+<td>White neoclassical icon over Senate Square steps</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe6d8%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%9B%AA%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EChurch%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ECathedral%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Cathedral visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Uspenski%20Cathedral" target="_blank" rel="noopener">Uspenski Cathedral</a></td>
+<td>Red-brick domes and harbor views</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe6d8%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%9B%AA%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EChurch%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EUspenski%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ECathedral%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Uspenski Cathedral visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Temppeliaukio%20Church" target="_blank" rel="noopener">Temppeliaukio Church</a></td>
+<td>Church carved into rock with unreal acoustics</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe6d8%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%9B%AA%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EChurch%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ETemppeliaukio%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EChurch%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Temppeliaukio Church visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kiasma%20Museum%20of%20Contemporary%20Art" target="_blank" rel="noopener">Kiasma Museum of Contemporary Art</a></td>
+<td>Bold modern art and architecture</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKiasma%20Museum%20of%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EContemporary%20Art%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Kiasma Museum of Contemporary Art visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Amos%20Rex" target="_blank" rel="noopener">Amos Rex</a></td>
+<td>Underground gallery under playful domes</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EAmos%20Rex%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Amos Rex visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20City%20Museum" target="_blank" rel="noopener">Helsinki City Museum</a></td>
+<td>Free museum that makes old Helsinki feel personal</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20City%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki City Museum visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Old%20Market%20Hall" target="_blank" rel="noopener">Old Market Hall</a></td>
+<td>Historic food hall for easy tastings</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23f2e7d5%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%9B%8D%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMarket%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EOld%20Market%20Hall%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Old Market Hall visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Market%20Square%20%28Kauppatori%29" target="_blank" rel="noopener">Market Square (Kauppatori)</a></td>
+<td>Classic harbor scene, ferries and stalls</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23f2e7d5%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%9B%8D%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMarket%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMarket%20Square%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3E%28Kauppatori%29%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Market Square (Kauppatori) visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Esplanadi%20Park" target="_blank" rel="noopener">Esplanadi Park</a></td>
+<td>Elegant central promenade for a slow stroll</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8e2d0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EPark%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EEsplanadi%20Park%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Esplanadi Park visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Sibelius%20Monument" target="_blank" rel="noopener">Sibelius Monument</a></td>
+<td>Most photogenic abstract monument in the city</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d7d2cb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%97%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMonument%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESibelius%20Monument%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Sibelius Monument visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Senate%20Square" target="_blank" rel="noopener">Senate Square</a></td>
+<td>Grand postcard square framed by empire architecture</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e7dfd6%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%9B%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ESquare%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESenate%20Square%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Senate Square visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Seurasaari%20Open-Air%20Museum" target="_blank" rel="noopener">Seurasaari Open-Air Museum</a></td>
+<td>Wooden Finland in one peaceful island walk</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESeurasaari%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EOpen-Air%20Museum%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Seurasaari Open-Air Museum visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=National%20Museum%20of%20Finland" target="_blank" rel="noopener">National Museum of Finland</a></td>
+<td>Big-picture Finland history stop</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ENational%20Museum%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3Eof%20Finland%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="National Museum of Finland visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Natural%20History%20Museum%20Helsinki" target="_blank" rel="noopener">Natural History Museum Helsinki</a></td>
+<td>Whale skeleton + family-friendly exhibits</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ENatural%20History%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMuseum%20Helsinki%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Natural History Museum Helsinki visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Linnanm%C3%A4ki%20Amusement%20Park" target="_blank" rel="noopener">Linnanmäki Amusement Park</a></td>
+<td>Fun hilltop atmosphere and city views</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23ead8c0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8E%A1%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EAmusement%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ELinnanm%C3%A4ki%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EAmusement%20Park%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Linnanmäki Amusement Park visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Zoo%20%28Korkeasaari%29" target="_blank" rel="noopener">Helsinki Zoo (Korkeasaari)</a></td>
+<td>Sea-linked zoo island with open vistas</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23dce7d3%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%A6%81%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EZoo%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20Zoo%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3E%28Korkeasaari%29%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Zoo (Korkeasaari) visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Allas%20Sea%20Pool" target="_blank" rel="noopener">Allas Sea Pool</a></td>
+<td>Cool waterfront hangout and sauna scene</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e6d4bf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%99%A8%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ESauna%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EAllas%20Sea%20Pool%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Allas Sea Pool visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Oodi%20Library" target="_blank" rel="noopener">Oodi Library</a></td>
+<td>One of Europe’s best public spaces</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e5e0d8%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%93%9A%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ELibrary%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EOodi%20Library%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Oodi Library visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Design%20Museum%20Helsinki" target="_blank" rel="noopener">Design Museum Helsinki</a></td>
+<td>Compact intro to Finnish design culture</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EDesign%20Museum%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Design Museum Helsinki visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Ateneum%20Art%20Museum" target="_blank" rel="noopener">Ateneum Art Museum</a></td>
+<td>Finnish classics in a beautiful old museum</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EAteneum%20Art%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Ateneum Art Museum visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kaivopuisto%20Park" target="_blank" rel="noopener">Kaivopuisto Park</a></td>
+<td>Best open sea breeze in central Helsinki</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8e2d0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EPark%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKaivopuisto%20Park%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Kaivopuisto Park visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kaisaniemi%20Park" target="_blank" rel="noopener">Kaisaniemi Park</a></td>
+<td>Green break close to the center</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8e2d0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EPark%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKaisaniemi%20Park%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Kaisaniemi Park visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Central%20Station" target="_blank" rel="noopener">Helsinki Central Station</a></td>
+<td>Granite landmark and transport icon</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23ddd7cf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%9A%89%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EStation%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20Central%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EStation%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Central Station visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Finlandia%20Hall" target="_blank" rel="noopener">Finlandia Hall</a></td>
+<td>Alvar Aalto architecture by the bay</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e8dfd2%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%A2%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EArchitecture%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EFinlandia%20Hall%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Finlandia Hall visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Hall" target="_blank" rel="noopener">Hakaniemi Market Hall</a></td>
+<td>Local-life food hall with less tourist pressure</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23f2e7d5%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%9B%8D%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMarket%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHakaniemi%20Market%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHall%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Hakaniemi Market Hall visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Hakaniemi%20Market%20Square" target="_blank" rel="noopener">Hakaniemi Market Square</a></td>
+<td>Everyday Helsinki, not just postcard Helsinki</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23f2e7d5%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%9B%8D%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMarket%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHakaniemi%20Market%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESquare%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Hakaniemi Market Square visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=T%C3%B6%C3%B6l%C3%B6nlahti" target="_blank" rel="noopener">Töölönlahti</a></td>
+<td>Easy scenic loop around water near downtown</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23dbe7ea%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%8A%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EBay%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ET%C3%B6%C3%B6l%C3%B6nlahti%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Töölönlahti visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Hietaniemi%20Beach" target="_blank" rel="noopener">Hietaniemi Beach</a></td>
+<td>Wide seaside pause with local vibes</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe3cf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%96%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EBeach%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHietaniemi%20Beach%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Hietaniemi Beach visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Olympic%20Stadium" target="_blank" rel="noopener">Helsinki Olympic Stadium</a></td>
+<td>Classic sports landmark with tower views nearby</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23dfd8d1%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%9F%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EStadium%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20Olympic%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EStadium%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Olympic Stadium visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Tram%20Museum" target="_blank" rel="noopener">Tram Museum</a></td>
+<td>Small quirky stop with real local transport history</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ETram%20Museum%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Tram Museum visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Finnish%20Museum%20of%20Theatre" target="_blank" rel="noopener">Finnish Museum of Theatre</a></td>
+<td>Niche cultural stop inside Cable Factory area</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EFinnish%20Museum%20of%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ETheatre%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Finnish Museum of Theatre visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Regatta" target="_blank" rel="noopener">Café Regatta</a></td>
+<td>Legendary tiny red café on the water</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe1cf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%98%95%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ECafe%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ECaf%C3%A9%20Regatta%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Café Regatta visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Engel" target="_blank" rel="noopener">Café Engel</a></td>
+<td>Breakfast with the best square view</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23efe1cf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%98%95%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ECafe%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ECaf%C3%A9%20Engel%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Café Engel visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kallio%20District" target="_blank" rel="noopener">Kallio District</a></td>
+<td>Edgier neighborhood with strong local energy</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23eadfd4%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%99%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKallio%20District%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Kallio District visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Punavuori%20District" target="_blank" rel="noopener">Punavuori District</a></td>
+<td>Stylish design streets and cafes</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23eadfd4%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%99%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EPunavuori%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Punavuori District visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=T%C3%B6%C3%B6l%C3%B6%20District" target="_blank" rel="noopener">Töölö District</a></td>
+<td>Leafy, calm, and classic Helsinki</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23eadfd4%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%99%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ET%C3%B6%C3%B6l%C3%B6%20District%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Töölö District visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Design%20District" target="_blank" rel="noopener">Helsinki Design District</a></td>
+<td>Independent shops and studio vibes</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23eadfd4%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8F%99%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20Design%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EDistrict%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Design District visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Kamppi%20Chapel%20of%20Silence" target="_blank" rel="noopener">Kamppi Chapel of Silence</a></td>
+<td>A quiet wood cocoon in a busy square</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23ebe4d7%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EChapel%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKamppi%20Chapel%20of%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESilence%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Kamppi Chapel of Silence visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=SkyWheel%20Helsinki" target="_blank" rel="noopener">SkyWheel Helsinki</a></td>
+<td>Quick panoramic harbor view</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23dfe7ee%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%94%AD%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EViewpoint%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESkyWheel%20Helsinki%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="SkyWheel Helsinki visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6yly%20Sauna" target="_blank" rel="noopener">Löyly Sauna</a></td>
+<td>Modern wooden waterfront icon</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e6d4bf%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%E2%99%A8%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3ESauna%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EL%C3%B6yly%20Sauna%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Löyly Sauna visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20Art%20Museum%20%28HAM%29" target="_blank" rel="noopener">Helsinki Art Museum (HAM)</a></td>
+<td>Tove Jansson connection and clean curation</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%20Art%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMuseum%20%28HAM%29%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki Art Museum (HAM) visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Sinebrychoff%20Art%20Museum" target="_blank" rel="noopener">Sinebrychoff Art Museum</a></td>
+<td>Small elegant mansion museum</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e9dccb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ESinebrychoff%20Art%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EMuseum%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Sinebrychoff Art Museum visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Botanical%20Garden%20Helsinki" target="_blank" rel="noopener">Botanical Garden Helsinki</a></td>
+<td>Glasshouses and calm pathways</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23dfe9d6%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%B1%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EGarden%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EBotanical%20Garden%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Botanical Garden Helsinki visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Helsinki%20University" target="_blank" rel="noopener">Helsinki University</a></td>
+<td>Historic academic core around Senate Square</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23e4ddd4%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8E%93%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EUniversity%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHelsinki%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EUniversity%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Helsinki University visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Havis%20Amanda%20Statue" target="_blank" rel="noopener">Havis Amanda Statue</a></td>
+<td>Beloved city symbol at the harbor edge</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d7d2cb%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%97%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EMonument%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EHavis%20Amanda%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EStatue%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Havis Amanda Statue visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Vanha%20Kirkkopuisto" target="_blank" rel="noopener">Vanha Kirkkopuisto</a></td>
+<td>Old church park with gentle local pace</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8e2d0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EPark%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EVanha%3C/text%3E%3Ctext%20x%3D%2718%27%20y%3D%27104%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3EKirkkopuisto%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Vanha Kirkkopuisto visual tile" class="spot-thumb"/></td>
+</tr><tr>
+<td><a href="https://www.google.com/maps/search/?api=1&query=Lapinlahti%20Park" target="_blank" rel="noopener">Lapinlahti Park</a></td>
+<td>Quiet shoreline walks and underrated sunset stop</td>
+<td><img src="data:image/svg+xml;utf8,%0A%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27320%27%20height%3D%27180%27%20viewBox%3D%270%200%20320%20180%27%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%27320%27%20height%3D%27180%27%20rx%3D%2720%27%20fill%3D%27%23d8e2d0%27/%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2714%27%20y%3D%2714%27%20width%3D%27292%27%20height%3D%27152%27%20rx%3D%2716%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.25%29%27%20stroke%3D%27rgba%2890%2C70%2C50%2C0.18%29%27/%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2746%27%20font-size%3D%2728%27%3E%F0%9F%8C%BF%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2760%27%20y%3D%2742%27%20font-size%3D%2713%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%236d5e52%27%20font-weight%3D%27700%27%3EPark%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2718%27%20y%3D%2778%27%20font-size%3D%2720%27%20font-family%3D%27Arial%2C%20sans-serif%27%20fill%3D%27%233d342d%27%20font-weight%3D%27700%27%3ELapinlahti%20Park%3C/text%3E%0A%20%20%20%20%3C/svg%3E%0A%20%20%20%20" alt="Lapinlahti Park visual tile" class="spot-thumb"/></td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="small-note mt-3 mb-0">The picture column uses lightweight visual tiles so the page stays fast and reliable as an offline-friendly trip dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container pb-5">
+    <hr>
+    <p><strong>Transport note:</strong> HSL day tickets are valid on buses, trams, metro, trains and the Suomenlinna ferry, and 24-hour tickets are available in the HSL app and from sales points. See: <a href="https://www.hsl.fi/en/tickets-and-fares/day-tickets" target="_blank" rel="noopener">hsl.fi day tickets</a>, <a href="https://www.hsl.fi/en/travelling/visitors" target="_blank" rel="noopener">visitor guide</a>, and <a href="https://www.hsl.fi/en/tickets-and-fares/hsl-area-and-zones" target="_blank" rel="noopener">zones</a>.</p>
+    <p>Food choices prioritize safe vegetarian options for Yash and Ketki, without making Saurabh and Shruti feel boxed into vegetarian-only meals unless the stop is explicitly tagged <span class="tag tag-veg">VEG</span>.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
