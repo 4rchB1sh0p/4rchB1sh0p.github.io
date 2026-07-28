@@ -35,22 +35,81 @@ $(function() {
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
 
+    function openModal(modalId) {
+        let modal = $(modalId);
+        if (!modal.length) {
+            return;
+        }
+
+        let dialog = modal.find(".modal__dialog");
+
+        modal.addClass("show");
+        $("body").addClass("no-scroll");
+
+        if (window.gsap) {
+            gsap.killTweensOf(dialog.get());
+            gsap.set(modal.find(".timeline__item, .progress-bar__item, .modal-work__content > *").get(), { clearProps: "all" });
+            gsap.fromTo(dialog.get(), {
+                scale: 0.92,
+                y: 24,
+                opacity: 0
+            }, {
+                scale: 1,
+                y: 0,
+                opacity: 1,
+                duration: 0.36,
+                ease: "back.out(1.4)"
+            });
+        } else {
+            setTimeout(function() {
+                dialog.css({
+                    transform: "scale(1)"
+                });
+            }, 200);
+        }
+
+        if (worksSlider.length && worksSlider.hasClass("slick-initialized")) {
+            worksSlider.slick('setPosition');
+        }
+    }
+
+    function closeModal(modal) {
+        let modalParent = $(modal);
+        let dialog = modalParent.find(".modal__dialog");
+
+        if (window.gsap) {
+            gsap.killTweensOf(dialog.get());
+            gsap.to(dialog.get(), {
+                scale: 0.94,
+                y: 18,
+                opacity: 0,
+                duration: 0.22,
+                ease: "power2.in",
+                onComplete: function() {
+                    modalParent.removeClass('show');
+                    $("body").removeClass('no-scroll');
+                    gsap.set(dialog.get(), { clearProps: "transform,opacity" });
+                }
+            });
+        } else {
+            dialog.css({
+                transform: "scale(0)"
+            });
+
+            setTimeout(function() {
+                modalParent.removeClass('show');
+                $("body").removeClass('no-scroll');
+            }, 200);
+        }
+    }
+
     modalCall.on("click", function(event) {
         event.preventDefault();
 
         let $this = $(this);
         let modalId = $this.data('modal');
 
-        $(modalId).addClass('show');
-        $("body").addClass('no-scroll');
-
-        setTimeout(function() {
-            $(modalId).find(".modal__dialog").css({
-                transform: "scale(1)"
-            });
-        }, 200);
-
-        worksSlider.slick('setPosition');
+        openModal(modalId);
     });
 
 
@@ -60,28 +119,14 @@ $(function() {
         let $this = $(this);
         let modalParent = $this.parents('.modal');
 
-        modalParent.find(".modal__dialog").css({
-            transform: "scale(0)"
-        });
-
-        setTimeout(function() {
-            modalParent.removeClass('show');
-            $("body").removeClass('no-scroll');
-        }, 200);
+        closeModal(modalParent);
     });
 
 
     $(".modal").on("click", function(event) {
         let $this = $(this);
 
-        $this.find(".modal__dialog").css({
-            transform: "scale(0)"
-        });
-
-        setTimeout(function() {
-            $this.removeClass('show');
-            $("body").removeClass('no-scroll');
-        }, 200);
+        closeModal($this);
     });
 
     $(".modal__dialog").on("click", function(event) {
@@ -119,8 +164,8 @@ $(function() {
     });
 
 // Mobile nav
-    const navToggle = $("#navToggle")
-    const nav = $("#nav")
+    const navToggle = $("#nav_2Toggle, #navToggle")
+    const nav = $("#nav_2, #nav")
 
     navToggle.on("click", function (event) {
         event.preventDefault();

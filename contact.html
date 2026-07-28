@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/gsap-enhancements.css">
+    <link rel="stylesheet" href="css/contact-dynamic.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
           rel="stylesheet">
@@ -40,10 +42,10 @@
 
 
                 <nav class="nav_2" id="nav_2">
-                    <a class="nav_2__link scrollto" href="index.html">Home</a>
-                    <a class="nav_2__link scrollto" href="projects.html">Projects</a>
-                    <a class="nav_2__link scrollto" href="blog.html">blog</a>
-                    <a class="nav_2__link" href="contact.html">contact</a>
+                    <a class="nav_2__link" href="index.html">Home</a>
+                    <a class="nav_2__link" href="projects.html">Projects</a>
+                    <a class="nav_2__link" href="blog.html">blog</a>
+                    <a class="nav_2__link is-active" href="contact.html">contact</a>
                     <a class="nav_2__link nav_2__link--btn" href="#" data-modal="#modal_hire_me">Contact Me</a>
                 </nav>
 
@@ -58,21 +60,27 @@
     <div id="background_contact"></div>
     <div class="container_contact">
         <h1>Contact Me</h1>
-        <form id="contact-form_contact">
+        <p class="contact_intro">For project ideas, automation questions, or notes about writing and engineering, send a message here. I like clear context, real constraints, and problems with moving parts.</p>
+        <form id="contact-form_contact" novalidate>
             <label for="name_contact">Name:</label> 
             <input type="text" id="name_contact" name="name" required>
+            <div class="contact-form-error">Please enter your name.</div>
             
             <label for="email_contact">Email:</label>
             <input type="email" id="email_contact" name="email" required>
+            <div class="contact-form-error">Please enter a valid email address.</div>
             
             <label for="message_contact">Message:</label>
             <textarea id="message_contact" name="message" required></textarea>
-            <a class="btn btn--sm" href="#">Submit</a>
-             <!--<button type="submit">Send</button> -->
+            <div class="contact-form-error">Please add a short message.</div>
+            <div class="contact-actions">
+                <button class="btn btn--sm" type="submit">Submit</button>
+                <button class="btn btn--sm btn--thin" type="button" data-modal="#modal_hire_me">Quick contact</button>
+            </div>
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 <!-- Footer -->
 
@@ -109,8 +117,8 @@
             <nav class="footer__nav_2">
                 <a class="footer__nav_2-link" href="index.html">Home</a>
                 <a class="footer__nav_2-link" href="projects.html">Projects</a>
-                <a class="footer__nav_2-link" href="#">Blog</a>
-                <a class="footer__nav_2-link" href="#">Contact</a>
+                <a class="footer__nav_2-link" href="blog.html">Blog</a>
+                <a class="footer__nav_2-link" href="contact.html">Contact</a>
                 <a class="footer__nav_2-link footer__nav_2-link--btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
             </nav>
 
@@ -605,7 +613,7 @@
         <div class="contact">
             <div class="contact__left">
                 <h3 class="modal__title mb-0">LET'S TALK!</h3>
-                <div class="modal__subtitle">I usually respond to twitter DM's within 2 hours</div>
+                <div class="modal__subtitle">Best for project notes, automation problems, writing ideas, or a quick hello.</div>
 
                 <ul class="contact__info">
                     <li class="contact__info-item">
@@ -620,21 +628,23 @@
                     </li>
                 </ul>
 
-                <form class="form" action="/" method="post">
+                <form class="form" id="modalContactForm" novalidate>
                     <div class="form__group">
-                        <label class="form__label" for="input-email">Adress e-mail</label>
-                        <input class="form__input" name="input-email" type="text" placeholder="Adress e-mail"
+                        <label class="form__label" for="input-email">Address e-mail</label>
+                        <input class="form__input" name="input-email" type="email" placeholder="Address e-mail"
                                id="input-email">
+                        <div class="contact-form-error">Please enter a valid email address.</div>
                     </div>
 
                     <div class="form__group">
                         <label class="form__label" for="input-text">Request</label>
                         <textarea class="form__textarea" name="input-text" id="input-text"
-                                  placeholder="Type your request..."></textarea>
+                                  placeholder="Tell me what you are building, debugging, or thinking about..."></textarea>
+                        <div class="contact-form-error">Please add a short request.</div>
                     </div>
 
                     <div class="text-right">
-                        <button class="btn">send</button>
+                        <button class="btn" type="submit">send</button>
                     </div>
                 </form>
 
@@ -658,15 +668,10 @@
 <!-- JS -->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-    jQuery(document).ready(function() {
-        jQuery("a.scrollto").click(function () {
-            elementClick = jQuery(this).attr("href")
-            destination = jQuery(elementClick).offset().top;
-            jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-            return false;
-        });
-    });
-</script>
+<script src="js/contact-dynamic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="js/gsap-enhancements.js"></script>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/gsap-enhancements.css">
+    <link rel="stylesheet" href="css/blog-dynamic.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
@@ -48,9 +50,9 @@
 
 
                 <nav class="nav_2" id="nav_2">
-                    <a class="nav_2__link scrollto" href="index.html">Home</a>
-                    <a class="nav_2__link scrollto" href="projects.html">Projects</a>
-                    <a class="nav_2__link scrollto" href="blog.html">blog</a>
+                    <a class="nav_2__link" href="index.html">Home</a>
+                    <a class="nav_2__link" href="projects.html">Projects</a>
+                    <a class="nav_2__link is-active" href="blog.html">blog</a>
                     <a class="nav_2__link" href="contact.html">contact</a>
                     <a class="nav_2__link nav_2__link--btn" href="#" data-modal="#modal_hire_me">Contact Me</a>
                 </nav>
@@ -76,25 +78,41 @@
 
 
         <!-- News -->
-        <section class="news">
+        <section class="news blog-page">
+            <div class="blog-hero">
+                <p class="blog-eyebrow">Notes, essays, and field observations</p>
+                <h1 class="blog-title">Read Me</h1>
+                <p class="blog-lead">Sometimes I write about social work, living away from home, and the small lessons that only become obvious after you document them.</p>
+                <div class="blog-toolbar" aria-label="Blog controls">
+                    <label class="blog-search">
+                        <span>Search posts</span>
+                        <input type="search" id="blogSearch" placeholder="Search by title, topic, or phrase">
+                    </label>
+                    <div class="blog-filters" role="group" aria-label="Filter posts">
+                        <button class="blog-filter is-active" type="button" data-blog-filter="all">All</button>
+                        <button class="blog-filter" type="button" data-blog-filter="Growth">Growth</button>
+                        <button class="blog-filter" type="button" data-blog-filter="Life">Life</button>
+                    </div>
+                </div>
+            </div>
 
 
 
             <div class="articles">
-                <div class="articles__col">
+                <div class="articles__col" data-blog-card data-blog-category="Growth" data-blog-title="Playing Detective">
                     <div class="articles__item">
                         <div class="articles__header">
                             <div class="articles__date">
                                 25 <br> Nov
                             </div>
-                            <a href="#"> <img class="articles__photo"
+                            <a href="#" data-modal="#modal_blog_1"> <img class="articles__photo"
                                     src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
                                     alt="">
                             </a>
                         </div>
                         <div class="articles__content">
                             <h4 class="articles__title">
-                                <a href="#"> Playing Detective </a>
+                                <a href="#" data-modal="#modal_blog_1"> Playing Detective </a>
                             </h4>
                             <div class="articles__cat">Growth</div>
                             <div class="articles__text">
@@ -109,18 +127,18 @@
                             </div>
 
                         </div>
-                        <a class="btn btn--sm" href="#">read more</a>
+                        <a class="btn btn--sm" href="#" data-modal="#modal_blog_1">read more</a>
                     </div>
                 </div>
 
 
-                <div class="articles__col">
+                <div class="articles__col" data-blog-card data-blog-category="Life" data-blog-title="It's Complicated">
                     <div class="articles__item">
                         <div class="articles__header">
                             <div class="articles__date">
                                 25 <br> Nov
                             </div>
-                            <a href="#">
+                            <a href="#" data-modal="#modal_blog_2">
                                 <img class="articles__photo"
                                     src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg"
                                     alt="">
@@ -129,7 +147,7 @@
                        
                         <div class="articles__content">
                             <h4 class="articles__title">
-                                <a href="#"> It’s Complicated </a>
+                                <a href="#" data-modal="#modal_blog_2"> It’s Complicated </a>
                             </h4>
                             <div class="articles__cat">Life</div>
                             <div class="articles__text">
@@ -143,26 +161,26 @@
                             </div>
 
                         </div>
-                        <a class="btn btn--sm" href="#">read more</a>
+                        <a class="btn btn--sm" href="#" data-modal="#modal_blog_2">read more</a>
                     </div>
 
 
                 </div>
 
-                <div class="articles__col">
+                <div class="articles__col" data-blog-card data-blog-category="Growth" data-blog-title="Notes to My Younger Self">
                     <div class="articles__item">
                         <div class="articles__header">
                             <div class="articles__date">
                                 25 <br> Nov
                             </div>
-                            <a href="#"> <img class="articles__photo"
+                            <a href="#" data-modal="#modal_blog_3"> <img class="articles__photo"
                                     src="https://images.unsplash.com/photo-1592496001020-d31bd830651f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
                                     alt="">
                             </a>
                         </div>
                         <div class="articles__content">
                             <h4 class="articles__title">
-                                <a href="#"> Notes to My Younger Self</a>
+                                <a href="#" data-modal="#modal_blog_3"> Notes to My Younger Self</a>
                             </h4>
                             <div class="articles__cat">Growth</div>
                             <div class="articles__text">
@@ -175,13 +193,13 @@
                             </div>
 
                         </div>
-                        <a class="btn btn--sm" href="#">read more</a>
+                        <a class="btn btn--sm" href="#" data-modal="#modal_blog_3">read more</a>
                     </div>
                 </div>
             </div> <!-- /.articles -->
     </div> <!-- /.container -->
     <div class="news__footer">
-        <a class="news__link" href="#">See more posts</a>
+        <a class="news__link" href="https://yashodhar.substack.com/archive" target="_blank" rel="noopener">See more posts</a>
     </div>
 
     <div class="container">
@@ -189,7 +207,7 @@
             <h3 class="news__title">read me</h3>
             <div class="news__text">Sometimes I write!</div>
             <br>
-            <iframe src="https://yashodhar.substack.com/embed" width="480" height="320"
+            <iframe src="https://yashodhar.substack.com/embed" width="100%" height="320"
                 style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
             <br>
         </div>
@@ -232,8 +250,8 @@
                 <nav class="footer__nav_2">
                     <a class="footer__nav_2-link" href="index.html">Home</a>
                     <a class="footer__nav_2-link" href="projects.html">Projects</a>
-                    <a class="footer__nav_2-link" href="#">Blog</a>
-                    <a class="footer__nav_2-link" href="#">Contact</a>
+                    <a class="footer__nav_2-link" href="blog.html">Blog</a>
+                    <a class="footer__nav_2-link" href="contact.html">Contact</a>
                     <a class="footer__nav_2-link footer__nav_2-link--btn" href="#" data-modal="#modal_hire_me">HIRE
                         ME</a>
                 </nav>
@@ -242,6 +260,114 @@
         </div> <!-- /.container -->
     </footer>
 
+    <div class="modal" id="modal_blog_1">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <h3 class="modal__title">Playing Detective</h3>
+                <div class="articles__cat">Growth</div>
+                <div class="about__text">
+                    <p>Many find documentation dull, especially process documentation. But I have had some fantastic experiences with it, mostly because good documentation turns you into a quiet detective.</p>
+                    <p>A few years ago, I documented processes for two bodhshalas with Bodh Shiksha Samiti, an NGO focused on educating underprivileged children in Rajasthan. Bodhshalas are community-driven schools, starting from land selection to construction, and every small decision has a story attached to it.</p>
+                    <p>One of these schools even sparked the NGO's creation over 20 years ago. Together with a group of teachers, I documented two decades of their journey and learned how much careful observation can reveal. A wall is not just a wall when a village argued for it, funded it, built it, and then trusted it with its children.</p>
+                    <p>The lesson stayed with me: when you write down how something works, you also discover what people value, what they protect, and what they quietly improve when nobody is making a slide deck about it.</p>
+                </div>
+                <div class="text-center">
+                    <a class="btn" href="https://yashodhar.substack.com/archive" target="_blank" rel="noopener">More on Substack</a>
+                    <button class="btn btn--thin" type="button" data-close>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_blog_2">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <h3 class="modal__title">It’s Complicated</h3>
+                <div class="articles__cat">Life</div>
+                <div class="about__text">
+                    <p>Living alone abroad has been a journey of self-discovery. Away from the familiar chaos of life, I found a unique peace in solitude, but it did not arrive in a cinematic way.</p>
+                    <p>It came through ordinary things: learning which train door opens closest to the exit, cooking one sensible meal after a long day, walking through a city where nobody knows your default version.</p>
+                    <p>The quiet moments, the freedom to explore new places, and the chance to truly understand myself brought a sense of calm I never knew I needed. Some days the silence felt generous. Some days it was heavy. Both were honest.</p>
+                    <p>It is complicated, but in the silence of foreign lands, I found the tranquility that eluded me at home. Not perfect peace, exactly, but enough room to hear myself think.</p>
+                </div>
+                <div class="text-center">
+                    <a class="btn" href="https://yashodhar.substack.com/archive" target="_blank" rel="noopener">More on Substack</a>
+                    <button class="btn btn--thin" type="button" data-close>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_blog_3">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <h3 class="modal__title">Notes to My Younger Self</h3>
+                <div class="articles__cat">Growth</div>
+                <div class="about__text">
+                    <p>As we get older, we get wiser. Or at least we hope so. Even if we cannot turn all our lessons into perfect sayings, we do learn some useful things.</p>
+                    <p>If I could chat with my younger self, just starting out in social work over ten years ago, I would remind him to stay curious, document carefully, and listen longer than feels comfortable.</p>
+                    <p>I would tell him not to confuse urgency with importance. Some work needs speed, yes, but most meaningful work needs trust, and trust does not grow well under constant performance.</p>
+                    <p>Those notes are still useful today: keep asking better questions, keep showing up, and let the work change you. The best parts of the work rarely announce themselves at the beginning.</p>
+                </div>
+                <div class="text-center">
+                    <a class="btn" href="https://yashodhar.substack.com/archive" target="_blank" rel="noopener">More on Substack</a>
+                    <button class="btn btn--thin" type="button" data-close>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="images/cancel.svg" alt="">
+            </button>
+            <div class="modal__content blog-contact-modal">
+                <h3 class="modal__title">Let's Talk</h3>
+                <div class="modal__subtitle">Notes, projects, collaborations, or a good technical rabbit hole.</div>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" width="20" alt="">
+                        <a href="mailto:mahajan.yash09@gmail.com">mahajan.yash09@gmail.com</a>
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/linkedin-gray.svg" width="20" alt="">
+                        <a href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank" rel="noopener">LinkedIn</a>
+                    </li>
+                </ul>
+
+                <form class="form" id="blogContactForm" novalidate>
+                    <div class="form__group">
+                        <label class="form__label" for="blog-contact-email">Email address</label>
+                        <input class="form__input" name="email" type="email" placeholder="name@example.com" id="blog-contact-email" required>
+                        <div class="blog-form-error">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="blog-contact-message">Message</label>
+                        <textarea class="form__textarea" name="message" id="blog-contact-message" placeholder="Tell me what you are thinking about..." required></textarea>
+                        <div class="blog-form-error">Please add a short message.</div>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-toast" id="blogToast" role="status" aria-live="polite"></div>
 
 
 
@@ -264,16 +390,11 @@
     <!-- JS -->
     <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            jQuery("a.scrollto").click(function () {
-                elementClick = jQuery(this).attr("href")
-                destination = jQuery(elementClick).offset().top;
-                jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 800);
-                return false;
-            });
-        });
-    </script>
+    <script src="js/blog-dynamic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/gsap-enhancements.js"></script>
 </body>
 
 </html>

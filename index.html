@@ -1,447 +1,410 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
-    <title>Yashodhar</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        body {
-            background-image: url('images/imageback.jpg');
-            background-size: cover; /* Ensures the image covers the entire page */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-attachment: fixed; /* Keeps the image fixed in place */
-        }
-    </style>
+    <meta name="description" content="Portfolio of Yashodhar Mahajan, an automation engineer and software developer.">
+    <title>Yashodhar Mahajan | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/index-bootstrap.css">
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top site-nav">
         <div class="container">
-
-            <div class="header__inner">
-
-                <div class="user">
-                    <div class="user__avatar">
-                        <a href="index.html">
-                            <img src="images/yash_notion.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="user__content">
-                        <div class="user__name">Yashodhar<br>Mahajan</div>
-                        <div class="user__prof">Software Developer</div>
-                    </div>
-                </div>
-
-
-                <nav class="nav_2" id="nav_2">
-                    <a class="nav_2__link scrollto" href="index.html">Home</a>
-                    <a class="nav_2__link scrollto" href="projects.html">Projects</a>
-                    <a class="nav_2__link scrollto" href="blog.html">blog</a>
-                    <a class="nav_2__link" href="contact.html">contact</a>
-                    <a class="nav_2__link nav_2__link--btn" href="#" data-modal="#modal_hire_me">Contact Me</a>
-                </nav>
-
-                <button class="burger" type="button" id="nav_2Toggle">
-                    <img class="burger__icon" src="images/burger.svg" alt="">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Yashodhar Mahajan home">
+                <img src="images/yash_notion.svg" alt="" class="brand-mark">
+                <span>
+                    <span class="d-block fw-bold lh-1">Yashodhar</span>
+                    <span class="d-block small text-body-secondary">Software Developer</span>
+                </span>
+            </a>
+            <div class="nav-actions d-flex align-items-center gap-2 order-lg-2">
+                <button class="btn btn-icon" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+                    <i class="bi bi-moon-stars"></i>
                 </button>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list fs-3" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="siteNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-dark ms-lg-2" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            <i class="bi bi-send"></i>
+                            Contact Me
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>    <!--Header End-->
+    </nav>
 
-    <!--Intro-->
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 col-7-large col-12-medium">
-                    <div class="intro__inner_2">
-                        <div class="intro__content_2">
-                            <h2 class="intro__subtitle">Hello, I'm</h2>
-                            <h1 class="intro__title">Yashodhar</h1>
-                            <div class="intro__text">I am an automation engineer and software developer on a thrilling
-                                multidisciplinary journey...
-                                I run a <a
-                                    href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy">fortnightly
-                                    newsletter</a>
-                                where I share interesting things I saw, heard, found and read.</div>
-								                <div id="africa-wrapper" class="col-lg-6 py-lg-0 py-lg-5 pt-3 order-1 order-lg-2" data-aos="fade-left">
-                    <div id="tsparticles"></div>
-                </div>
-
-                            <div class="social">
-                                <a class="social__link"
-                                    href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy/"
-                                    target="_blank">
-                                    <img src="images/substack-icon.svg" width="41px" height="41px" alt="">
-                                </a>
-
-                                <a class="social__link" href="https://www.linkedin.com/in/yashodhar-mahajan/">
-                                    <img src="images/in.svg" width="41px" height="41px" alt="">
-                                </a>
-
-                                <a class="social__link" href="https://www.instagram.com/yashodhar03/">
-                                    <img src="images/instagram.svg" width="41px" height="41px" alt="">
-                                </a>
-
-                                <a class="social__link" href="https://twitter.com/yashodhar03">
-                                    <img src="images/twitter.svg" width="41px" height="41px" alt="">
-                                </a>
-                            </div>
-
-                            <!-- <a class="btn" href="#" data-modal="#modal_hire_me">Contact ME</a>-->
-                            <!--  <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button> -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-particles" id="tsparticles" aria-hidden="true"></div>
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <p class="eyebrow">Automation Engineer + Software Developer</p>
+                        <h1 class="display-3 fw-bold">Yashodhar Mahajan</h1>
+                        <p class="lead hero-copy">I build practical automation systems, production software, and web tools across mechatronics, PLCs, robotics, and full-stack development.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a class="btn btn-dark btn-lg" href="projects.html">
+                                <i class="bi bi-kanban"></i>
+                                View Projects
+                            </a>
+                            <button class="btn btn-outline-dark btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                <i class="bi bi-file-earmark-person"></i>
+                                See CV
+                            </button>
                         </div>
-                    </div> <!-- /.intro__inner -->    
+                        <div class="social-row" aria-label="Social links">
+                            <a href="https://yashodhar.substack.com/p/coming-soon?r=25l3g&utm_campaign=post&utm_medium=email&utm_source=copy" target="_blank" rel="noopener" title="Substack"><i class="bi bi-newspaper"></i></a>
+                            <a href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/yashodhar03/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://twitter.com/yashodhar03" target="_blank" rel="noopener" title="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://github.com/4rchB1sh0p" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="portrait-frame">
+                            <img src="images/tram_pic.jpg" alt="Yashodhar standing near a tram" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4 col-5-large col-12-medium">
-                    <span class="image fit">
-                        <img src="images/tram_pic.jpg" alt="" class="responsive-image" />
-                    </span>
-                </div>
+            </div>
+        </section>
 
+        <section class="section-band py-5" aria-label="Professional highlights">
+            <div class="container">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-tile">
+                            <strong class="stat-number" data-count="6">0</strong>
+                            <span>Years engineering</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-tile">
+                            <strong class="stat-number" data-count="12">0</strong>
+                            <span>Core technologies</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-tile">
+                            <strong class="stat-number" data-count="4">0</strong>
+                            <span>Industry domains</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-tile">
+                            <strong class="stat-number" data-count="2">0</strong>
+                            <span>Countries worked</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <img src="images/cafe_pic.jpg" alt="Yashodhar seated at a cafe" class="img-fluid rounded-3 shadow-sm about-photo">
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="eyebrow">About Me</p>
+                        <h2 class="section-title">A bridge between machines, code, and people.</h2>
+                        <p>I started in automotive and factory engineering, then moved deeper into programming and automation. That mix helps me design systems with the physical machine, operator, data layer, and business requirement in mind.</p>
+                        <p>My work has crossed labs, classrooms, and industrial production environments. I enjoy building tools that make complex technical work easier to see, maintain, and improve.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <span class="badge rounded-pill text-bg-light">PLC</span>
+                            <span class="badge rounded-pill text-bg-light">Python</span>
+                            <span class="badge rounded-pill text-bg-light">C#</span>
+                            <span class="badge rounded-pill text-bg-light">JavaScript</span>
+                            <span class="badge rounded-pill text-bg-light">SQL</span>
+                            <span class="badge rounded-pill text-bg-light">Robotics</span>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                <i class="bi bi-file-text"></i>
+                                Open CV
+                            </button>
+                            <a class="btn btn-outline-dark" href="contact.html">
+                                <i class="bi bi-envelope"></i>
+                                Contact Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band py-5" id="skills">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <p class="eyebrow">Capabilities</p>
+                        <h2 class="section-title">Systems thinking with implementation detail.</h2>
+                        <p class="mb-0">The skill bars animate when they enter view, and the accordion keeps the technical areas tidy on small screens.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="accordion" id="skillsAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#automationSkill" aria-expanded="true" aria-controls="automationSkill">
+                                        Industrial Automation
+                                    </button>
+                                </h3>
+                                <div id="automationSkill" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="skill-row"><span>PLC: Siemens, Mitsubishi</span><div class="progress"><div class="progress-bar" data-progress="85"></div></div></div>
+                                        <div class="skill-row"><span>HMI, WinCC, TIA Portal</span><div class="progress"><div class="progress-bar" data-progress="80"></div></div></div>
+                                        <div class="skill-row"><span>Robotics: EPSON</span><div class="progress"><div class="progress-bar" data-progress="72"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#softwareSkill" aria-expanded="false" aria-controls="softwareSkill">
+                                        Software Development
+                                    </button>
+                                </h3>
+                                <div id="softwareSkill" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="skill-row"><span>Full-stack web development</span><div class="progress"><div class="progress-bar" data-progress="82"></div></div></div>
+                                        <div class="skill-row"><span>Python, C#, C++</span><div class="progress"><div class="progress-bar" data-progress="78"></div></div></div>
+                                        <div class="skill-row"><span>SQL and MES integrations</span><div class="progress"><div class="progress-bar" data-progress="76"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#designSkill" aria-expanded="false" aria-controls="designSkill">
+                                        Design and Simulation
+                                    </button>
+                                </h3>
+                                <div id="designSkill" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="skill-row"><span>Autodesk Inventor</span><div class="progress"><div class="progress-bar" data-progress="88"></div></div></div>
+                                        <div class="skill-row"><span>Matlab-Simulink</span><div class="progress"><div class="progress-bar" data-progress="80"></div></div></div>
+                                        <div class="skill-row"><span>Safety and risk assessment</span><div class="progress"><div class="progress-bar" data-progress="74"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="featured-projects">
+            <div class="container">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+                    <div>
+                        <p class="eyebrow">Selected Work</p>
+                        <h2 class="section-title mb-0">Featured projects</h2>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Project filters">
+                        <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="automation">Automation</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="software">Software</button>
+                    </div>
+                </div>
+                <div class="row g-4" id="projectGrid"></div>
+            </div>
+        </section>
+
+        <section class="section-band py-5" id="newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 text-center">
+                        <p class="eyebrow">Read Me</p>
+                        <h2 class="section-title">Sometimes I write.</h2>
+                        <p>I run a fortnightly newsletter where I share interesting things I saw, heard, found, and read.</p>
+                        <div class="ratio ratio-16x9 newsletter-frame">
+                            <iframe src="https://yashodhar.substack.com/embed" title="Yashodhar Substack signup" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                <p class="mb-0">&copy; <span id="currentYear"></span> Yashodhar Mahajan</p>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="btn btn-sm btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</button>
+                </div>
             </div>
         </div>
-        </div> <!-- /.container -->
-        <br>
-
-    </section>
-
-
-    <!-- About -->
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about__inner_2">
-                <div class="row">
-                    <div class="col-4 col-5-large col-12-medium">
-                        <div class="about__photo_2">
-                            <span class="image fit"><img src="images/cafe_pic.jpg" alt="" class="responsive-image" /></span>
-                        </div>
-                    </div>
-                    <div class="col-8 col-7-large">
-
-                        <div class="about__content_2">
-                            <h3 class="about__title">about me</h3>
-                            <h2 class="about__bigtitle">WHO AM I</h2>
-                            <div class="about__text">
-                                <p>I'm a bit like a tech nerd, starting off in the world of cars 
-                                    and factories, playing with gears and designs. Then, 
-                                    curiosity got the better of me, and I dived into the 
-                                    world of computer codes and programming, mixing my old 
-                                    skills with new tricks to make cool automated stuff.</p>
-                                <p>My journey's taken me through different places – 
-                                    labs, schools, and businesses, each teaching me
-                                     something new. I've learned to look at problems in big and small ways, 
-                                    which helps me come up with smart solutions. </p>
-                                <p>Apart from stealing human jobs by replacing them by autonomous machines, I also 
-                                    spend time helping kids learn about technology
-                                     through charity work. It's awesome to share what I know and get inspired by their 
-                                    bright ideas and endless questions. Let's make the future exciting with tech!</p>
-                            </div>
-
-                            <a class="btn" href="contact.html">Contact ME</a>
-                            <a class="btn" type="button" data-modal="#modal_resume">SEE MY CV</a>
-
-                        </div> <!-- /.about__content -->
-                    </div> <!-- col-8 col-7-large col-12-medium -->
-                </div> <!-- row -->
-            </div><!-- /.about__inner -->
-        </div> <!-- /.container -->
-    </section> <!-- /.about-->
-
-    <!-- News -->
-    <section class="news">
-        <div class="container">
-            <div class="container d-flex align-items-center justify-content-center">
-            <div class="news__header">
-                <h3 class="news__title">read me</h3>
-                <div class="news__text">Sometimes I write!</div>
-                <br>
-                
-                <iframe src="https://yashodhar.substack.com/embed" width="480" height="320"
-                    style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-                </div>
-            </div>
-
-        </div> <!-- /.container -->
-    </section> <!-- /.news -->
-
-    <!-- Footer -->
-
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer__inner">
-                <div class="footer__credits">
-                    <div class="footer__copyright">
-                        &copy; 2020 My Portfolio
-                    </div>
-                    <div class="footer__social">
-                        <a href="https://github.com/4rchB1sh0p" target="_blank">
-                            <img src="images/github_gray.svg" width="23" alt="">
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank">
-                            <img src="images/linkedin-gray.svg" width="21" alt="">
-                        </a>
-
-                        <a href="https://www.instagram.com/yashodhar03/" target="_blank">
-                            <img src="images/instagram-gray.svg" width="21" height="21" alt="">
-                        </a>
-
-                        <a href="https://twitter.com/yashodhar03" target="_blank">
-                            <img src="images/twitter-gray.svg" width="21" alt="">
-                        </a>
-
-                    </div>
-
-                </div> <!-- /.footer__credits -->
-
-                <nav class="footer__nav_2">
-                    <a class="footer__nav_2-link" href="index.html">Home</a>
-                    <a class="footer__nav_2-link" href="projects.html">Projects</a>
-                    <a class="footer__nav_2-link" href="#">Blog</a>
-                    <a class="footer__nav_2-link" href="#">Contact</a>
-                    <a class="footer__nav_2-link footer__nav_2-link--btn" href="#" data-modal="#modal_hire_me">HIRE
-                        ME</a>
-                </nav>
-
-            </div> <!-- /.footer__inner -->
-        </div> <!-- /.container -->
     </footer>
 
-    <div class="modal" id="modal_resume">
-        <div class="modal__dialog">
-
-            <button type="button" class="modal__close" data-close>
-                <img src="images/cancel.svg" alt="">
-            </button>
-
-            <div class="modal__content">
-                <h3 class="modal__title text-center">Yashodhar Mahajan</h3>
-
-                <div class="text-center">
-                
-                </div>
-
-
-                <div class="timeline">
-
-
-                    <div class="timeline__col timeline__col--left">
-                        <h4 class="timeline__title">EXPERIENCE</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2022 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Controls Engineer</h5>
-                            <div class="timeline__position">Cummins, Germany</div>
-                            <div class="timeline__text">• Creation of plant software for special machines in the automotive and emissions
-                                sector. Focus on dosing units, testing, and flow measurement systems.
-                                • Responsible for servicing the systems electrically, and in software terms. Developed
-                                various software for MES systems to integrate changes in part in production.
-                                • Technologies: HTML, CSS, JS, PHP, SQL, Python, C#, C++, Siemens Step7, Siemens WinCC, TIA
-                                Portal, Robotics: EPSON
-                            </div>
-                        </div>
-
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2021 - 2022</time>
-                            <h5 class="timeline__subtitle">R&D Intern + Masters Thesis</h5>
-                            <div class="timeline__position">Dürr Group, Germany</div>
-                            <div class="timeline__text">• Completed training courses in Advanced-Simulink, Control Technology. Gained
-                                thorough knowledge in ADAS, End-of-line Testing, and Safety/risk assessment
-                                • Generation of Simulink model of “Steerable Function Tester” used for testing of
-                                autonomous driving of vehicles on various terrains.
-                            </div>
-                        </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2018 - 2020</time>
-                            <h5 class="timeline__subtitle">Project Engineer</h5>
-                            <div class="timeline__position">System Automation, India</div>
-                            <div class="timeline__text">Design, development, and testing of electromechanical modules of production
-                                machines (mill/lathe/gear cutting machines) in Industry 4.0
-                                • Development of PLC ladders for production machines with Mitsubishi M80 CNC/
-                                Siemens 840D control. Developed HMI-based user interface with a C++ backend that
-                                monitors real-time status of spindle and axis motors, usage alarms, and systems for
-                                measuring new tools and detecting tool breakage.
-                                • Assisting the maintenance team with troubleshooting of CNC controllers.
-                            </div>
-                        </div>
-
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <p class="eyebrow mb-1">Curriculum Vitae</p>
+                        <h2 class="modal-title h4" id="resumeModalLabel">Yashodhar Mahajan</h2>
                     </div>
-
-
-                    <div class="timeline__col timeline__col--right">
-                        <h4 class="timeline__title">EDUCATION</h4>
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2020 - 2022</b></time>
-                            <h5 class="timeline__subtitle">MS Mechatronics</h5>
-                            <div class="timeline__position">University of Applied Sceinces Kaiserslautern, Germany</div>
-
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <h3 class="h5 mb-3">Experience</h3>
+                            <div class="vstack gap-3">
+                                <article class="timeline-card">
+                                    <time>2022 - Present</time>
+                                    <h4>Controls Engineer</h4>
+                                    <p class="text-body-secondary mb-2">Cummins, Germany</p>
+                                    <p>Plant software for special machines in automotive emissions, dosing units, testing, flow measurement, service, and MES integrations.</p>
+                                </article>
+                                <article class="timeline-card">
+                                    <time>2021 - 2022</time>
+                                    <h4>R&D Intern + Masters Thesis</h4>
+                                    <p class="text-body-secondary mb-2">Durr Group, Germany</p>
+                                    <p>Simulink model generation for a steerable function tester used in autonomous vehicle testing.</p>
+                                </article>
+                                <article class="timeline-card">
+                                    <time>2018 - 2020</time>
+                                    <h4>Project Engineer</h4>
+                                    <p class="text-body-secondary mb-2">System Automation, India</p>
+                                    <p>Electromechanical module development for Industry 4.0 production machines, CNC controls, HMI interfaces, and maintenance support.</p>
+                                </article>
+                            </div>
                         </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2014 - 2018</b></time>
-                            <h5 class="timeline__subtitle">BE Mechanical Engineering</h5>
-                            <div class="timeline__position">Pune University, India</div>
-
-                        </div>
-
-                        <h4 class="timeline__title">Skills</h4>
-
-                        <div class="progress-bar">
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">PLC (Siemens, Mitsubishi)</div>
-
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 80%;"></div>
-                                    </div>
-                                </div>
+                        <div class="col-lg-5">
+                            <h3 class="h5 mb-3">Education</h3>
+                            <div class="vstack gap-3 mb-4">
+                                <article class="timeline-card">
+                                    <time>2020 - 2022</time>
+                                    <h4>MS Mechatronics</h4>
+                                    <p>University of Applied Sciences Kaiserslautern, Germany</p>
+                                </article>
+                                <article class="timeline-card">
+                                    <time>2014 - 2018</time>
+                                    <h4>BE Mechanical Engineering</h4>
+                                    <p>Pune University, India</p>
+                                </article>
                             </div>
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">Full Stack Web Dev</div>
-
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">Autodesk Inventor</div>
-
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div> <!-- /.progress-bar -->
-
-                        <h4 class="timeline__title">Projects</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2021 - 2022</b></time>
-                            <h5 class="timeline__subtitle">Simulation of variants of a steerable function test bench </h5>
-                            <div class="timeline__position">Dürr Group, Germany</div>
-                            <div class="timeline__text">• Development of a control concept for functional test benches with steerable front double rollers in Matlab-Simulink. 
-                                • Development of test benches in EOL, prototyping and testing on simulation software.
+                            <h3 class="h5 mb-3">Tools</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge text-bg-dark">HTML</span>
+                                <span class="badge text-bg-dark">CSS</span>
+                                <span class="badge text-bg-dark">JavaScript</span>
+                                <span class="badge text-bg-dark">PHP</span>
+                                <span class="badge text-bg-dark">SQL</span>
+                                <span class="badge text-bg-dark">Python</span>
+                                <span class="badge text-bg-dark">C#</span>
+                                <span class="badge text-bg-dark">C++</span>
+                                <span class="badge text-bg-dark">Step7</span>
+                                <span class="badge text-bg-dark">WinCC</span>
                             </div>
                         </div>
                     </div>
-
-                </div> <!-- /.timeline -->
-                <div class="text-center">
-                    <a href="contact.html" class="btn">Contact Me</a>
-                    <a href="contact.html" class="btn"> Download PDF</a>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" id="printCv">
+                        <i class="bi bi-printer"></i>
+                        Print CV
+                    </button>
+                    <a href="contact.html" class="btn btn-dark">
+                        <i class="bi bi-envelope"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            </div> <!-- /.modal__content -->
-        </div> <!-- /.modal-dialog -->
-    </div> <!-- /.modal -->
-
-
-    <div class="modal" id="modal_hire_me">
-        <div class="modal__dialog modal__dialog--sm">
-            <button type="button" class="modal__close" data-close>
-                <img src="images/cancel.svg" alt="">
-            </button>
-
-            <div class="contact">
-                <div class="contact__left">
-                    <h3 class="modal__title mb-0">LET'S TALK!</h3>
-                    <div class="modal__subtitle">I usually respond to twitter DM's within 2 hours</div>
-
-                    <ul class="contact__info">
-                        <li class="contact__info-item">
-                            <img class="contact__info-icon" src="images/smartphone-call.svg" width="20" alt="">
-                            +49 17*******16
-                        </li>
-
-
-                        <li class="contact__info-item">
-                            <img class="contact__info-icon" src="images/mail.svg" width="20" alt="">
-                            mahajan.yash09@gmail.com
-                        </li>
-                    </ul>
-
-                    <form class="form" action="/" method="post">
-                        <div class="form__group">
-                            <label class="form__label" for="input-email">Adress e-mail</label>
-                            <input class="form__input" name="input-email" type="text" placeholder="Adress e-mail"
-                                id="input-email">
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-lg-7">
+                        <div class="modal-header">
+                            <div>
+                                <p class="eyebrow mb-1">Let's Talk</p>
+                                <h2 class="modal-title h4" id="contactModalLabel">Send a quick note</h2>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
-                        <div class="form__group">
-                            <label class="form__label" for="input-text">Request</label>
-                            <textarea class="form__textarea" name="input-text" id="input-text"
-                                placeholder="Type your request..."></textarea>
+                        <form class="modal-body needs-validation" id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Request</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell me what you are building..." required></textarea>
+                                <div class="invalid-feedback">Please add a short message.</div>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                <div class="small text-body-secondary">
+                                    <i class="bi bi-envelope"></i>
+                                    mahajan.yash09@gmail.com
+                                </div>
+                                <button type="submit" class="btn btn-dark">
+                                    <i class="bi bi-send"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 contact-panel">
+                        <div>
+                            <h3 class="h5">Direct channels</h3>
+                            <p class="mb-4">I usually respond fastest through email or LinkedIn.</p>
+                            <a class="btn btn-outline-light w-100 mb-2" href="mailto:mahajan.yash09@gmail.com">
+                                <i class="bi bi-envelope"></i>
+                                Email
+                            </a>
+                            <a class="btn btn-outline-light w-100" href="https://www.linkedin.com/in/yashodhar-mahajan/" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                                LinkedIn
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <div class="text-right">
-                            <button class="btn">send</button>
-                        </div>
-                    </form>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="contactToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <strong class="me-auto">Message ready</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Your email client has been opened with the message details.
+            </div>
+        </div>
+    </div>
 
-                </div> <!-- /.contact__left -->
-
-                <div class="contact__right"></div>
-
-            </div> <!-- /.contact -->
-
-
-        </div> <!-- /.modal-dialog -->
-    </div> <!-- /.modal -->
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-	<!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.29.2/tsparticles.min.js" integrity="sha512-BCawwABAvfbOiCjTAAsgG2SSs35AjAVlQq66rOTeQsS+2H/1OZsY3QEi3IAEQ0odsSxqVSHNqhBe3ut0pKl9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/custom_particle.js"></script>
-    <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-
-
-    <!-- JS -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            jQuery("a.scrollto").click(function () {
-                elementClick = jQuery(this).attr("href")
-                destination = jQuery(elementClick).offset().top;
-                jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 800);
-                return false;
-            });
-        });
-    </script>
+    <script src="js/index-dynamic.js"></script>
 </body>
 
 </html>
